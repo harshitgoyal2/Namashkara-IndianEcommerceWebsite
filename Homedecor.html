@@ -1,0 +1,984 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homedecor</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.cart
+{
+    margin-left: 40px;
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+.container
+{
+    display: inline-flex;
+    height: 700px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container1
+{
+    display: inline-flex;
+    height: 850px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container2
+{
+    display: inline-flex;
+    height: 650px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container3
+{
+    display: inline-flex;
+    height: 600px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container5
+{
+    display: inline-flex;
+    height: 570px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.box
+{
+         float: left;
+		 height: 700px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.box2
+{
+         float: left;
+		 height: 650px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.box5
+{
+         float: left;
+		 height: 570px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.box3
+{
+         float: left;
+		 height: 600px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.box1
+{
+         float: left;
+		 height: 850px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.co{
+            display: block;
+            position: relative;
+
+}
+p{
+            position: absolute;
+  bottom: 0;
+  background: #14aed4;
+  background: rgba(20, 174, 212, 0.6);
+  color:#f1f1f1;
+  width: 160px;
+  transition: 4s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+
+ 
+        }
+        .co:hover p{
+            opacity: 1;
+            margin-bottom: 80px;
+            margin-left: 100px;
+        }
+        .display{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #ul1{color: red;
+  display: contents;
+  list-style: none;} 
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Homedecor</h1>
+<div class="cont">
+  <ol>
+    <li id="list">Storage Boxes & Baskets</li><br>
+    <div class="container">
+        <div class="box">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605076954_main.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 795</del><br>Rs 755.25<br><mark>Flat 36% off</mark></p></div>
+            <div class="display">
+                Wilderness Doodles Trinket Box
+                <ul type="circle" id="ul1">
+                    <li>Shape: Square</li>
+                    <li>Material: MDF & Canvas</li>
+                    <li>Care Instructions: Dust with a soft cloth to clean.</li>
+                    <li>Box Contents: 1 Storage Box</li>
+                    <li>Width (cms.): 10</li>
+                    <li>Length (cms.): 10</li>
+                    <li>Height (cms.): 10</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="cart.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="checkout.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605098635_plus1.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1995</del><br>Rs 1835<br><mark>Flat 8% off</mark></p></div>
+            <div class="display">
+                Ornate Cows Suitcase - Yellow
+                <ul type="circle" id="ul1">
+                    <li>Material: MDF & Waterproof canvas</li>
+                    <li>Care Instructions: Do not wash.</li>
+                    <li>Box Contents: 1 Suitcase</li>
+                    <li>Width (cms.): 25.00</li>
+                    <li>Length (cms.): 35.00</li>
+                    <li>Height (cms.): 12.00</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605100130_top.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 935<br><mark>Flat 6% off</mark></p></div>
+            <div class="display">
+                Human Maze Watch Organiser - Beige
+                <ul type="circle" id="ul1">
+                    <li>Material: Ecoleatherette, Velvet & Cardboard</li>
+                    <li>Care Instructions: Wipe with damp cloth.</li>
+                    <li>Box Contents: 1 Watch Organiser</li>
+                    <li>Width (cms.): 9.50</li>
+                    <li>Length (cms.): 25.50</li>
+                    <li>Height (cms.): 8.25</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605098598_top.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1595</del><br>Rs 1436<br><mark>Flat 10% off</mark></p></div>
+            <div class="display">
+                Sun Face Storage Box
+                <ul type="circle" id="ul1">
+                    <li>Material: MDF & Waterproof canvas</li>
+                    <li>Care Instructions: Do not wash.</li>
+                    <li>Box Contents: 1 Storage Box</li>
+                    <li>Width (cms.): 20.00</li>
+                    <li>Length (cms.): 20.00</li>
+                    <li>Height (cms.): 15.00</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="box">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605098550_top.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 795</del><br>Rs 509<br><mark>Flat 36% off</mark></p></div>
+            <div class="display">
+                Palms & Paws Storage Box
+                <ul type="circle" id="ul1">
+                    <li>Material: MDF & Waterproof canvas</li>
+                    <li>Care Instructions: Do not wash.</li>
+                    <li>Box Contents: 1 Storage Box</li>
+                    <li>Width (cms.): 10.00</li>
+                    <li>Length (cms.): 10.00</li>
+                    <li>Height (cms.): 10.00</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605098543_top.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 795</del><br>Rs 731<br><mark>Flat 8% off</mark></p></div>
+            <div class="display">
+                Folk Art Trinket Box
+                <ul type="circle" id="ul1">
+                    <li>Material: MDF & Waterproof canvas</li>
+                    <li>Care Instructions: Do not wash.</li>
+                    <li>Box Contents: 1 Storage Box</li>
+                    <li>Width (cms.): 10.00</li>
+                    <li>Length (cms.): 10.00</li>
+                    <li>Height (cms.): 10.00</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605091957_plus1.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 2495</del><br>Rs 2345<br><mark>Flat 6% off</mark></p></div>
+            <div class="display">
+                Hue Got It Lunch Basket
+                <ul type="circle" id="ul1">
+                    <li>Material: Plastic Strings Weaved in to Basket With Iron Wire Backing</li>
+                    <li>Care Instructions: Wipe with a dry/damp cloth.</li>
+                    <li>Box Contents: 1 Storage Basket</li>
+                    <li>Width (cms.): 22</li>
+                    <li>Length (cms.): 35</li>
+                    <li>Height (cms.): 40</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605091940_plus1.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 845.75<br><mark>Flat 15% off</mark></p></div>
+            <div class="display">
+                Rainbow Pear Basket
+                <ul type="circle" id="ul1">
+                    <li>Material: Plastic Strings Weaved in to Basket With Iron Wire Backing</li>
+                    <li>Care Instructions: Wipe with a dry/damp cloth.</li>
+                    <li>Box Contents: 1 Storage Basket</li>
+                    <li>Width (cms.): 20.5</li>
+                    <li>Length (cms.): 26.5</li>
+                    <li>Height (cms.): 6</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+    <li id="list">Comfy corners</li><br>
+    <div class="container1">
+        <div class="box1">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605073229_1_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 647<br><mark>Flat 35% off</mark></p></div>
+            <div class="display">
+                Charmed Deer 16" Cushion Cover- Ivory
+                <ul type="circle" id="ul1">
+                    <li>Shape: Square</li>
+                    <li>Material: Cotton</li>
+                    <li>Care Instructions: Donot wash. Spot clean only</li>
+                    <li>Box Contents: 1 Cushion Cover</li>
+                    <li>Wash in cold water.</li>
+                    <li>Hand wash recommended for long lasting fabric. Wash with similar colours.</li>
+                    <li>Iron on the reverse.</li>
+                    <li>In case of spillage, wash with a fabric detergent immediately.</li>
+                    <li>Do not bleach.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605073243_1_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 895<br><mark>Flat 10% off</mark></p></div>
+            <div class="display">
+                Build Castles In The Air 16" Cushion Cover- Red
+                <ul type="circle" id="ul1">
+                    <li>Shape: Square</li>
+                    <li>Material: Cotton</li>
+                    <li>Care Instructions: Donot wash. Spot clean only.</li>
+                    <li>Box Contents: 1 Cushion Cover</li>
+                    <li>Wash in cold water.</li>
+                    <li>Hand wash recommended for long lasting fabric. Wash with similar colours.</li>
+                    <li>Iron on the reverse.</li>
+                    <li>In case of spillage, wash with a fabric detergent immediately.</li>
+                    <li> Do not bleach.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0009_layer_1_3.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1595</del><br>Rs 1467<br><mark>Flat 8% off</mark></p></div>
+            <div class="display">
+                Tropical Owl Stuffed Cushion
+                <ul type="circle" id="ul1">
+                    <li>Shape: Owl</li>
+                    <li>Material: Cotton and Polyester</li>
+                    <li>Care Instructions: Do not Wash/ Spot Clean Only.</li>
+                    <li>Box Contents: 1 Shape Cushion</li>
+                    <li>Do not wash.</li>
+                    <li>Spot clean with a dry/damp cloth.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0004_layer_6_2.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1595</del><br>Rs 1355.75<br><mark>Flat 15% off</mark></p></div>
+            <div class="display">
+                Rainbow Pear Basket
+                <ul type="circle" id="ul1">
+                    <li>Shape: Cycle</li>
+                    <li>Material: Cotton and Polyester</li>
+                    <li>Box Contents: 1 Shape Cushion</li>
+                    <li>Do not wash.</li>
+                    <li>Spot clean with a dry/damp cloth.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+    <li id="list">Wall Hooks & Shelves</li><br>
+    <div class="container2">
+        <div class="box2">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/_/1_23_26.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1095</del><br>Rs 711.75<br><mark>Flat 35% off</mark></p></div>
+            <div class="display">
+                Nourishing Palms Coat Hanger - Blue
+                <ul type="circle" id="ul1">
+                    <li>Material: Ceramic</li>
+                    <li>Shape: Hand</li>
+                    <li>Care Instructions: Dusting Only / Handle with Care</li>
+                    <li>Box Contents: 1 Coat Hanger</li>
+                    <li>Weight (gms.): 375</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605049965_top_3.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1295</del><br>Rs 1165.5<br><mark>Flat 10% off</mark></p></div>
+            <div class="display">
+                Good Things Wall Plate
+                <ul type="circle" id="ul1">
+                    <li>Material: Bone China</li>
+                    <li>Care Instructions: Wipe with a dry/damp cloth to clean.</li>
+                    <li>Box Contents: 1 Wall Plate</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/8/9/8907605049910_main.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 915<br><mark>Flat 8% off</mark></p></div>
+            <div class="display">
+                Garden Maiden Wall Plate
+                <ul type="circle" id="ul1">
+                    <li>Material: Bone China</li>
+                    <li>Care Instructions: Wipe with a dry/damp cloth to clean.</li>
+                    <li>Box Contents: 1 Wall Plate</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605082979_plus1.jpg" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 695</del><br>Rs 590.75<br><mark>Flat 15% off</mark></p></div>
+            <div class="display">
+                Make It Happen Shado Storage Box
+                <ul type="circle" id="ul1">
+                    <li>Material: MDF & Paper</li>
+                    <li>Box Contents: 1 Shado Storage Box</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+    <li id="list">Wall decor</li><br>
+    <div class="container3">
+        <div class="box3">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0001_layer_4.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 696.5<br><mark>Flat 30% off</mark></p></div>
+            <div class="display">
+                Pastel Mandala Wall D
+                <ul type="circle" id="ul1">
+                    <li>Material: Metal</li>
+                    <li>Care Instructions: Wipe with a dry/damp cloth.</li>
+                    <li>Box Contents: A chime</li>
+                    <li>Weight (gms.): 120</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0017_layer_15_1.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 795</del><br>Rs 715.5<br><mark>Flat 10% off</mark></p></div>
+            <div class="display">
+                Tropical Leaf Wall D
+                <ul type="circle" id="ul1">
+                    <li>Material: Poly-resin</li>
+                    <li>Care Instructions: Wipe with Damp cloth</li>
+                    <li>Box Contents: 1 Trinket Tray</li>                    
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605082467_main.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1295</del><br>Rs 1191<br><mark>Flat 8% off</mark></p></div>
+            <div class="display">
+                Spinning Hues Wall Plate
+                <ul type="circle" id="ul1">
+                    <li>Material: Paper rope</li>
+                    <li>Box Contents: 1 Wall Plate</li>
+                    <li>Weight (gms.): 375</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605079191_top.jpg" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 796<br><mark>Flat 20% off</mark></p></div>
+            <div class="display">
+                Hooked On Home Key Holder
+                <ul type="circle" id="ul1">
+                    <li>Material: Ecoleatherette, Jute, Cardboard & MDF</li>
+                    <li>Box Contents: 1 Key Holder</li>
+                    <li>Weight (gms.): 410</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+    <li id="list">Photo frames</li><br>
+    <div class="container2">
+        <div class="box2">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605094132_top.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 795</del><br>Rs 477<br><mark>Flat 40% off</mark></p></div>
+            <div class="display">
+                Pretty Beaks Photo Frame - Green
+                <ul type="circle" id="ul1">
+                    <li>Material: Polyresin</li>
+                    <li>Care Instructions: Wipe With Damp Cloth</li>
+                    <li>Box Contents: 1 Photo Frame</li>
+                    <li>Clean with soft dry cloth only.</li>
+                    <li>For indoor use only.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0021_layer_6_1.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 795</del><br>Rs 596.25<br><mark>Flat 25% off</mark></p></div>
+            <div class="display">
+                Townhouse Glance Green Photo Frame
+                <ul type="circle" id="ul1">
+                    <li>Material: Poly-resin</li>
+                    <li>Care Instructions: Wipe with damp Cloth</li>
+                    <li>Box Contents: 1 Photo Frame</li>
+                    <li>Clean with soft dry cloth only.</li>
+                    <li>For indoor use only.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0014_layer_13.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 895</del><br>Rs 814<br><mark>Flat 9% off</mark></p></div>
+            <div class="display">
+                Thoughtful Trunk Photo Frame
+                <ul type="circle" id="ul1">
+                    <li>Material: Poly-resin</li>
+                    <li>Care Instructions: Wipe with damp Cloth</li>
+                    <li>Box Contents: 1 Photo Frame</li>
+                    <li>Clean with soft dry cloth only.</li>
+                    <li>For indoor use only.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0020_layer_7.jpg" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 856<br><mark>Flat 14% off</mark></p></div>
+            <div class="display">
+                Rosy Memories Photo Frame
+                <ul type="circle" id="ul1">
+                    <li>Material: Poly-resin</li>
+                    <li>Care Instructions: Wipe with damp Cloth</li>
+                    <li>Box Contents: 1 Photo Frame</li>
+                    <li>Clean with soft dry cloth only.</li>
+                    <li>For indoor use only.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div>
+      <li id="list">Decor and Accents</li><br>
+      <div class="container5">
+          <div class="box5">
+              <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0012_layer_21.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 595</del><br>Rs 559<br><mark>Flat 6% off</mark></p></div>
+              <div class="display">
+                Rustic Monkey Tealight Holder
+                  <ul type="circle" id="ul1">
+                    <li>Shape: Monkey</li>
+                    <li>Material: Poly-resin</li>
+                    <li>Care Instructions: Wipe with Damp cloth</li>
+                    <li>Box Contents: 1 Tealight Holder</li>
+                    </ul>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+          <div class="box5">
+              <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/1/0/1000_x_1250_0013_layer_6.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 595</del><br>Rs 547<br><mark>Flat 8% off</mark></p></div>
+              <div class="display">
+                Owl Face Ivory Planter
+                  <ul type="circle" id="ul1">
+                    <li>Shape: Owl</li>
+                    <li>Material: Stoneware</li>
+                    <li>Care Instructions: Wipe with Damp Cloth</li>
+                    <li>Box Contents: 1 Planter</li>
+                    </ul>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+          <div class="box5">
+              <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/8/9/8907605074783_top.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 896<br><mark>Flat 10% off</mark></p></div>
+              <div class="display">
+                Choose Happy Table Décor With Led Light- Brown
+                  <ul type="circle" id="ul1">
+                    <li>Shape: Pentagon</li>
+                    <li>Material: Wood, MDF & Led Lights</li>
+                    <li>Box Contents: 1 Wall D</li>
+                    </ul>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+          <div class="box5">
+              <div class="co"><img src="https://media.chumbak.com/media/catalog/product/image/500x625/2/1/21_4_23.jpg" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 595</del><br>Rs 524<br><mark>Flat 12% off</mark></p></div>
+              <div class="display">
+                Peony Margarita Tin Candle
+                  <ul type="circle" id="ul1">
+                    <li>Material: Scented Wax</li>
+                    <li>Care Instructions: Always store your candles in a cool, dark and dry place.</li>
+                    <li>Box Contents: 1 Candle Jar</li>
+                    </ul>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+      </div>
+      
+  </ol>
+</div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

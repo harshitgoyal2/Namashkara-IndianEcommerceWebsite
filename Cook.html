@@ -1,0 +1,551 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cooking Essentials</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+div.box
+        {
+            border: 3px solid #14aed4;
+            height: 20 px;
+            margin: 0vw;
+            display: flex;
+        }
+        .co{
+            display: block;
+            position: relative;
+
+        }
+        p{
+            position: absolute;
+  bottom: 0;
+  background: #14aed4;
+  background: rgba(20, 174, 212, 0.6);
+  color:#f1f1f1;
+  width: 160px;
+  transition: 4s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+
+ 
+        }
+        .co:hover p{
+            opacity: 1;
+            margin-left: 140px;
+        }
+        .display{
+            padding-left: 50px;
+            margin-top: 90px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #ul1{
+            padding-left: 50px;
+            color: red;
+            font-weight: bolder;
+            font-size: 30px;
+            margin: auto;
+        }
+        .cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Cooking Essentials</h1>
+    <div class="box">
+        <div class="co"><img src="https://m.media-amazon.com/images/I/61n1hm72dlL._AC_UL480_FMwebp_QL65_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 19</del><br>Rs 18<br><mark>Flat 5% off</mark></p></div>
+        <div class="display">
+            Tata Salt, 1kg
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Item Weight:998 g</li>
+            <li>Weight:1 Kilograms</li>
+            <li>Units:1000 gram</li>
+            <li>Origin:India</li>
+            <li>Brand:Tata</li>
+            <li>Manufacturer:Tata Sampann</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://m.media-amazon.com/images/I/61v9KY-lLKL._AC_UL480_FMwebp_QL65_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 70</del><br>Rs 67.2<br><mark>Flat 4% off</mark></p></div>
+        <div class="display">
+            Tata Sampann Chilli Powder Masala, 200g
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Item Weight:200 g</li>
+            <li>Units:200 gram</li>
+            <li>Origin:India</li>
+            <li>Brand:Tata</li>
+            <li>Format:Powdered</li>
+            <li>Manufacturer:Tata Sampann</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://m.media-amazon.com/images/I/61a4fydTBQL._AC_UL480_FMwebp_QL65_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 85</del><br>Rs 63.75<br><mark>Flat 25% off</mark></p></div>
+        <div class="display">
+            Tata Sampann Garam Masala, 100g
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Item Weight:99.8 g</li>
+            <li>Units:100 gram</li>
+            <li>Origin:India</li>
+            <li>Brand:Tata</li>
+            <li>Manufacturer:Tata Sampann</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://m.media-amazon.com/images/I/9160N3MhJvL._AC_UL480_FMwebp_QL65_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 60</del><br>Rs 54<br><mark>Flat 10% off</mark></p></div>
+        <div class="display">
+            Aashirvaad Powder, Turmeric Pouch, 200g (North)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Units:200 gram</li>
+            <li>Origin:India</li>
+            <li>Brand:Aashirvaad</li>
+            <li>Format:Powdered</li>
+            <li>Manufacturer:ITC</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/61TcE06VKXL._SL1000_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 296</del><br>Rs 258<br><mark>Flat 13% off</mark></p></div>
+        <div class="display">
+            Tata Sampann Toor Dal, 2 kg
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Item Weight:2 Kg</li>
+            <li>Units:2000 gram</li>
+            <li>Origin:India</li>
+            <li>Brand:Tata</li>
+            <li>Manufacturer:TATA Chemicals</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/616srx52erL._SL1500_.jpg" alt="co" width="310" height="400"><p>MRP: <br><del>Rs 1000</del><br>Rs 799<br><mark>Flat 20% off</mark></p></div>
+        <div class="display">
+            Saffola Total, Pro Heart Conscious Edible Oil, Jar, 5 L
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Units:5000 millilitre</li>
+            <li>Origin:India</li>
+            <li>Brand:Saffola</li>
+            <li>Manufacturer:Marico</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/91ejzn3zyTL._SL1500_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 90</del><br>Rs 62<br><mark>Flat 31% off</mark></p></div>
+        <div class="display">
+            Vedaka Cumin (Jeera) Seed, 200g
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Item Weight:200 g</li>
+            <li>Units:200 gram</li>
+            <li>Brand:Vedaka</li>
+            <li>Specialty:No Artificial Colours</li>
+            <li>Manufacturer:Amiras Agro and Foods, FSSAI Lic. No. 10718017000002</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/71R9VXkpEEL._SL1500_.jpg" alt="co" width="310" height="500"><p>MRP: <br><del>Rs 2600</del><br>Rs 1075<br><mark>Flat 59% off</mark></p></div>
+        <div class="display">
+            Borges Extra Light Olive Oil, 2L
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Units:2000 millilitre</li>
+            <li>Brand:Borges</li>
+            <li>Manufacturer:Borges India Pvt Ltd</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/41fAkhF7UtL.jpg" alt="co" width="310" height="400"><p>MRP: <br><del>Rs 650</del><br>Rs 605<br><mark>Flat 10% off</mark></p></div>
+        <div class="display">
+            Fortune Rice Bran Health Oil, 5L
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Product Name:Oils</li>
+            <li>Volume:5000 Milliliters</li>
+            <li>Units:5000 millilitre</li>
+            <li>Origin:India</li>
+            <li>Brand:FORTUNE</li>
+            <li>Manufacturer:Adani Wilmar</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://m.media-amazon.com/images/I/81CUHqWQs4L._AC_UL480_FMwebp_QL65_.jpg" alt="co" width="290" height="340"><p>MRP: <br><del>Rs 78</del><br>Rs 70<br><mark>Flat 10% off</mark></p></div>
+        <div class="display">
+            Everest Royal Garam Masala Powder, 100g Carton
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Item Weight:99.8 g</li>
+            <li>Weight:100 Grams</li>
+            <li>Units:100 gram</li>
+            <li>Origin:India</li>
+            <li>Brand:Everest</li>
+            <li>Format:Powdered</li>
+            <li>Manufacturer:Everest</li>
+          </ul>
+    </div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

@@ -1,0 +1,1070 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Appliances</title>
+<script src="cart.js"></script>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.cart
+{
+    margin-left: 40px;
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+.container
+{
+    display: inline-flex;
+    height: 800px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container1
+{
+    display: inline-flex;
+    height: 730px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container2
+{
+    display: inline-flex;
+    height: 860px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container3
+{
+    display: inline-flex;
+    height: 880px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container4
+{
+    display: inline-flex;
+    height: 680px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.box
+{
+         float: left;
+		 height: 800px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.2px solid #14aed4;
+}
+.box2
+{
+         float: left;
+		 height: 860px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.box3
+{
+         float: left;
+		 height: 880px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.box1
+{
+         float: left;
+		 height: 730px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.box4
+{
+         float: left;
+		 height: 680px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.co{
+            display: block;
+            position: relative;
+
+}
+p{
+            position: absolute;
+  bottom: 0;
+  background: #14aed4;
+  background: rgba(20, 174, 212, 0.6);
+  color:#f1f1f1;
+  width: 160px;
+  transition: 4s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+
+ 
+        }
+        .co:hover p{
+            opacity: 1;
+            margin-bottom: 80px;
+            margin-left: 100px;
+        }
+        .display{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #ul1{color: red;
+  display: contents;
+  list-style: none;} 
+
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Home Appliances</h1>
+<div class="cont">
+  <ol>
+    <li id="list">Washing machine</li><br>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/CY7I4EgI40o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+    <div class="container">
+        <div class="box">
+            <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hd9/h1c/8938239721502/-1200Wx1200H-221776-300Wx300H.png" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 20500</del><br>Rs 16490<br><mark>Flat 20% off</mark></p></div>
+            <div class="display">
+              Whirlpool 7.5 kg Fully Automatic Top Loading Washing Machine (7.5 Elite, Grey)
+                <ul type="circle" id="ul1">
+                  <li>7.5 Kg, Top Load, Fully Automatic</li>
+                  <li>Ideal Family Size: 6-8 Members</li>
+                  <li>Power Scrub Technology</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h0b/hf9/8937907978270/217486.png" alt="co" width="420" height="410"><p>MRP: <br><del>Rs 68500</del><br>Rs 56990<br><mark>Flat 17% off</mark></p></div>
+            <div class="display">
+              Samsung 9 kg Fully Automatic Front Loading Washing Machine (WW90K54E0UX/TL, Inox)
+                <ul type="circle" id="ul1">
+                  <li>8 Kg, Front Load, Fully Automatic</li>
+                  <li>Ideal Family Size: 6-8 Members</li>
+                  <li>Dimensions - 59.80 x 63.20 x 84.80 cms</li>
+                  <li>24 Months Warranty</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/ha9/h48/8937905160222/217118_pjpeg.jpg" alt="co" width="360" height="410"><p>MRP: <br><del>Rs 43849</del><br>Rs 35990<br><mark>Flat 18% off</mark></p></div>
+            <div class="display">
+              Bosch 8 kg Fully Automatic Front Loading Washing Machine (WAT2846WIN, White)
+                <ul type="circle" id="ul1">
+                    <li>Material: Ecoleatherette, Velvet & Cardboard</li>
+                    <li>Care Instructions: Wipe with damp cloth.</li>
+                    <li>Box Contents: 1 Watch Organiser</li>
+                    <li>Width (cms.): 9.50</li>
+                    <li>Length (cms.): 25.50</li>
+                    <li>Height (cms.): 8.25</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h56/h0c/8843708432414/217152.webp" alt="co" width="360" height="380"><p>MRP: <br><del>Rs 21290</del><br>Rs 20226<br><mark>Flat 5% off</mark></p></div>
+            <div class="display">
+                LG 6.5 kg Fully Automatic Top Loading Washing Machine (T7588NDDLE.ASFPEIL, Silver)
+                <ul type="circle" id="ul1">
+                  <li>Smart Motion and Turbo Drum</li>
+                  <li>Capacity : 6.5 KG</li>
+                  <li>Digital Display</li>
+                  <li>Smart Inverter Technology</li>
+                  <li>Smart Diagnosis</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container">
+      <div class="box">
+          <div class="co"><img src="https://www.voltasbeko.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/w/t/wtl120s_1.png" alt="co" width="360" height="410"><p>MRP: <br><del>Rs 43390</del><br>Rs 40499<br><mark>Flat 7% off</mark></p></div>
+          <div class="display">
+            Voltas Beko 12 kg Fully Automatic Top Loading Washing Machine (WTL120S, Silver)
+              <ul type="circle" id="ul1">
+                <li>Fuzzy Control</li>
+                <li>Monsoon Dry Function</li>
+                <li>GentleWave Drum</li>
+                <li>Soundless Operation</li>
+                <li>Capacity of 12 Kgs</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h1b/h96/8937895854110/225034.png" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 13000</del><br>Rs 9700<br><mark>Flat 25% off</mark></p></div>
+          <div class="display">
+            Haier 7 kg Semi Automatic Twin Loading Washing Machine (HTW70-178, Champagne Gold)
+              <ul type="circle" id="ul1">
+                <li>7 Kg, Twin Load, Semi-Automatic</li>
+                <li>Ideal Family Size: 6-8 Members</li>
+                <li>Vortex Pulsator Wash</li>
+                <li>Dimensions - 78.00 x 46.20 x 93.00 cms</li>
+                <li>2 Wash Programs</li>
+                <li>24 Months Warranty, 5 Years Motor Warranty</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/he1/hb8/8943855009822/224673.png" alt="co" width="360" height="410"><p>MRP: <br><del>Rs 14950</del><br>Rs 12100<br><mark>Flat 19% off</mark></p></div>
+          <div class="display">
+            Whirlpool 8 kg Semi Automatic Top Loading Washing Machine (Ace TurboDry, Purple Dazzle)
+              <ul type="circle" id="ul1">
+                <li>8 Kg, Top Load, Semi-Automatic</li>
+                <li>Ideal Family Size: 6-8 Members</li>
+                <li>Dimension - 95.61 x 88.61 x 50.71</li>
+                <li>3 Wash Programs</li>
+                <li>60 Months Warranty</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hab/h4f/8937891692574/223093.png" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 13490</del><br>Rs 11400<br><mark>Flat 15% off</mark></p></div>
+          <div class="display">
+            LG 7 kg Semi Automatic Top Loading Washing Machine (P7020NGAY, Dark Grey)
+              <ul type="circle" id="ul1">
+                <li>Ideal Family Size: 4-6 Members</li>
+                <li>Pulsator Wash</li>
+                <li>Dimensions - 80.50 x 47.80 x 97.50 cms</li>
+                <li>3 Wash Programs</li>
+                <li>24 Months Warranty, 5 Years Motor Warranty</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+  </div><br><br>
+    <li id="list">Refrigerators</li><br>
+    <div class="container2">
+      <div class="box2">
+          <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/819IRQYSDjL._SY679_.jpg" alt="co" width="190" height="410"><p>MRP: <br><del>Rs 43500</del><br>Rs 39150<br><mark>Flat 10% off</mark></p></div>
+          <div class="display">
+            Panasonic 336 L 3 Star ( 2019 ) Inverter Frost-Free Double-Door Refrigerator (NR-BG341VDA3, Deep Ocean Blue)
+              <ul type="circle" id="ul1">
+                <li>336 Litres, 3 Star, Inverter Technology</li>
+                <li>Frost Free Defrost System</li>
+                <li>Fridge Bottom Freezer Top</li>
+                <li>Dimensions - 60.00 x 68.10 x 174.70 cms</li>
+                <li>Frost Free Cooling Technology</li>
+                <li>12 Months Warranty</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box2">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hd5/hc9/8951176855582/224485.png" alt="co" width="350" height="410"><p>MRP: <br><del>Rs 42570</del><br>Rs 39160<br><mark>Flat 8% off</mark></p></div>
+          <div class="display">
+            Liebherr 346 L 2 Star Inverter Frost Free Single Door Refrigerator (3510, Grey Steel)
+              <ul type="circle" id="ul1">
+                <li>Frost Free Defrost System</li>
+                <li>Fridge Bottom Freezer Top</li>
+                <li>Dimensions - 60.60 x 73.20 x 185.00  cms</li>
+                <li>No Frost Cooling Technology</li>
+                <li>12 Months Warranty</li>                
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box2">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h67/h2a/8951158046750/224290.png" alt="co" width="350" height="410"><p>MRP: <br><del>Rs 61600</del><br>Rs 42990<br><mark>Flat 30% off</mark></p></div>
+          <div class="display">
+            Whirlpool 440 L 3 Star Inverter Frost Free Double Door Refrigerator (IF INV CNV 455, Alpha Steel)
+              <ul type="circle" id="ul1">
+                <li>440 Litres, 4 Star, Inverter Technology</li>
+                <li>Frost Free Defrost System</li>
+                <li>Fridge Bottom Freezer Top</li>
+                <li>Dimensions - 70.00 x 71.00 x 164.50 cms</li>
+                <li>6th Sense IntelliFresh Cooling Technology</li>
+                <li>12 Months Warranty, 10 Years Compressor Warranty</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box2">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hc3/he0/8951160635422/224940.png" alt="co" width="360" height="410"><p>MRP: <br><del>Rs 33690</del><br>Rs 30640<br><mark>Flat 9% off</mark></p></div>
+          <div class="display">
+            LG 260 L 3 Star Inverter Frost Free Double Door Refrigerator (GL-T292RRS3.ARSZEB, Russet Sheen)
+              <ul type="circle" id="ul1">
+                <li>260 Litres, 3 Star, Inverter Technology</li>
+                <li>Frost Free Defrost System</li>
+                <li>Fridge Top Freezer Bottom</li>
+                <li>Dimensions - 58.50 x 70.30 x 147.50 cms</li>
+                <li>Linear Cooling Technology</li>
+                <li>12 Months Warranty, 10 Years Compressor Warranty</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+  </div><br><br>
+  <iframe width="100%" height="500" src="https://www.youtube.com/embed/UEDxRY4xcCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+  <div class="container3">
+    <div class="box3">
+        <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h11/h11/8951183966238/224790.png" alt="co" width="410" height="410"><p>MRP: <br><del>Rs 18900</del><br>Rs 14931<br><mark>Flat 21% off</mark></p></div>
+        <div class="display">
+          Whirlpool 200 L 3 Star Direct Cool Single Door Refrigerator (215 VITAMAGIC PRO PRM, Alpha Steel)
+            <ul type="circle" id="ul1">
+              <li>200 Litres, 3 Star, Inverter Technology</li>
+              <li>Frost Free Defrost System</li>
+              <li>Fridge Bottom Freezer Top</li>
+              <li>Dimensions - 53.50 x 61.50 x 123.80 cms</li>
+              <li>Insulated Capillary Cooling Technology</li>
+              <li>12 Months Warranty, 10 Years Compressor Warranty</li>
+              </ul>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h7d/h8d/8951161847838/224690.png" alt="co" width="370" height="410"><p>MRP: <br><del>Rs 72000</del><br>Rs 64500<br><mark>Flat 10% off</mark></p></div>
+        <div class="display">
+          Panasonic 450 L 3 Star Inverter Frost Free Double Door Refrigerator (NR-BX468VVX3, Shining Silver)
+            <ul type="circle" id="ul1">
+              <li>450 Litres, 3 Star, Inverter Technology</li>
+              <li>Frost Free Defrost System</li>
+              <li>Fridge Top Freezer Bottom</li>
+              <li>Dimensions - 68.50 x 69.80 x 176.40 cms</li>
+              <li>Smart Cooling Technology</li>
+              <li>12 Months Warranty</li>
+              </ul>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hce/h28/8958919966750/227371.png" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 219900</del><br>Rs 196990<br><mark>Flat 10% off</mark></p></div>
+        <div class="display">
+          Samsung 657 L No Star Frost Free Side-by-Side Refrigerator (RS74T5F01B4/TL, Gentle Black Matt)
+            <ul type="circle" id="ul1">
+              <li>657 Litres, No Star, SpaceMax Technology</li>
+              <li>Frost Free Defrost System</li>
+              <li>Side-by-Side</li>
+              <li>Dimensions - 91.20 x 71.60 x 178.90 cms</li>
+              <li>All Around Cooling Technology</li>
+              <li>12 Months Warranty, 10 Years Compressor Warranty</li>
+              </ul>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="co"><img src="https://www.reliancedigital.in/medias/LG-SBS-687L-GC-B247SLUV-SHINY-STEEL-491281636-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMzU5ODd8aW1hZ2UvanBlZ3xpbWFnZXMvaGRiL2gwYy85MTg4Nzk2ODI1NjMwLmpwZ3w0ZGZkNzA5NzRlMDI1MDFhMWFmN2MyM2UxMWVkMjhhYjgwYzEzNTAyNzllNmZiOTg0YmJkMDgwODlmYTM3YzJk" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 114790</del><br>Rs 95500<br><mark>Flat 17% off</mark></p></div>
+        <div class="display">
+          LG 687 L 4 Star Inverter DoorCooling+ Side-By-Side Door Refrigerator (GC-B247SQUV.BMCQEB, Matt Black)
+            <ul type="circle" id="ul1">
+              <li>687 Litres, 4 Star, Inverter Linear Technology</li>
+              <li>Frost Free Defrost System</li>
+              <li>Fridge Freezer Alignment: Side-By-Side</li>
+              <li>Dimensions - 91.2 x 73.8 x 179.0 cms</li>
+              <li>DoorCooling+</li>
+              <li>12 Months Warranty</li>
+              </ul>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+</div><br><br>
+    <li id="list">Air Conditioner</li><br>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/PkR_ro2Mj1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+    <div class="container1">
+      <div class="box1">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h64/hed/8846955216926/216932.webp" alt="co" width="390" height="310"><p>MRP: <br><del>Rs 60090</del><br>Rs 49990<br><mark>Flat 17% off</mark></p></div>
+          <div class="display">
+            Hitachi 1.5 Ton 5 Star Inverter Split AC (Kashikoi 5100X RSOG518HCEA, Copper Condenser, White)
+              <ul type="circle" id="ul1">
+                <li>Capacity : 1.5 Ton</li>
+                <li>Tropical Inverter Technology</li>
+                <li>Star Rating : 5</li>
+                <li>Eco Friendly Refrigerant R410A</li>
+                <li>Defrosting Sensor Technology</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box1">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h13/h20/8875544805406/222176.webp" alt="co" width="390" height="310"><p>MRP: <br><del>Rs 61990</del><br>Rs 50390<br><mark>Flat 19% off</mark></p></div>
+          <div class="display">
+            Sharp 1.5 Ton 5 Star Inverter Split AC (AH-XP18WHT, Copper Condenser, White)
+              <ul type="circle" id="ul1">
+                <li>1.5 Ton, 5 Star, Split Ac</li>
+                <li>Approximate Coverage Area – 180 Sq. Ft (16.72 Sq. M)</li>
+                <li>IDU Dimension – 100.60 x 24.90 x 31.60 cms</li>
+                <li>Follow Me Sensor Mode</li>
+                <li>Copper Condenser</li>
+                <li>12 Months, 1 Year Condenser Warranty</li> 
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box1">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hee/h3c/8962579103774/208512.png" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 37090</del><br>Rs 34490<br><mark>Flat 7% off</mark></p></div>
+          <div class="display">
+            Hitachi 1.5 Ton 5 Star Window AC (Summer QC RAV518HUD, Copper Condenser, White)
+              <ul type="circle" id="ul1">
+                <li>1.5 Ton, 5 Star, Window Ac</li>
+                <li>Approximate Coverage Area – 170 Sq. Ft (15.79 Sq. M)</li>
+                <li>Dimension – 66 x 81 x 43 cms</li>
+                <li>Tropical Rotary Compressor</li>
+                <li>Copper Condenser</li>
+                <li>12 Months, 5 Years Compressor Warranty</li> 
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box1">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h0d/h77/8931123068958/222235.png" alt="co" width="390" height="310"><p>MRP: <br><del>Rs 50000</del><br>Rs 28490<br><mark>Flat 43% off</mark></p></div>
+          <div class="display">
+            Croma 1 Ton 5 Star Inverter Split AC (CRAC7884, Copper Condenser, White)
+              <ul type="circle" id="ul1">
+                <li>1 Ton, 5 Star, Split Ac</li>
+                <li>Approximate Coverage Area – 130 Sq. Ft (12.07 Sq. M)</li>
+                <li>IDU Dimension – 85 x 30 x 9.8 cms</li>
+                <li>Single Rotary Compressor</li>
+                <li>Copper Condenser</li>
+                <li>12 Months, 9 Years Compressor Warranty | 1 Year Warranty On Condenser</li> 
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+  </div><br><br>
+  <div class="container">
+    <div class="box">
+        <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h29/hcb/8902697549854/225038.webp" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 54050</del><br>Rs 42990<br><mark>Flat 20% off</mark></p></div>
+        <div class="display">
+          Daikin 1.5 Ton 5 Star Inverter Split AC (FTKM50TV, Copper Condenser, White)
+            <ul type="circle" id="ul1">
+              <li>1.5 Ton, 5 Star, Split Ac</li>
+              <li>Approximate Coverage Area – 180 Sq. Ft (16.72 Sq. M)</li>
+              <li>IDU Dimension – 88.50 x 22.90 x 29.80 cms</li>
+              <li>Swing Compressor</li>
+              <li>Copper Condenser</li>
+              <li>12 Months, 10 Years Compressor Warranty </li>
+              </ul>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <div class="box">
+        <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hbb/h4a/8929511768094/225069.png" alt="co" width="390" height="310"><p>MRP: <br><del>Rs 55990</del><br>Rs 35990<br><mark>Flat 36% off</mark></p></div>
+        <div class="display">
+          LG 1.5 Ton 3 Star Inverter Split AC (LS-Q18JNXA, Copper Condenser, White)
+            <ul type="circle" id="ul1">
+              <li>1.5 Ton, 3 Star, Split Ac</li>
+              <li>Approximate Coverage Area – 180 Sq. Ft (16.72 Sq. M)</li>
+              <li>IDU Dimension – 83.70 x 18.90 x 30.80 cms</li>
+              <li>Dual Rotary Compressor</li>
+              <li>Copper Condenser</li>
+              <li>12 Months, 10 Years Compressor Warranty </li>
+              </ul>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <div class="box">
+        <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hf0/h54/8962584903710/223936.png" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 35000</del><br>Rs 19990<br><mark>Flat 43% off</mark></p></div>
+        <div class="display">
+          Haier 1 Ton 3 Star Window AC (12C-CV3CNB1, Copper Condenser, White)
+            <ul type="circle" id="ul1">
+              <li>1 Ton, 3 Star, Window Ac</li>
+              <li>Approximate Coverage Area – 120 Sq. Ft (11.14 Sq. M)</li>
+              <li>Dimension – 60 x 57 x 38.50 cms</li>
+              <li>High Efficiency Rotary Compressor</li>
+              <li>Copper Condenser</li>
+              <li>12 Months</li>
+              </ul>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <div class="box">
+        <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h5d/h2c/8895838584862/224143.webp" alt="co" width="390" height="310"><p>MRP: <br><del>Rs 40000</del><br>Rs 30990<br><mark>Flat 23% off</mark></p></div>
+        <div class="display">
+          Blue Star 2 Ton 3 Star Window AC (3W24GBT, Copper Condenser, White)
+            <ul type="circle" id="ul1">
+              <li>1 Ton, 5 Star, Split Ac</li>
+              <li>2 Ton, 3 Star, Window Ac</li>
+              <li>Approximate Coverage Area – 240 Sq. Ft (22.29 Sq. M)</li>
+              <li>Dimension – 66 x 77 x 43 cms</li>
+              <li>Rotary Compressor</li>
+              <li>Copper Condenser</li>
+              <li>12 Months, 5 Years Compressor Warranty | 1 Years Condenser Warranty </li>
+              </ul>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+</div><br><br>
+      <li id="list">Smart Home Appliances</li><br>
+      <div class="container4">
+        <div class="box4">
+            <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h92/h76/8901220401182/224423.webp" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 1200</del><br>Rs 999<br><mark>Flat 17% off</mark></p></div>
+            <div class="display">
+              Globalkart Nut Mini Smart Tracker (F6, White)
+                <ul type="circle" id="ul1">
+                  <li>One Touch Find</li>
+                  <li>Battery Life: 110 Days</li>
+                  <li>Location Record</li>
+                  <li>Replaceable Battery</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="cart.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="checkout.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/hb5/h0d/8904591999006/223654.webp" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 33040</del><br>Rs 32990<br><mark>Flat 2% off</mark></p></div>
+            <div class="display">
+              Alta Tecnologia Automatic Digital Lock (DL-214, Black)
+                <ul type="circle" id="ul1">
+                  <li>Passcode Unlock</li>
+                  <li>Manual Key</li>
+                  <li>RFID Unlock</li>
+                  <li>Biometric Unlock</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h15/h6c/8904593178654/223655.webp" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 22999</del><br>Rs 21849<br><mark>Flat 17% off</mark></p></div>
+            <div class="display">
+              Globalkart Nut Mini Smart Tracker (F6, White)
+                <ul type="circle" id="ul1">
+                  <li>Passcode Unlock</li>
+                  <li>Manual Key</li>
+                  <li>RFID Unlock</li>
+                  <li>Biometric Unlock</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h8f/h9b/8941920813086/-1200Wx1200H-225080-2-300Wx300H.png" alt="co" width="320" height="410"><p>MRP: <br><del>Rs 3000</del><br>Rs 2850<br><mark>Flat 5% off</mark></p></div>
+            <div class="display">
+              Qubo Smart Door/Window Sensor (HS1DS-E, White)
+                <ul type="circle" id="ul1">
+                  <li>Product Type: Smart Door/Window Sensor</li>
+                  <li>Ideal For : Home</li>
+                  <li>Power Source: Battery Powered</li>
+                  <li>Instant Notification with Qubo App</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br><br>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/ouAGOUPnXsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+    <div class="container4">
+      <div class="box4">
+          <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/51wwlJjZ2gL._SL1000_.jpg" alt="co" width="350" height="390"><p>MRP: <br><del>Rs 3000</del><br>Rs 2850<br><mark>Flat 5% off</mark></p></div>
+          <div class="display">
+            Qubo Smart Smoke Sensor (HS1SA-E, White)
+              <ul type="circle" id="ul1">
+                <li>Product Type: Smart Smoke Sensor</li>
+                <li>Ideal For : Home</li>
+                <li>Power Source: Battery Powered</li>
+                <li>Instant Notification with Qubo App</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box4">
+          <div class="co"><img src="https://www.reliancedigital.in/medias/Qubo-HS1CG-E-Smart-Sensors-491630432-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzIyNjd8aW1hZ2UvanBlZ3xpbWFnZXMvaDhmL2gwMS85MzI0MTc1MjI4OTU4LmpwZ3xkMmM0NWM3ZWVkYWFlZWNjZjJiZjkzMzBlZTA4NjY1NzFjNDk0YTBmZGUwMWYxYjM2MjNiNDlmM2YwNGUwNTUy" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 3000</del><br>Rs 2850<br><mark>Flat 5% off</mark></p></div>
+          <div class="display">
+            Qubo Smart Gas Sensor (HS1CG-E, White)
+              <ul type="circle" id="ul1">
+                <li>Product Type: Smart Gas Sensor</li>
+                <li>Ideal For : Home</li>
+                <li>Power Source: Electric Powered</li>
+                <li>Instant Notification with Qubo App</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box4">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h3c/h3c/8927740166174/221937.png" alt="co" width="350" height="350"><p>MRP: <br><del>Rs 3000</del><br>Rs 1190<br><mark>Flat 60% off</mark></p></div>
+          <div class="display">
+            Croma Smart Wi-Fi Infrared Remote Control (CRCP1006, Black)
+              <ul type="circle" id="ul1">
+                <li>Amazon Alexa and Google Home Support</li>
+                <li>Compatibility: Android 4.1, iOS 8.0 and Above</li>
+                <li>Maximum Current Load: 10 Ampere</li>
+                <li>Infrared Range: 800 cm</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+      <div class="box4">
+          <div class="co"><img src="https://assets.croma.com/medias/sys_master/images/images/h0d/h1a/8873707044894/221555.webp" alt="co" width="390" height="410"><p>MRP: <br><del>Rs 9999</del><br>Rs 5999<br><mark>Flat 40% off</mark></p></div>
+          <div class="display">
+            Lenovo Smart Clock with Google Assistant (CD 24501F, Grey)
+              <ul type="circle" id="ul1">
+                <li>12 Months Warranty</li>
+                </ul>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+          </div>
+      </div>
+  </div><br><br>
+  </ol>
+</div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

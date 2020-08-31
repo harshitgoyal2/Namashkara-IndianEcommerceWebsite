@@ -1,0 +1,2162 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W1Westernss</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+    .ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 500px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;} 
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Women's Clothings</h1>
+<h2 id="M2">Western Wearings</h2><br>
+<div class="cont">
+  <ol>
+    <li id="list">Faballey</li>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://img.faballey.com/images/Product/DRS03682Z/2.jpg" class="image">
+              <p><b>Type of cloth:Viscose</b><br>MRP: <br>
+                <del>Rs 1900</del><br>Rs 1140<br>
+              <mark><em>Flat 40% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://img.faballey.com/images/Product/DRS03669Z/d3.jpg" class="image"> 
+              <p><b>Type of cloth:Jersey</b><br>MRP: <br>
+                <del>Rs 1700</del><br>Rs 1020<br>
+              <mark><em>Flat 40% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://img.faballey.com/images/Product/FCO00019Z/2.jpg" class="image"> 
+              <p><b>Type of cloth:Viscose</b><br>MRP: <br>
+                <del>Rs 1800</del><br>Rs 1080<br>
+              <mark><em>Flat 40% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://img.faballey.com/images/Product/DRS03668Z/2.jpg" class="image"> 
+              <p><b>Type of cloth:Jersey</b><br>MRP: <br>
+                <del>Rs 1700</del><br>Rs 1020<br>
+              <mark><em>Flat 40% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://img.faballey.com/images/Product/DRS03695Z/2.jpg" class="image"> 
+              <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs 2100</del><br>Rs 1260<br>
+              <mark><em>Flat 40% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Black Solid Mini Shirt Dress with Buckle Belt
+              <ul type="circle" id="ul1">
+                <li>Color: Black</li>
+                <li>Neck: Collared</li>
+                <li>Sleeves: Three Quarter</li>
+                <li>Closure: Button</li>
+                <li>Length : 40 Inches</li>
+                <li>Upgrade your laid-back look with this chic black mini shirt dress. It features a collared neck and a self-fabric buckle belt.</li>
+                <li>Style Tip: Complete the look with a cute headband.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Olive Strappy Culotte Jumpsuit
+              <ul type="circle" id="ul1">
+                <li>Sleeves: Sleeveless</li>
+                <li>Length : 52 Inches</li>
+                <li>Closure: Slip On</li>
+                <li>This basic yet chic olive jersey jumpsuit makes for an effortless pick for everyday style. Cut in a culotte length with a strappy neck, this jumpsuit is perfect for sunny strolls, movie marathons and more.</li>
+                <li>There might be a slight variation in the shade of the actual product and the image shown on the screen, due to the screen resolution and photography effects.</li>
+                <li>Style Tip: Complete the look with a dainty layered gold necklace.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="cart.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="checkout.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Olive Crop Shirt and Midi Skirt Set
+              <ul type="circle" id="ul1">
+                <li>Color: Olive Green</li>
+                <li>Short Sleeves</li>
+                <li>Neck: Collared</li>
+                <li>Closure: Button, Zip</li>
+                <li>Length : 38 Inches</li>
+                <li>NOTE: There might be a slight variation in the shade of the actual product and the image shown on the screen, due to the screen resolution and photography effects.</li>
+                <li>Find the sweet spot between comfy and chic in this olive shirt and skirt set. It features a cropped button-down shirt and a midi skirt with mock buttons.</li>
+                <li>Style Tip: Pair the set with mules to take the look from virtual meetings to quick coffee runs.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Black Strappy Culotte Jumpsuit
+              <ul type="circle" id="ul1">
+                <li>Color: Back</li>
+                <li>Neck: Strappy</li>
+                <li>Sleeves: Sleeveless</li>
+                <li>Closure: Slip On</li>
+                <li>Length : 52 Inches</li>
+                <li>This basic yet chic black jersey jumpsuit makes for an effortless pick for everyday style. Cut in a culotte length with a strappy neck, this jumpsuit is perfect for sunny strolls, movie marathons and more.</li>
+                <li>NOTE: There might be a slight variation in the shade of the actual product and the image shown on the screen, due to the screen resolution and photography effects.</li>
+                <li>Style Tip: Complete the look with a dainty layered gold necklace..</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Blue Striped Belted Mini Shift Dress
+              <ul type="circle" id="ul1">
+                <li>Tailored in a cool hue with a classic striped print, this belted mini dress makes for an effortlessly stylish go-to. It features a self-fabric belt with short sleeves.</li><li>Color: Blue</li>
+                <li>Pattern: Striped</li>
+                <li>Neck: Round</li>
+                <li>Sleeves: Short</li>
+                <li>Closure: Slip On</li>
+                <li>Length : 40 Inches</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier1">
+              <img src="https://img.faballey.com/images/Product/TOP03858Z/2.jpg" class="image">
+              <p id="p1"><b>Type of cloth:Poly Lycra</b><br>MRP: <br>
+                <del>Rs 1600</del><br>Rs 640<br>
+              <mark><em>Flat 60% off</em></mark></p>
+                
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://img.faballey.com/images/Product/TOP04549Z/d3.jpg" class="image"> 
+              <p id="p1"><b>Type of cloth:Georgette</b><br>MRP: <br>
+                <del>Rs 1500</del><br>Rs 750<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://img.faballey.com/images/Product/TOP03672Z/d3.jpg" class="image"> 
+              <p id="p1"><b>Type of cloth:Georgette</b><br>MRP: <br>
+                <del>Rs 1650</del><br>Rs 660<br>
+              <mark><em>Flat 60% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://img.faballey.com/images/Product/TOP03953Z/d3.jpg" class="image"> 
+              <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs 1800</del><br>Rs 720<br>
+              <mark><em>Flat 60% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://img.faballey.com/images/Product/JNS00105A/d4.jpg" class="image"> 
+              <p id="p1"><b>Type of cloth:Denim</b><br>MRP: <br>
+                <del>Rs 1950</del><br>Rs 975<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Coral Side Tie Off Shoulder Peplum Top
+              <ul type="circle" id="ul1">
+                <li>Color: Coral</li>
+                <li>Side Tie-Up</li>
+                <li>Off Shoulder Design</li>
+                <li>Short Sleeves</li>
+                <li>Length : 19 Inches</li>
+                <li>NOTE: There might be a slight variation in the shade of the actual product and the image shown on the screen, due to the screen resolution and photography effects.</li>
+                <li>Work It: Keep it simple by teaming this top with pearl white bottoms and pointy toe heels to look stunning.</li>
+                <li>A feminine top in coral color cut out for after dark hours so you can comfortably rock and roll with your bae. Featuring side tie-up and a bardot neck for a little flirty vibe.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Peach Floral Frilled Hem Top
+              <ul type="circle" id="ul1">
+                <li>Elevate your everyday style with this all-season peach floral blouse. It features a V-neck with a peplum detail.</li><li>Color: Peach</li>
+                <li>Print: Floral</li>
+                <li>Sleeves: Short Sleeves</li>
+                <li>Neck: V Neck</li>
+                <li>Closure: Zip</li>
+                <li>Length : 23 Inches</li>
+                <li>NOTE: There might be a slight variation in the shade of the actual product and the image shown on the screen, due to the screen resolution and photography effects.</li>
+                <li>Style Tip: Layer it with a denim jacket to give it an easy and casual spin.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">White Polka Dot Smocked Waist Top
+              <ul type="circle" id="ul1">
+                <li>Revisit the 70s fashion era in this gorgeous black-white polka dot top. Features smocked waist, round neck and full sleeves.</li>
+                <li>Color: White</li>
+                <li>Print: Polka</li>
+                <li>Smocking details</li>
+                <li>Full Sleeves</li>
+                <li>Length : 24 Inches</li>
+                <li>NOTE: There might be a slight variation in the shade of the actual product and the image shown on the screen, due to the screen resolution and photography effects.</li>
+                <li>Work It: This top work well with a pencil skirt and gilded heels.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">White Embroidered Schiffli Tie Top
+              <ul type="circle" id="ul1">
+                <li>This perfect go-to peplum top is an ideal summer wear for its design and appeal. Featuring an embroidered neckline, this top has a front tie-up to ensure a better fit.</li>
+                <li>Color: White</li>
+                <li>Pattern: Embroidered</li>
+                <li>Round Neck</li>  
+                <li>Self fabric tie up</li>  
+                <li>Short sleeves</li>  
+                <li>Length : 23 Inches</li>
+                <li>NOTE: There might be a slight variation in the shade of the actual product and the image shown on the screen, due to the screen resolution and photography effects.</li>
+                <li>Work It: Style this top with distressed denim.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Blue Knee Ripped High Waist Jeans
+              <ul type="circle" id="ul1">
+                <li>Look effortlessly stylish in these trendy mid blue jeans that feature slits on the knees. It has zip and button closure and high waist style.</li>
+                <li>Color - Mid Blue</li>
+                <li>Knee Ripped Look</li>
+                <li>High Waist Style</li>
+                <li>Length : 41 Inches</li>
+                <li>NOTE: There might be a slight variation in the shade of the actual product and the image shown on the screen, due to the screen resolution and photography effects.</li>
+                <li>Work it - Feel the utmost comfort by teaming these jeans with a striped top and white sneakers.
+                </li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="24">24</option>
+              <option value="26">26</option>
+              <option value="28">28</option>
+              <option value="30">30</option>
+              <option value="32">32</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <li id="list">Kazo</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/U_o1dwM8DCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/120554BLACKL_1_800x.jpg?v=1592322080" class="image">
+                <p><b>Type of cloth:100% Polyster</b><br>MRP: <br>
+                  <del>Rs 1690</del><br>Rs 799<br>
+                <mark><em>Flat 52% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/117146TRKSHSEA_1_800x.jpg?v=1592302462" class="image"> 
+                <p><b>Type of cloth:Polyster</b><br>MRP: <br>
+                  <del>Rs 1690</del><br>Rs 799<br>
+                <mark><em>Flat 52% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/120581GREYL_1_800x.jpg?v=1592322371" class="image"> 
+                <p><b>Type of cloth:Polyster</b><br>MRP: <br>
+                  <del>Rs 990</del><br>Rs 499<br>
+                <mark><em>Flat 49% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/117962MVGRY_1_800x.jpg?v=1592316696" class="image"> 
+                <p><b>Type of cloth:Polyster</b><br>MRP: <br>
+                  <del>Rs 799</del><br>Rs 415<br>
+                <mark><em>Flat 52% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/119099DRSBLCL_1_800x.jpg?v=1592308139" class="image"> 
+                <p><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 2490</del><br>Rs 1199<br>
+                <mark><em>Flat 51% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Overlap Panel Top
+                <ul type="circle" id="ul1">
+                  <li>SKU:-120554</li>
+                  <li>ACTUAL COLOR:-Black</li>
+                  <li>GENDER:-Women</li>
+                  <li>TYPE:-Top</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                  <li>SLEEVE TYPE:-3/4Th Sleeves</li>
+                  <li>FIT:-Fitted</li>
+                  <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Charlotte Jegging
+                <ul type="circle" id="ul1">
+                <li>SKU:-117146</li>
+                <li>ACTUAL COLOR:-BLACK</li>
+                <li>TYPE:-Jeggings</li>
+                <li>MATERIAL:-95% Polyester + 5% Elastane</li>
+                <li>COLLECTIONS:-Kazo Pick'S</li>
+                <li>FIT:-Fitted</li>
+                <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Jersey Halter-Neck Crop Top
+                <ul type="circle" id="ul1">
+                  <li>SKU:-120581</li>
+                  <li>ACTUAL COLOR:-Grey</li>
+                  <li>TYPE:-Top</li>
+                  <li>MATERIAL:-100% Polyester</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                  <li>SLEEVE TYPE:-Sleeveless</li>
+                  <li>FIT:-Fitted</li>
+                  <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Future Femme High Neck Rib Top
+                <ul type="circle" id="ul1">
+                  <li>SKU:-117962</li>
+                  <li>ACTUAL COLOR:-MAUVE GREY</li>
+                  <li>TYPE:-Top</li>
+                  <li>MATERIAL:-100% Polyester</li>
+                  <li>OCCASION:-Na</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                  <li>SLEEVE TYPE:-Full Sleeve</li>
+                  <li>FIT:-Regular</li>
+                  <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Printed Skater Mini Dress
+                <ul type="circle" id="ul1">
+                  <li>SKU:-119099</li>
+                  <li>ACTUAL COLOR:-Dress Blue Combo</li>
+                  <li>TYPE:-Mini Dress</li>
+                  <li>OCCASION:-Na</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                  <li>SLEEVE TYPE:-3/4Th Sleeves</li>
+                  <li>FIT:-Fit& Flared</li>
+                  <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier1">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/116508PCHBG_1_800x.jpg?v=1592304163" class="image">
+                <p id="p1"><b>Type of cloth:Polyster</b><br>MRP: <br>
+                  <del>Rs 3490</del><br>Rs 2443<br>
+                <mark><em>Flat 51% off</em></mark></p>
+                  
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/119772DRSBLCL_1_800x.jpg?v=1592303957" class="image"> 
+                <p id="p1"><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 2990</del><br>Rs 1799<br>
+                <mark><em>Flat 39% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/118803DRSBLC_1_800x.jpg?v=1592307841" class="image"> 
+                <p id="p1"><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 2990</del><br>Rs 1499<br>
+                <mark><em>Flat 49% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/120911NAVYL_1_800x.jpg?v=1592312519" class="image"> 
+                <p id="p1"><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 1990</del><br>Rs 999<br>
+                <mark><em>Flat 49% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://cdn.shopify.com/s/files/1/0261/2386/2082/products/120366BLACKL_1_800x.jpg?v=1592314293" class="image"> 
+                <p id="p1"><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 1190</del><br>Rs 599<br>
+                <mark><em>Flat 49% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Aisha Dress
+                <ul type="circle" id="ul1">
+                  <li>SKU:-116508</li>
+                  <li>ACTUAL COLOR:-Peach Beige</li>
+                  <li>TYPE:-Maxi Dress</li>
+                  <li>MATERIAL:-100% Polyester</li>
+                  <li>OCCASION:-NA</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                  <li>SLEEVE TYPE:-Sleeveless</li>
+                  <li>FIT:-Straight</li>
+                  <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Tube Jumpsuit With Floral Print Lace
+                <ul type="circle" id="ul1">
+                  <li>SKU:-119772</li>
+                  <li>ACTUAL COLOR:-Dress Blue Combo</li>
+                  <li>TYPE:-Jumpsuit</li>
+                  <li>MATERIAL:-Na</li>
+                  <li>OCCASION:-Na</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                  <li>SLEEVE TYPE:-Na</li>
+                  <li>FIT:-Bodycon</li>
+                  <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Shirt Dress With Polka Print
+                <ul type="circle" id="ul1">
+                  <li>SKU:-118803</li>
+                  <li>ACTUAL COLOR:-Dress Blue Combo</li>
+                  <li>TYPE:-Mini Dress</li>
+                  <li>MATERIAL:-Na</li>
+                  <li>OCCASION:-Na</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                  <li>SLEEVE TYPE:-Full Sleeve</li>
+                  <li>FIT:-Regular</li>
+                  <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boxy Shirt Collar With Fringes Detail
+                <ul type="circle" id="ul1">
+                  <li>SKU:-120911</li>
+                  <li>ACTUAL COLOR:-Navy</li>
+                  <li>TYPE:-Shirt</li>
+                  <li>MATERIAL:-100% Viscose</li>
+                  <li>OCCASION:-Na</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                  <li>SLEEVE TYPE:-Short Sleeve</li>
+                  <li>FIT:-Boxy Fit</li>
+                  <li>WASHCARE:-Delicate Machine Wash</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Hustle T-Shirt
+                <ul type="circle" id="ul1">
+                  <li>SKU:-120366</li>
+                  <li>ACTUAL COLOR:-Black</li>
+                  <li>TYPE:-T Shirt</li>
+                  <li>MATERIAL:-Na</li>
+                  <li>OCCASION:-Na</li>
+                  <li>COLLECTIONS:-Kazo Pick'S</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">AND</li>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw19ab041tn117_black--_5__1.jpg" class="image">
+                <p><b>Type of cloth:Rayon</b><br>MRP: <br>
+                  <del>Rs 1299</del><br>Rs 650<br>
+                <mark><em>Flat 50% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/s/s/ss19ab042tpg-_2_.jpg" class="image"> 
+                <p><b>Type of cloth:Polyster</b><br>MRP: <br>
+                  <del>Rs 1299</del><br>Rs 650<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/s/s/ss19athand22-blue--_2__1.jpg" class="image"> 
+                <p><b>Type of cloth:Polyster</b><br>MRP: <br>
+                  <del>Rs 1799</del><br>Rs 1619<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/r/w/rw17ab15tu180_coral-_4_.jpg" class="image"> 
+                <p><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 2999</del><br>Rs 900<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw18at119tumos_navy-_5_.jpg" class="image"> 
+                <p><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 2199</del><br>Rs 660<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Black Top
+                <ul type="circle" id="ul1">
+                  <li>Color:Black</li>
+                  <li>Wash like colours separately, wash dry inside out, do not iron directly on decoration, hand wash cold, do not bleach, tumble dry low, medium iron, no dry clean</li>
+                  <li>Style no: AW19AB041TN117</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Mint Sleeveless Tie-Up Top
+                <ul type="circle" id="ul1">
+                  <li>Color:Mint</li>
+                  <li>Wash like colours seperately, wash/dry inside out, do not iron directly on decoration, machine wash cold, do not bleach, tumble dry low, low iron/no dry clean.</li>
+                  <li>Style no:SS19AB042TPG</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Ankle Length Leggings
+                <ul type="circle" id="ul1">
+                  <li>Color:Blue</li>
+                  <li>Do not dry clean, gentle wash using cold water and mild detergent, do not bleach or soak, dry immediately after washing, do not leave garment wet in a heap, do not tumble dry, dry away from direct sunlight, do not iron.</li>
+                  <li>Style no:SS19ATHAND22</li>
+                  <li>STYLE TIP: Style these wardrobe-must-have leggings with a fun printed top and a pair of classic white sneakers.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Coral Tunic
+                <ul type="circle" id="ul1">
+                  <li>Color:Coral</li><li>Round neck embellished with sequin work</li>
+                  <li>Sleeveless</li>
+                  <li>Sheer layers</li>
+                  <li>High side slits</li>
+                  <li>Keyhole button back closure</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP: Pair this tunic with fitted trousers for a chic look</li><li>Style no:RW17AB15TU180</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Navy Tunic
+                <ul type="circle" id="ul1">
+                  <li>Color:Navy blue</li>
+                  <li>AW18AT119TUMOS</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw19as060tun114_blue-_5_.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Polycotton</b><br>MRP: <br>
+                  <del>Rs 2299</del><br>Rs 1150<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                  
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/n/and146100_1.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 2199</del><br>Rs 660<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw18ap005sksufblack1.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 1999</del><br>Rs 600<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/r/w/rw18oar001btol_black_1_.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Linen, Cotton</b><br>MRP: <br>
+                  <del>Rs 1999</del><br>Rs 600<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.andindia.com/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/s/h/shot06-0741.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 2299</del><br>Rs 690<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Blue Tunic
+                <ul type="circle" id="ul1">
+                  <li>Color:Blue</li>
+                  <li>Wash like colours separately do not iron directly on decoration wash/dry inside out machine wash cold do not bleach tumble dry low medium iron dry clean only</li>
+                  <li>Style no:AW19AS060TUN114</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Blue Georgette Wrap Pants
+                <ul type="circle" id="ul1">
+                  <li>Color:Blue</li>
+                  <li>Partially elasticated waistband</li>
+                  <li>Side hook-on zipper fastening</li>
+                  <li>Wrap over design</li>
+                  <li>Flared legs</li>
+                  <li>Cropped length</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP: Style these pants with a flounce top, off-shoulder being the best. Slip on your nude high heels and be the star of the party. </li><li>Wash like colours separately, wash/dry inside out, do not iron directly on decoration, machine wash cold/gentle cycle, do not bleach, tumble dry low, low iron</li>
+                  <li>Style no:AW17AP018APLZPG</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="24">24</option>
+              <option value="26">26</option>
+              <option value="28">28</option>
+              <option value="30">30</option>
+              <option value="32">32</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Black Tulip Skirt
+                <ul type="circle" id="ul1">
+                  <li>Color:Black</li><li>Layered skirt
+                    <li>Front slit</li>
+                    <li>Knee length</li>
+                    <li>Regular fit</li>
+                    <li>STYLE TIP: Pair this skirt with a smart top for a sophisticated business look.</li>
+                    <li>Wash like colours separately, wash/dry inside out, machine wash cold, do not bleach, tumble dry low, low iron, no dry clean.</li>
+                    <li>Style no:AW18AP005SKSUF</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Black Culottes
+                <ul type="circle" id="ul1">
+                  <li>Color:Black</li>
+                  <li>Black culottes with straight waistband, front button and zip closure and pockets on both the sides.</li>
+                  <li>STYLE TIP: Black culottes is a wardrobe staple and can be complemented with array of tops.</li>
+                  <li>Wash like colours separately, wash/dry inside out, machine wash cold, do not bleach, tumble dry low, medium iron, no dry clean</li>
+                  <li>Style no:RW18OAR001BTOL</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Denim Wrap Culottes
+                <ul type="circle" id="ul1">
+                  <li>Color:Light Blue</li>
+                  <li>Broad waist</li>
+                  <li>Overlap detailing</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP: Team this pair of versatile denim culottes with a tank top or crisp shirt.</li>
+                  <li>Wash like colours separately, wash/dry, iron inside out, machine wash cold, do not bleach, tumble dry, medium iron/no dry clean.</li>
+                  <li>Style no:SS18AR334BTDNM</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Madame</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/TC_BmyTwkRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h00/h2f/14500757667870/206715596_9212.jpg_1088Wx1632H" class="image">
+                <p><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 2699</del><br>Rs 1619<br>
+                <mark><em>Flat 40% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h82/hd5/14538760486942/206715588_9327.jpg_1088Wx1632H" class="image"> 
+                <p><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 2899</del><br>Rs 1739<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h6a/h05/14450480447518/206715577_9324.jpg_1088Wx1632H" class="image"> 
+                <p><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 1699</del><br>Rs 1019<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h07/h48/14585806651422/206798957_9562.jpg_1088Wx1632H" class="image"> 
+                <p><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 2199</del><br>Rs 1319<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h29/h6a/14561496530974/206813856_9324.jpg_1088Wx1632H" class="image"> 
+                <p><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 1799</del><br>Rs 1079<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Womens Round Neck Lace Jumpsuit
+                <ul type="circle" id="ul1">
+                  <li>Product Type	Playsuit</li>
+                  <li>Fabric	Polyester</li>
+                  <li>Pattern	Solid</li>
+                  <li>Sleeves	Sleeveless</li>
+                  <li>Occasion	Casual</li>
+                  <li>Sleeve Length	Sleeveless</li>
+                  <li>Neckline	Round</li>
+                  <li>Length	Ankle Length</li>
+                  <li>Silouhette	Bodycon</li>
+                  <li>Fit	Slim</li>
+                  <li>Knit/Woven	Knit</li>
+                  <li>Material	100% Polyester</li>
+                  <li>Category	Dress</li>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Womens Round Neck Solid Asymmetrical Dress
+                <ul type="circle" id="ul1">
+                  <li>Occasion	Casual</li>
+                  <li>Knit/Woven	Knit</li>
+                  <li>Sleeves	Flared Sleeves</li>
+                  <li>Neckline	Round</li>
+                  <li>Product Type	Kaftan</li>
+                  <li>Category	Dress</li>
+                  <li>Fit	Wide</li>
+                  <li>Pattern	Solid</li>
+                  <li>Length	Knee Length</li>
+                  <li>Material	100% Polyester</li>
+                  <li>Silouhette	Fit and Flare</li>
+                  <li>Sleeve Length	Short Sleeves</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Womens Surplice Neck Stripe Top
+                <ul type="circle" id="ul1">
+                  <li>Knit/Woven	Knit</li>
+                  <li>Sleeves	Short Sleeves</li>
+                  <li>Back Style	Round Back</li>
+                  <li>Occasion	Casual</li>
+                  <li>Pattern	Stripes</li>
+                  <li>Neckline	V Neck</li>
+                  <li>Sleeve Length	Short Sleeves</li>
+                  <li>Length	Waist Length</li>
+                  <li>Silouhette	Wrap</li>
+                  <li>Fit	Boxy</li>
+                  <li>Material	100% Polyester</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Womens Round Neck Solid Top
+                <ul type="circle" id="ul1">
+                  <li>Knit/Woven	Woven</li>
+                  <li>Sleeves	Flared Sleeves</li>
+                  <li>Back Style	Key Hole Back</li>
+                  <li>Occasion	Casual</li>
+                  <li>Pattern	Solid</li>
+                  <li>Neckline	Round</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Womens Round Neck Striped Top
+                <ul type="circle" id="ul1">
+                  <li>Knit/Woven	Knit</li>
+                  <li>Sleeves	Puff Sleeves</li>
+                  <li>Back Style	Key Hole Back</li>
+                  <li>Occasion	Casual</li>
+                  <li>Pattern	Stripes</li>
+                  <li>Neckline	Round</li>
+                  <li>Sleeve Length	Long Sleeves</li>
+                  <li>Length	Waist Length</li>
+                  <li>Silouhette	Cinched Waist</li>
+                  <li>Fit	Regular</li>
+                  <li>Material	100% Polyester</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier1">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h9b/hca/14243512942622/206595456_9111.jpg_1088Wx1632H" class="image">
+                <p id="p1"><b>Type of cloth:Crepe</b><br>MRP: <br>
+                  <del>Rs 3990</del><br>Rs 1795<br>
+                <mark><em>Flat 55% off</em></mark></p>
+                  
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h06/h26/14224977297438/206518801_9212.jpg_1088Wx1632H" class="image"> 
+                <p id="p1"><b>Type of cloth:Poly Spendex</b><br>MRP: <br>
+                  <del>Rs 3999</del><br>Rs 1999<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h0e/h3b/14350943911966/206332732_9324.jpg_1088Wx1632H" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 1699</del><br>Rs 849<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/hf9/hf1/13748929527838/206257944_9212.jpg_1088Wx1632H" class="image"> 
+                <p id="p1"><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 1899</del><br>Rs 949<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://sslimages.shoppersstop.com/sys-master/images/h1a/h26/13699032088606/206206721_9212.jpg_1088Wx1632H" class="image"> 
+                <p id="p1"><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 2199</del><br>Rs 1099<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Womens Strappy Neck Solid Embroidered Pleated Dress
+                <ul type="circle" id="ul1">
+                  <li>Occasion Casual</li>
+                  <li>Knit/Woven Knit</li>
+                  <li>Sleeves	Sleeveless</li>
+                  <li>Neckline Scoop Neck</li>
+                  <li>Product Type Slip Dress</li>
+                  <li>Category Dress</li>
+                  <li>Fit	Slim</li>
+                  <li>Pattern	Embroidered</li>
+                  <li>Length Calf Length</li>
+                  <li>Material 100% Crepe</li>
+                  <li>Silouhette Flare</li>
+                  <li>Sleeve Length	Sleeveless</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Womens Round Neck Sequined Maxi Dress
+                <ul type="circle" id="ul1">
+                  <li>Occasion Casual</li>
+                  <li>Knit/Woven Knit</li>
+                  <li>Sleeves	Slit Sleeves</li>
+                  <li>Neckline Round</li>
+                  <li>Product Type Corset</li>
+                  <li>Category Dress</li>
+                  <li>Fit	Slim</li>
+                  <li>Pattern	Embellished</li>
+                  <li>Length Ankle Length</li>
+                  <li>Material 95% Poly 5% Spendex</li>
+                  <li>Silouhette Fit and Flare</li>
+                  <li>Sleeve Length	Short Sleeves</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Womens 5 Pocket Solid Jeans
+                <ul type="circle" id="ul1">
+                  <li>Fit	Skinny</li>
+                  <li>Length Ankle Length</li>
+                  <li>Product Type Regular</li>
+                  <li>Style	Solid</li>
+                  <li>Silouhette Mid Rise</li>
+                  <li>Pattern	Solid</li>
+                  <li>Occasion Casual</li>
+                  <li>Knit/Woven Denim</li>
+                  <li>Material 100% Cotton</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Women 2 Pocket Solid Jeggings
+                <ul type="circle" id="ul1">
+                  <li>Length Full Length</li>
+                  <li>Product Type Jegging</li>
+                  <li>Length Full Length</li>
+                  <li>Product Type Jegging</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Womens Check Jeggings
+                <ul type="circle" id="ul1">
+                  <li>Length Full Length</li>
+                  <li>Product Type Jegging</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Koovs</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/CizGrWRQVt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://product.koovs.com/86195_9c5fec78dc7fef62b5a622fadb0ae797.webp" class="image">
+                <p><b>Type of cloth:Blended Fabric</b><br>MRP: <br>
+                  <del>Rs 895</del><br>Rs 89<br>
+                <mark><em>Flat 90% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://product.koovs.com/90276_ae9dc856605f19f984649d24f53a1e29.webp" class="image"> 
+                <p><b>Type of cloth:Cotton Blend</b><br>MRP: <br>
+                  <del>Rs 1990</del><br>Rs 398<br>
+                <mark><em>Flat 80% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://product.koovs.com/128611_7470cc4f61e2193ece592e15f9f200b9.webp" class="image"> 
+                <p><b>Type of cloth:Polyester Blend</b><br>MRP: <br>
+                  <del>Rs 1499</del><br>Rs 600<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://product.koovs.com/131675_2f50b4d9b27d4ea068b85ec20eacd75a.webp" class="image"> 
+                <p><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 999</del><br>Rs 400<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://product.koovs.com/87303_872d56ee60dfcb6789c86a4285c20247.webp" class="image"> 
+                <p><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 1495</del><br>Rs 598<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Elasticated Off Shoulder Top
+                <ul type="circle" id="ul1">
+                  <li>Made from viscose-lycra-jersey blend</li>
+                  <li>Bardot neckline</li>
+                  <li>Short sleeves with elasticated cuffs</li>
+                  <li>Regular fit</li><li>Style tip:The off-shoulder trend refuses to go off the trend. Hence, we have this effortless pick in elasticated cuffs and neckline. Wear it with your skinnies and block heels before you join your all girls gang.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Front Tie Knot Top
+                <ul type="circle" id="ul1">
+                  <li>Made from cotton blend</li>
+                  <li>Round neckline</li>
+                  <li>Puffed short sleeves</li>
+                  <li>Front bow tie knot </li>
+                  <li>Regular fit</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Lace Yoke Sequin Detail Blouse
+                <ul type="circle" id="ul1">
+                  <li>Made from polyester blend</li>
+                  <li>Round neckline</li>
+                  <li>Back keyhole with button fastening</li>
+                  <li>Lace yoke detail</li>
+                  <li>Sequins detail</li>
+                  <li>Short sleeves</li>
+                  <li>Regular fit </li>
+                  <li>Style tip:Let your party look be high on the classier side with minimal design as you sport this Lace Yoke Sequin Detail Blouse by PRIVY LEAGUE. Team up this blouse with white high waist pants alongside heeled sandals for a statement finish.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Basic Balloon Sleeve Blouse
+                <ul type="circle" id="ul1">
+                  <li>Made from polyester</li>
+                  <li>Round neckline</li>
+                  <li>Keyhole back with button closure</li>
+                  <li>Long balloon sleeves</li>
+                  <li>Regular fit</li>
+                  <li>Style tip:Look effortlessly chic in this hot pink blouse from our in-house KOOVS collection. Combine it with a button-up skirt and some trendy heels for a chic, statement finish!</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Textured & Double Layer Blouse
+                <ul type="circle" id="ul1">
+                  <li>Made from polyester</li>
+                  <li>Square neckline</li>
+                  <li>Double layer design</li>
+                  <li>Front wrap styling</li>
+                  <li>Long sleeves</li>
+                  <li>Regular fit</li>
+                  <li>Cami included </li>
+                  <li>Style tip:Step out for the new season in this KOOVS Textured & Double Layer Blouse. Combine this blouse with your favourite bottoms for a chic look.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier1">
+                <img src="https://product.koovs.com/96263_b6b4e64a16bfa42aca7c1dfe0bf08038.webp" class="image">
+                <p id="p1"><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 2795</del><br>Rs 1118<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                  
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://product.koovs.com/130192_48985ca047fef733ac3b6d298e656f7c.webp" class="image"> 
+                <p id="p1"><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 1499</del><br>Rs 600<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://product.koovs.com/96829_6b9fc2e8fd386c9b7531a2f1f23b6715.webp" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 1499</del><br>Rs 600<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://product.koovs.com/124180_a8e336a43746e5c685a9a764fc3f918e.webp" class="image"> 
+                <p id="p1"><b>Type of cloth:Viscose</b><br>MRP: <br>
+                  <del>Rs 3999</del><br>Rs 1600<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://product.koovs.com/124196_5f4e9f15e5da1e67643774fa17fe5f0e.webp" class="image"> 
+                <p id="p1"><b>Type of cloth:Viscose</b><br>MRP: <br>
+                  <del>Rs 2499</del><br>Rs 1000<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Eyelet Tie Up Detail Dress
+                <ul type="circle" id="ul1">
+                  <li>Made from polyester</li>
+                  <li>V-neckline</li>
+                  <li>Eyelet detail with tie-up fastening</li>
+                  <li>Strappy sleeves</li>
+                  <li>Midi length</li>
+                  <li>Regular fit</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Tiered Detail Shift Dress
+                <ul type="circle" id="ul1">
+                  <li>Made from polyester </li>
+                  <li>Square neckline</li>
+                  <li>Back tie-up style</li> 
+                  <li>Tiered detail</li>
+                  <li>Sleeveless</li>
+                  <li>Knee length</li>
+                  <li>Regular fit </li><li>Style tip:Summer-friendly and lightweight - this Tiered Detail Shift Dress by THE GUD LOOK is sure to give you wanderlust for the new season! Style this one with statement earrings and clear strap heels for a chic look.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Paper Bag Waist Wide Leg Trousers
+                <ul type="circle" id="ul1">
+                  <li>Made from cotton</li>
+                  <li>Paper bag waist</li>
+                  <li>Zipper fastening at back</li>
+                  <li>Side pockets</li>
+                  <li>Wide leg style</li>
+                  <li>Regular fit</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Tassel Pocket Drawcord Trousers
+                <ul type="circle" id="ul1">
+                  <li>Made from viscose</li>
+                  <li>Elasticated waist with drawcord</li>
+                  <li>Decorative tassel pockets</li>
+                  <li>Regular fit</li><li>Slip into this lightweight and comfortable pair of drawcord trousers by LC WAIKIKI. Combine them with a fun and quirky t-shirt and trainers to finish off your new-season look!</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+                <option value="44">44</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Front Split Palazzo Pants
+                <ul type="circle" id="ul1">
+                  <li>Made from viscose</li>
+                  <li>Elasticated waist</li>
+                  <li>High waist style</li>
+                  <li>Front split hem </li>
+                  <li>Regular fit </li><li>Style tip:Blush and chic, these Front Split Palazzo Pants by LC WAIKIKI are sure to turn heads this season. Combine these palazzo pants with polka dot sleeveless top alongside heeled sandals to make a statement.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+                <option value="44">44</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </ol>
+</div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

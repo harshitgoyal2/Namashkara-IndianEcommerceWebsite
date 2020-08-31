@@ -1,0 +1,553 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+      .ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+div.box
+        {
+            border: 3px solid #14aed4;
+            height: 20 px;
+            margin: 0vw;
+            display: flex;
+        }
+        .co{
+            display: block;
+            position: relative;
+
+        }
+        p{
+            position: absolute;
+  bottom: 0;
+  background: #14aed4;
+  background: rgba(20, 174, 212, 0.5);
+  color:#f1f1f1;
+  width: 160px;
+  transition: 4s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+
+
+        }
+        .co:hover p{
+            opacity: 1;
+            margin-left: 140px;
+        }
+        .display{
+            padding-left: 50px;
+            margin-top: 90px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #ul1{
+            padding-left: 50px;
+            color: red;
+            font-weight: bolder;
+            font-size: 30px;
+            margin: auto;
+        }
+        .cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Books</h1>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jph83gw0/book/2/3/2/that-long-silence-original-imafbp42ama34jpc.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 250</del><br>Rs 237<br><mark>Flat 5% off</mark></p></div>
+        <div class="display">
+          That Long Silence  (English, Paperback, Deshpande Shashi)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+
+ <li>Language: English</li>
+ <li>Binding: Paperback</li>
+ <li>Publisher: Penguin</li>
+ <li>Genre: Fiction</li>
+  <li>ISBN: 9780140127232, 0140127232</li>
+ <li>Pages: 204</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jpmxuvk0/book/1/5/1/the-night-train-at-deoli-and-other-stories-original-imafbtkbvstthujf.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 299</del><br>Rs 284<br><mark>Flat 5% off</mark></p></div>
+        <div class="display">
+        "The Night Train at Deoli and Other Stories  (English, Paperback, Bond Ruskin)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Language: English</li>
+<li>Binding: Paperback</li>
+<li>Publisher: Penguin Random House India</li>
+<li>Genre: Fiction</li>
+<li>ISBN: 9780140116151, 014011615X</li>
+<li>Pages: 248</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jplif0w0/book/1/4/6/one-indian-girl-original-imafbtyk8fsgwa8w.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 195</del><br>Rs 156<br><mark>Flat 20% off</mark></p></div>
+        <div class="display">
+      One Indian Girl  (English, Paperback, Bhagat Chetan)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Language: English</li>
+<li>Binding: Paperback</li>
+<li>Publisher: Rupa & Co</li>
+<li>Genre: Fiction</li>
+<li>Pages: 280</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/book/5/3/7/revolution-twenty20-original-imaeyg6y9hhutyry.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 250</del><br>Rs 155<br><mark>Flat 38% off</mark></p></div>
+        <div class="display">
+        Revolution Twenty20 - Love . Corruption. Ambition  (English, Paperback, Bhagat Chetan)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Language: English</li>
+  <li>Binding: Paperback</li>
+  <li>Publisher: Rupa & Co</li>
+  <li>Genre: Fiction</li>
+  <li>Pages: 296</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jph83gw0/book/5/7/4/the-god-of-small-things-original-imafbp4y6t49pzzx.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 450</del><br>Rs 248<br><mark>Flat 44% off</mark></p></div>
+        <div class="display">
+          The God of Small Things  (English, Paperback, Roy Arundhati)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Language: English</li>
+            <li>Binding: Paperback</li>
+<li>Publisher: Penguin Random House India</li>
+<li>Genre: Fiction</li>
+<li>Pages: 256</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jpmxuvk0/book/7/6/9/the-ministry-of-utmost-happiness-original-imafbtgbhzay3wqv.jpeg?q=70" alt="co" width="310" height="400"><p>MRP: <br><del>Rs 450</del><br>Rs 325<br><mark>Flat 27% off</mark></p></div>
+        <div class="display">
+          The Ministry of Utmost Happiness  (English, Paperback, Roy Arundhati)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Language: English
+  <li>Binding: Paperback
+  <li>Publisher: Penguin Random House India
+  <li>Genre: Fiction
+  <li>Pages: 464</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/book/8/7/6/the-portrait-of-a-lady-collected-stories-original-imadffrgzee4vf3s.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 499</del><br>Rs291 <br><mark>Flat 41% off</mark></p></div>
+        <div class="display">
+        The Portrait of a Lady - Collected Stories  (English, Paperback, Khushwant Singh)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Language: English</li>
+<li>Publisher: Penguin</li>
+<li>Binding: Paperback</li>
+<li>Edition: 01, 2009</li>
+<li>Pages: 484</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/book/4/1/4/the-rich-legacy-of-her-stories-original-imadx7msbhm5hqhy.jpeg?q=70" alt="co" width="310" height="500"><p>MRP: <br><del>Rs 245</del><br>Rs 184<br><mark>Flat 24% off</mark></p></div>
+        <div class="display">
+        Relive Indira Goswami The Rich Legacy Of Her Stories  (English, Paperback, Indira Goswami, Gayatri Bhattacharyya)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Language: English</li>
+      <li>Binding: Paperback</li>
+      <li>Publisher: Vitasta</li>
+      <li>Edition: 1st Edition, 2014</li>
+      <li>Pages: 166d</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jph83gw0/book/1/8/2/selected-stories-original-imafbp24gkhchdcz.jpeg?q=70" alt="co" width="310" height="400"><p>MRP: <br><del>Rs 399</del><br>Rs 268<br><mark>Flat 32% off</mark></p></div>
+        <div class="display">
+          Selected Stories - Selected Stories  (English, Paperback, Manto Sa'adat Hasan)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Language: English</li>
+<li>Binding: Paperback</li>
+<li>Publisher: Penguin</li>
+<li>Genre: Fiction</li>
+<li>Pages: 352</li>
+
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/book/5/0/2/namak-swadanusar-original-imadu86tmrmhw59d.jpeg?q=70" alt="co" width="290" height="340"><p>MRP: <br><del>Rs 230</del><br>Rs 130<br><mark>Rs100 off</mark></p></div>
+        <div class="display">
+          Namak Swadanusar  (Hindi, Paperback, Sachan Nikhil)
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+          <li>      <li>Language: Hindi</li>
+          <li>Publisher: Hind Yugm</li>
+<li>Binding: Paperback</li>
+<li>Genre: Juvenile Fiction</li>
+<li>Pages: 165</li>
+          </ul>
+    </div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>
+</body>
+</html>

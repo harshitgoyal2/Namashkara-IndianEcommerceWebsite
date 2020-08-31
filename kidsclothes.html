@@ -1,0 +1,1402 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kid's Dress</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 500px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;}
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Kids Fashion</h1>
+
+
+<div class="cont">
+  <ol>
+
+
+
+
+<!-- working of images and content for them-->
+
+
+
+<!-- 1st line of images-->
+    <li id="list">GINNI & JONY </li>
+      <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/800/960/k1118cw0/kids-dress/d/f/3/7-8-years-k-frock084-mojua-original-imafkzewkxhyhrfz.jpeg?q=50" class="image">
+              <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                <del>Rs2000</del><br>Rs1800<br>
+              <mark><em> Rs200 off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/800/960/jgzfv680/kids-ethnic-set/u/m/d/2-3-years-khadi001-smartbazar-original-imaehzyaxwyktagd.jpeg?q=50" class="image">
+              <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                <del>Rs3000</del><br>Rs2500<br>
+              <mark><em>Flat Rs500 off</em></mark></p>
+
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/800/960/k3670cw0/kids-ethnic-set/y/w/d/1-2-years-grey-ethnic-set-star-kids-original-imafgr3pgja6evzq.jpeg?q=50" class="image">
+              <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                <del>Rs1500</del><br>Rs1200<br>
+              <mark><em> Rs300 off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://n4.sdlcdn.com/imgs/a/q/f/Nauti-Nati-Sky-Blue-Color-SDL301034876-1-cae49.jpg" class="image">
+              <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                <del>Rs3000</del><br>Rs2500<br>
+              <mark><em>Flat Rs500 off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/800/960/ju79hu80/kids-apparel-combo/d/f/c/1-2-years-baby-girls-103-new-gen-original-imaffah4hschjbfu.jpeg?q=50" class="image">
+              <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                <del>Rs3000</del><br>Rs2300<br>
+              <mark><em>Flat Rs700 off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text"> Girls Calf Length Party Dress  (Pink, Short Sleeve)
+              <ul type="circle" id="ul1">
+                <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                  <li> Iron gently</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="1-2">1-2years</option>
+              <option value="2-3">2-3years</option>
+              <option value="3-4">3-4years</option>
+              <option value="4-5">4-5years</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Boys Casual Kurta, Waistcoat and Pyjama Set  (Multicolor Pack of 1)
+              <ul type="circle" id="ul1">
+                <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                  <li> Iron gently</li>
+              </ul>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="1-2">1-2years</option>
+              <option value="2-3">2-3years</option>
+              <option value="3-4">3-4years</option>
+              <option value="4-5">4-5years</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Boys Festive & Party Blazer, Shirt and Trouser Set  (Grey Pack of 1)
+              <ul type="circle" id="ul1">
+                <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                  <li> Iron gently</li>
+              </ul>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="1-2">1-2years</option>
+              <option value="2-3">2-3years</option>
+              <option value="3-4">3-4years</option>
+              <option value="4-5">4-5years</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Boys Printed Cotton Blend T Shirt  (Blue, Pack of 1)
+              <ul type="circle" id="ul1">
+                <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                  <li> Iron gently</li>
+              </ul>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="1-2">1-2years</option>
+              <option value="2-3">2-3years</option>
+              <option value="3-4">3-4years</option>
+              <option value="4-5">4-5years</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Baby Boys & Baby Girls Casual Dress Top  (Pink)
+              <ul type="circle" id="ul1">
+                <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                  <li> Iron gently</li>
+              </ul>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="1-2">1-2years</option>
+              <option value="2-3">2-3years</option>
+              <option value="3-4">3-4years</option>
+              <option value="4-5">4-5years</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>
+            <!--2nd  line of images-->
+
+
+
+
+
+
+      </tbody>
+    </table>
+
+
+
+
+
+
+        <!--3rd new line of images-->
+    <li id="list">LILLIPUT</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/714/857/kbmjssw0/kids-ethnic-set/y/g/z/12-18-months-stc-krishna001-evaan-enterprises-original-imafswuw66ykjhev.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs999</del>799<br>Rs<br>
+                <mark><em> Rs200  off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/714/857/jx9aefk0/kids-apparel-combo/7/m/t/5-6-years-mcbch19pk002-miss-chief-original-imafhrnqgpv9nc3z.jpeg?q=50" class="image">
+                <p><b>Type of cloth:fabric</b><br>MRP: <br>
+                  <del>Rs999</del><br>Rs899<br>
+                <mark><em> Rs100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/714/857/k6ci8i80/kids-apparel-combo/t/e/y/10-11-years-capfrock-ftc-fashions-original-imafkzcdegdyzkfy.jpeg?q=50" class="image">
+                <p><b>Type of cloth:fabric</b><br>MRP: <br>
+                  <del>Rs1300</del><br>Rs1170<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/714/857/k6fd47k0/kids-lehenga-choli/e/t/w/10-11-years-k-s-b-black55-rayasa-original-imafga2ckvg4zrtc.jpeg?q=50" class="image">
+                <p><b>Type of cloth:fabric</b><br>MRP: <br>
+                  <del>Rs800</del><br>Rs500<br>
+                <mark><em>Flat Rs300 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/kc0u7bk0/kids-ethnic-set/j/j/n/3-4-years-whitejabla-ftc-fashions-original-imaft8pz3gvwyrfp.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs900<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Boys & Girls Casual Angarkha and Dhoti Pant  (Yellow Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boys Superman Casual T-shirt Shorts  (Multicolor)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Girls Party(Festive) Dress Cap  (Grey)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Girls Lehenga Choli Ethnic Wear Embroidered Lehenga Choli  (Maroon, Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="1-2">1-2years</option>
+              <option value="2-3">2-3years</option>
+              <option value="3-4">3-4years</option>
+              <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boys Festive & Party Dhoti & Kurta Set  (White Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+                <!--4th  line of images-->
+
+
+
+
+
+
+
+
+
+                  </tbody>
+      </table>
+
+
+
+
+
+    <!--5th new line of images-->
+
+
+
+
+
+
+
+    <li id="list">CUCUMBER</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/jydaqa80/kids-apparel-combo/g/6/e/7-8-years-nfgc06-ftc-fashions-original-imafggm6yskgppe3.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs1500</del><br>Rs1300<br>
+                <mark><em>Flat Rs200 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/jrf8o7k0/kids-ethnic-set/g/7/g/3-6-months-4019-smartraho-original-imafbh3ys4rzfzhq.jpeg?q=50" class="image">
+                <p><b>Type of cloth:fabric</b><br>MRP: <br>
+                  <del>Rs1400</del><br>Rs1300<br>
+                <mark><em>Flat Rs100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k6mibgw0/kids-dress/d/5/4/10-11-years-blueribjacket-ftc-fashions-original-imafz5g6mffxnkd9.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs800<br>
+                <mark><em>Flat 20% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/jvv9zm80/kids-ethnic-set/b/v/t/2-3-years-digibc001-digimart-original-imafggkydgvztb2k.jpeg?q=50" class="image">
+                <p><b>Type of cloth:fabric</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs900<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/jefzonk0/kids-ethnic-set/y/f/z/4-5-years-sbnbc007-ftc-fashions-original-imaf34pxhnzfbggf.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs1500</del><br>Rs1200<br>
+                <mark><em>Flat Rs300 off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Girls Casual Top Skirt  (Pink)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boys Festive & Party Kurta and Dhoti Pant Set  (Red Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Girls Mini/Short Festive/Wedding Dress  (Blue, 3/4 Sleeve)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boys Festive & Party Kurta, Waistcoat and Breeches Set  (Black Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Boys Festive & Party Kurta and Dhoti Pant Set  (Black Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+                  <!--6th  line of images-->
+
+
+
+
+
+
+
+
+        </tbody>
+      </table>
+
+
+
+
+      <!--7th  line of images-->
+
+
+
+
+    <li id="list">KAPKIDS</li>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+
+
+
+
+
+
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/ju79hu80/kids-ethnic-set/4/q/r/6-12-months-lumodi1-looks-united-original-imaf55z5usgagywq.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs1800</del><br>Rs1500<br>
+                <mark><em>Flat 300Rs off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/jj0bbm80/kids-dress/v/s/s/5-6-years-fp2500-jiofashion-original-imaf5fdjknwchfts.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs2000</del><br>Rs1800<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k2jbyq80/kids-dress/k/f/p/3-4-years-k-frock06-the-panda-ant-original-imafe6jrzqmghh4f.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs800</del><br>Rs500<br>
+                <mark><em>Flat Rs300 off</em></mark></p>
+                </div
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/jwdupow0/kids-dress/m/8/m/6-7-years-bgbuton-kl-collection-original-imafh2sanwzxy6sk.jpeg?q=50" class="image">
+                <p><b>Type of cloth:fabric</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs900<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/jfr57rk0/kids-ethnic-set/u/g/y/6-12-months-dbg001-bg-fashions-original-imaertwgdavzxekj.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs900</del><br>Rs700<br>
+                <mark><em>Flat Rs200 off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Boys Festive & Party Kurta, Waistcoat and Breeches Set  (White Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Girls Midi/Knee Length Party Dress  (Pink, Sleeveless)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Girls Midi/Knee Length Party Dress  (Red, 3/4 Sleeve)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Clean your shoes with leather cleaner or leather shampoo, and use a good quality brush to remove loose surface dirt;</li>
+                  <li> if your shoes are wet after cleaning, let them air-dry before your proceed with the next step;</li>
+                    <li> dry shoes in room temperature only and never expose them to the sun, heat from the sun will cause the leather to shrink, wrinkle, harden, dry, and crack</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Girls Calf Length Casual Dress  (Blue, 3/4 Sleeve)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boys Festive & Party Kurta and Pyjama Set  (Blue Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+          <!--9th  line of images-->
+    <li id="list">SKIP HOP</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k4k7f680/kids-ethnic-set/g/f/h/4-5-years-scp-kl-collection-original-imafnfzydydzdnfw.jpeg?q=50" class="image">
+                <p><b>Type of cloth:fabric</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k6qsn0w0/kids-ethnic-set/e/7/f/6-7-years-40851-smartraho-original-imafp5y56pbdrmpd.jpeg?q=50" class="image">
+                <p><b>Type of sole:leather</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k7m8brk0/kids-apparel-combo/2/m/m/5-6-years-kids-smile-more-pck-01-pink-not-original-imafpt83gxghnmvz.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k2z1t3k0/kids-dress/6/g/z/10-11-years-cpgl0015-chandrika-original-imafh4ez5wz2gr4s.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k4rcmfk0/kids-ethnic-set/z/d/6/9-10-years-wjs-kl-collection-original-imafnhzhq8bvmbea.jpeg?q=50" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Boys Festive & Party Kurta, Waistcoat and Pyjama Set  (Pink Pack of 1)
+
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boys Festive & Party Kurta, Waistcoat and Dhoti Pant Set  (Red Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boys Casual T-shirt Shorts  (Multicolor)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Girls Midi/Knee Length Casual Dress  (Yellow, Sleeveless)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="1-2">1-2years</option>
+              <option value="2-3">2-3years</option>
+              <option value="3-4">3-4years</option>
+              <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Boys Festive & Party Kurta, Waistcoat and Pyjama Set  (Maroon Pack of 1)
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="1-2">1-2years</option>
+                <option value="2-3">2-3years</option>
+                <option value="3-4">3-4years</option>
+                <option value="4-5">4-5years</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+
+</table>
+
+        <li id="list">CHICCO</li>
+
+        <table style="border-spacing: 13;">
+            <thead>
+              <tr>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/800/960/jkpr98w0/kids-dungaree-romper/x/b/5/3-6-months-denim-teddy-babymart-original-imaf8ycjggueaa9n.jpeg?q=50" class="image">
+                    <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                      <del>3500Rs</del><br>2975Rs<br>
+                    <mark><em>Flat 15% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/800/960/k63xle80/kids-dress/u/4/g/3-4-years-bpf44-kl-collection-original-imafzn7bhgyamuaf.jpeg?q=50" class="image">
+                    <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                      <del>3500Rs</del><br>2975Rs<br>
+                    <mark><em>Flat 15% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/800/960/jh6l2fk0/kids-dress/d/y/f/6-12-months-onokdsfrk14-orange-and-orchid-original-imaf59ba6seqwwf5.jpeg?q=50" class="image">
+                    <p><b>Type of cloth:fabric</b><br>MRP: <br>
+                      <del>3500Rs</del><br>2975Rs<br>
+                    <mark><em>Flat 15% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/800/960/k1b1bbk0/kids-lehenga-choli/2/b/x/18-24-months-orange-rose-najara-fashion-original-imaf6sxdefzprw3q.jpeg?q=50" class="image">
+                    <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                      <del>3500Rs</del><br>2975Rs<br>
+                    <mark><em>Flat 15% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/800/960/k2tc1ow0pkrrdj/kids-ethnic-set/m/v/e/3-4-years-multicolor-kurta003-fiera-original-imaeqpw9tzxppn7e.jpeg?q=50" class="image">
+                    <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                      <del>3500Rs</del><br>2975Rs<br>
+                    <mark><em>Flat 15% off</em></mark></p>
+                    </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="text">Dungaree For Boys & Girls Casual Applique Denim  (White, Pack of 1)
+                    <ul type="circle" id="ul1">
+                      <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                      <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                        <li> Iron gently</li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="1-2">1-2years</option>
+                    <option value="2-3">2-3years</option>
+                    <option value="3-4">3-4years</option>
+                    <option value="4-5">4-5years</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">Girls Midi/Knee Length Festive/Wedding Dress  (Multicolor, Sleeveless)
+                    <ul type="circle" id="ul1">
+                      <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                      <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                        <li> Iron gently</li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="1-2">1-2years</option>
+                    <option value="2-3">2-3years</option>
+                    <option value="3-4">3-4years</option>
+                    <option value="4-5">4-5years</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">Girls Midi/Knee Length Party Dress  (Pink, Full Sleeve)
+                    <ul type="circle" id="ul1">
+                      <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                      <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                        <li> Iron gently</li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="1-2">1-2years</option>
+                    <option value="2-3">2-3years</option>
+                    <option value="3-4">3-4years</option>
+                    <option value="4-5">4-5years</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">Girls Lehenga Choli Ethnic Wear Embroidered Lehenga Choli  (Orange, Pack of 1)
+                    <ul type="circle" id="ul1">
+                      <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                      <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                        <li> Iron gently</li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="1-2">1-2years</option>
+                    <option value="2-3">2-3years</option>
+                    <option value="3-4">3-4years</option>
+                    <option value="4-5">4-5years</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">Boys Festive & Party Kurta and Pyjama Set  (Maroon Pack of 1)
+                    <ul type="circle" id="ul1">
+                      <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                      <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                        <li> Iron gently</li>                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="1-2">1-2years</option>
+                    <option value="2-3">2-3years</option>
+                    <option value="3-4">3-4years</option>
+                    <option value="4-5">4-5years</option>
+
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+
+
+
+
+
+
+        </tbody>
+      </table>
+  </ol>
+</div>
+<br><br>
+
+
+
+    <!--working of footer-->
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>
+</body>
+</html>

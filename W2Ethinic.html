@@ -1,0 +1,2068 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W2Ethnic</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 500px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;} 
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Women's Clothings</h1>
+<h2 id="M2">Ethnic Wearings</h2><br>
+<div class="cont">
+  <ol>
+    <li id="list">W - Women's wear</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/JXBLxg_aUrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://admin.wforwomanonline.com/product/20FEWS30362-113229/665/20FEWS30362-113229_1.JPG" class="image">
+              <p><b>Type of cloth:Viscose</b><br>MRP: <br>
+                <del>Rs 6999</del><br>Rs 4199<br>
+              <mark><em>Flat 40% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://admin.wforwomanonline.com/product/20FEW13254-113660/665/20FEW13254-113660_1.JPG" class="image"> 
+              <p><b>Type of cloth:Cotton Blend</b><br>MRP: <br>
+                <del>Rs 1699</del><br>Rs 1274<br>
+              <mark><em>Flat 25% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://admin.wforwomanonline.com/product/19AUS10221-110891/665/19AUS10221-110891_1.JPG" class="image"> 
+              <p><b>Type of cloth:Viscose</b><br>MRP: <br>
+                <del>Rs 5999</del><br>Rs 2999<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://admin.wforwomanonline.com/product/20FEW12210-213003/665/20FEW12210-213003_1.JPG" class="image"> 
+              <p><b>Type of cloth:Viscose</b><br>MRP: <br>
+                <del>Rs 1699</del><br>Rs 1274<br>
+              <mark><em>Flat 25% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://admin.wforwomanonline.com/product/19FEW60432-211146/665/19FEW60432-211146_2.JPG" class="image"> 
+              <p><b>Type of cloth:Viscose</b><br>MRP: <br>
+                <del>Rs 1699</del><br>Rs 849<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">White Round Neck Set
+              <ul type="circle" id="ul1">
+                <li>Colour: White</li>
+                <li>Neck Type: Round Neck</li>
+                <li>Sleeve: 3/4 Sleeve</li>
+                <li>Sleeve: Styling Regular</li>
+                <li>Fit: Regular</li>
+                <li>Shape: Straight</li>
+                <li>Closure: Button & Keyhole</li>
+                <li>Slit: Detail No Slit</li>
+                <li>Hemline: Straight</li>
+                <li>Occasion: Festive</li>
+                <li>LengthCalf: Length</li>
+                <li>Pattern: Floral</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Ecru Round Neck Polka Dot Kurta
+              <ul type="circle" id="ul1">
+                <li>Colour: Beige</li>
+                <li>Fabric: Content 88% Cotton 12% Flax</li>
+                <li>Neck Type: Round Neck</li>
+                <li>Sleeve: 3/4 Sleeve</li>
+                <li>Sleeve: Styling Straight</li>
+                <li>Fit: Regular</li>
+                <li>Shape: Straight</li>
+                <li>Closure: Slip-On</li>
+                <li>Slit: Detail Side Slit</li>
+                <li>Hemline: Straight</li>
+                <li>Occasion: Casual</li>
+                <li>Length: Knee Length</li>
+                <li>Pattern: Geometric</li>
+                <li>Fabric" Family Cotton Flax</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Blue Round Neck Embroidered Dress
+              <ul type="circle" id="ul1">
+                <li>Colour: Blue</li>
+                <li>Neck Type: Round Neck</li>
+                <li>Sleeve: 3/4 Sleeve</li>
+                <li>Fit: Regular</li>
+                <li>Occasion: Festive</li>
+                <li>Length: Ankle Length</li>
+                <li>Pattern: Floral</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Blue Round Neck Embroidered Kurta
+              <ul type="circle" id="ul1">
+                <li>Colour: Blue</li>
+                <li>Fabric: Content 100% Viscose</li>
+                <li>Neck Type: Round Neck</li>
+                <li>Sleeve: 3/4 Sleeve</li>
+                <li>Sleeve: Styling Regular</li><li>FitRegular</li>
+                <li>Shape: Straight</li>
+                <li>Slit: Detail Side Slit</li>
+                <li>Hemline: Straight</li>
+                <li>Occasion: Festive</li>
+                <li>Length: Knee Length</li>
+                <li>Pattern: Floral</li>
+                <li>Fabric: Family Shantung</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Blue Solid Parallel Pants
+              <ul type="circle" id="ul1">
+                <li>Colour: Blue</li>
+                <li>Fit: Regular</li>
+                <li>Occasion: Casual</li>
+                <li>Pattern: Solid</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier1">
+              <img src="https://admin.wforwomanonline.com/product/18AUW50021-110370/665/18AUW50021_110370_1.JPG" class="image">
+              <p id="p1"><b>Type of cloth:Man made fibre</b><br>MRP: <br>
+                <del>Rs 3999</del><br>Rs 1999<br>
+              <mark><em>Flat 50% off</em></mark></p>
+                
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://admin.wforwomanonline.com/product/18FE55382-51018/665/18FE55382_51018.jpg" class="image"> 
+              <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs 3999</del><br>Rs 1999<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://admin.wforwomanonline.com/product/18AUW094-210982/665/18AUW094_210982.jpg" class="image"> 
+              <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs 599</del><br>Rs 419<br>
+              <mark><em>Flat 30% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://admin.wforwomanonline.com/product/20FEW80568-213624/665/20FEW80568-213624_1.JPG" class="image"> 
+              <p id="p1"><b>Type of cloth:Viscose</b><br>MRP: <br>
+                <del>Rs 1499</del><br>Rs 1124<br>
+              <mark><em>Flat 25% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://admin.wforwomanonline.com/product/18AUS81116-59575/665/18AUS81116_59575.jpg" class="image"> 
+              <p id="p1"><b>Type of cloth:NA</b><br>MRP: <br>
+                <del>Rs 1499</del><br>Rs 749<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Wine Printed Skirt
+              <ul type="circle" id="ul1">
+                <li>ColourWine</li>
+                <li>Material100% Man Made Fiber</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">White Glittering Flared Skirt
+              <ul type="circle" id="ul1">
+                <li>ColourWhite</li>
+                <li>MaterialCotton</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Red Knitted Churidar
+              <ul type="circle" id="ul1">
+                <li>ColourRed</li>
+                <li>MaterialCotton</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Off-White Embroidered Dupatta
+              <ul type="circle" id="ul1">
+                <li>ColourCream</li>
+                <li>MaterialViscose</li>
+                <li>OccasionCasual</li>
+                <li>PatternSolid</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="Free Size">Free Size</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Yellow Solid Dupatta
+              <ul type="circle" id="ul1">
+                <li>ColourYellow</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="Free Size">Free Size</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <li id="list">FabIndia</li>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v8021814411869132037/products/10612616WH.f.220720.jpg&height=940&width=940" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 3290</del><br>Rs 658<br>
+                <mark><em>Flat 80% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v8841080697457293702/products/10646910BK.r.250620.jpg&height=475&width=475" class="image"> 
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 990</del><br>Rs 594<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v4920957889719247574/products/10605699RD.f.311019.jpg&height=940&width=940" class="image"> 
+                <p><b>Type of cloth:Cotton Silk</b><br>MRP: <br>
+                  <del>Rs 6990</del><br>Rs 2796<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v2427023866222798462/products/10648110GR.f.240720.jpg&height=475&width=475" class="image"> 
+                <p><b>Type of cloth:Cotton Silk</b><br>MRP: <br>
+                  <del>Rs 6990</del><br>Rs 2796<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v3932631730699413879/products/10612741BG.f.220720.jpg&height=475&width=475" class="image"> 
+                <p><b>Type of cloth:Silk Tussr</b><br>MRP: <br>
+                  <del>Rs 6990</del><br>Rs 2446<br>
+                <mark><em>Flat 65% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Cotton Chikankari Slim Fit Long Kurta
+                <ul type="circle" id="ul1">
+                  <li>Long Kurta</li>
+                  <li>Cotton Cambric</li>
+                  <li>Chikankari</li>
+                  <li>Pintucks</li>
+                  <li>Straight Style</li>
+                  <li>Slim Fit</li>
+                  <li>Round Neck</li>
+                  <li>3/Q Sleeves</li>
+                  <li>Hand Wash Separately In Cold Water</li>
+                  <li>Size Worn By Model: S</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cotton Woven Cap Sleeves Blouse
+                <ul type="circle" id="ul1">
+                  <li>Blouse</li>
+                  <li>Cotton</li>
+                  <li>Woven</li>
+                  <li>Square Neck</li>
+                  <li>Cap Sleeves</li>
+                  <li>Hand Wash Separately In Cold Water</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cotton Silk Printed Lehenga Set
+                <ul type="circle" id="ul1">
+                  <li>Lehenga Set</li>
+                  <li>Regular Fit</li>
+                  <li>Cotton Silk</li>
+                  <li>Tussar Ghicha Silk Choli</li>
+                  <li>Flared Style</li>
+                  <li>3/Q Sleeves</li>
+                  <li>Dry Clean Recommended</li>
+                  <li>Size Worn By Model: S</li>
+                  <li>Model's Height:5.8"</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cotton Silk Maheshwari Sari
+                <ul type="circle" id="ul1">
+                  <li>Sari</li>
+                  <li>Cotton Silk</li>
+                  <li>Woven</li>
+                  <li>Maheshwari</li>
+                  <li>Lines</li>
+                  <li>Size-6.4m x 1.16m</li>
+                  <li>Blouse shown in the image is only for shoot purpose</li>
+                  <li>Sari With Blouse Piece</li>
+                  <li>Dry Clean Only</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="One Size">One Size</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Silk Tussar Chikankari Long Kurta
+               <ul type="circle" id="ul1"> <li>Long Kurta</li>
+                <li>Silk Tussar</li>
+                <li>Chikankari Jaal</li>
+                <li>Straight Style</li>
+                <li>Regular Fit</li>
+                <li>Chinese Collar</li>
+                <li>3/Q Sleeves</li>
+                <li>Dry Clean Only</li>
+                <li>Size Worn By Model: S</li>
+                <li>Model's Height: 5.6"</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v2208020878970699860/products/10648326BG.f.240720.jpg&height=940&width=940" class="image">
+                <p id="p1"><b>Type of cloth:Cotton Silk</b><br>MRP: <br>
+                  <del>Rs 1790</del><br>Rs 716<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                  
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v4786126996281355524/products/10648332PK.f.240720.jpg&height=475&width=475" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton Silk</b><br>MRP: <br>
+                  <del>Rs 1790</del><br>Rs 716<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v1358330066531721969/products/10654915BU.f.230720.jpg&height=475&width=475" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 3990</del><br>Rs 2593<br>
+                <mark><em>Flat 35% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v467790546066861149/products/10634433YL.r.210720.jpg&height=940&width=940" class="image"> 
+                <p id="p1"><b>Type of cloth:Viscose Tussr</b><br>MRP: <br>
+                  <del>Rs 2990</del><br>Rs 2392<br>
+                <mark><em>Flat 20% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.fabindia.com/ccstore/v1/images/?source=/file/v1332186765377377346/products/10648322GR.f.240720.jpg&height=940&width=940" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton Silk</b><br>MRP: <br>
+                  <del>Rs 1790</del><br>Rs 716<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Cotton Silk Maheshwari Dupatta
+                <ul type="circle" id="ul1">
+                  <li>Dupatta</li>
+                  <li>Cotton Silk</li>
+                  <li>Woven</li>
+                  <li>Maheshwari</li>
+                  <li>Striped Border</li>
+                  <li>Size-2.5m x 92cm</li>
+                  <li>Dry Clean Only</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="One Size">One Size</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cotton Silk Maheshwari Dupatta
+                <ul type="circle" id="ul1">
+                  <li>Dupatta</li>
+                  <li>Cotton Silk</li>
+                  <li>Woven</li>
+                  <li>Maheshwari</li>
+                  <li>Diamond patterened Border</li>
+                  <li>Size-2.5m x 92cm</li>
+                  <li>Dry Clean Only</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="One Size">One Size</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cotton Dobby Printed Kurta Set
+                <ul type="circle" id="ul1">
+                  <li>Long Kurta With Pant</li>
+                  <li>Cotton</li>
+                  <li>Dobby Weave</li>
+                  <li>Hand Block Printed</li>
+                  <li>Regular Fit</li>
+                  <li>Flared Style</li>
+                  <li>Round Neck</li>
+                  <li>3/Q Sleeves</li>
+                  <li>Hand Wash Separately in Cold Water</li>
+                  <li>Size Worn By Model: S</li>
+                  <li>Model's Height: 5.8"</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Viscose Tussar Slim Fit Long Kurta
+                <ul type="circle" id="ul1">
+                  <li>Long Kurta</li>
+                  <li>Viscose Tussar</li>
+                  <li>Embroidered Yoke</li>
+                  <li>Straight Style</li>
+                  <li>Slim Fit</li>
+                  <li>Boat Neck</li>
+                  <li>3/Q Sleeves</li>
+                  <li>Dry Clean Only</li>
+                  <li>Size Worn By Model: S</li>
+                  <li>Model's Height: 5.8"</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cotton Silk Maheshwari Dupatta
+                <ul type="circle" id="ul1">
+                  <li>Dupatta</li>
+                  <li>Cotton Silk</li>
+                  <li>Maheshwari</li>
+                  <li>Woven</li>
+                  <li>Rui Phool Pattern</li>
+                  <li>Size-2.5m x 92cm</li>
+                  <li>Dry Clean Only</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="One Size">One Size</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Biba</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/im_vTvu1BM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/summere15850ss20limyel-1.jpg" class="image">
+                <p><b>Type of cloth:100% Cotton</b><br>MRP: <br>
+                  <del>Rs 1599</del><br>Rs 1119<br>
+                <mark><em>Flat 30% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/neoncan15684ss20red-3.jpg" class="image"> 
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 2599</del><br>Rs 1559<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/siyahi15922ss20indigo-1.jpg" class="image"> 
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 899</del><br>Rs 629<br>
+                <mark><em>Flat 30% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/skd5312ss18crm-1.jpg" class="image"> 
+                <p><b>Type of cloth:Cotton Silk</b><br>MRP: <br>
+                  <del>Rs 10500</del><br>Rs 4200<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/skd6265aw19pch-1.jpg" class="image"> 
+                <p><b>Type of cloth:Polymettalic Cotton</b><br>MRP: <br>
+                  <del>Rs 7500</del><br>Rs 3750<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Lime Yellow Cotton Straight Kurta
+                <ul type="circle" id="ul1">
+                  <li>Category: Mix & Match</li>
+                  <li>Fit:	Straight</li>
+                  <li>Color:	Yellow</li>
+                  <li>Neckline:	Round Neck</li>
+                  <li>Fabric:	Cotton</li>
+                  <li>Sleeve Length:	3/4 Sleeve</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Red Cotton Flared Kurta
+                <ul type="circle" id="ul1">
+                  <li>Category:	Mix & Match</li>
+                  <li>Fit:	Flared</li>
+                  <li>Color:	Red</li>
+                  <li>Neckline:	Round Neck</li>
+                  <li>Fabric:	Cotton</li>
+                  <li>Sleeve Length:	3/4 Sleeve</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Indigo Cotton Palazzo
+                <ul type="circle" id="ul1">
+                  <li>Category:	Mix & Match</li>
+                  <li>Color:	Indigo</li>
+                  <li>Fabric:	Cotton</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cream Front Open Cotton Silk Suit Set
+                <ul type="circle" id="ul1">
+                  <li>Category:	Suit Sets</li>
+                  <li>Fit:	Straight</li>
+                  <li>Color:	Cream</li>
+                  <li>Neckline:	Round Neck</li>
+                  <li>Fabric:	Cotton Silk</li>
+                  <li>Sleeve Length:	3/4 Sleeve</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Peach Poly Metallic Cotton Straight Suit Set
+                <ul type="circle" id="ul1">
+                  <li>Category:	Suit Sets</li>
+                  <li>Fit:	Straight</li>
+                  <li>Color:	Peach</li>
+                  <li>Neckline:	Round Neck</li>
+                  <li>Fabric:	Poly Metallic Cotton</li>
+                  <li>Sleeve Length:	3/4 Sleeve</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier1">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/phulkari15795ss20red-1.jpg
+                " class="image">
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 2299</del><br>Rs 1379<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                  
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/pujacol15034aw19red-1.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Poly Cotton</b><br>MRP: <br>
+                  <del>Rs 1999</del><br>Rs 1399<br>
+                <mark><em>Flat 30% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/skd6561ss20sapgrn-4.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 3599</del><br>Rs 2159<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/neoncan15678ss20grn-1.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 1599</del><br>Rs 959<br>
+                <mark><em>Flat 40% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/6c57599f-2c43-4c82-806a-e07c3410f5d3/Images/ProductImages/Source/skd6231aw19owht-1.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Art Silk</b><br>MRP: <br>
+                  <del>Rs 3999</del><br>Rs 1999<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Red Cotton A Line Kurta
+                <ul type="circle" id="ul1">
+                  <li>Category: Mix & Match</li>
+                  <li>Fit: A-Line</li>
+                  <li>Color: Red</li>
+                  <li>Neckline: V-Neck</li>
+                  <li>Fabric: Cotton</li>
+                  <li>Sleeve Length: Elbow Length</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Red Poly Cotton Straight Kurta
+                <ul type="circle" id="ul1">
+                  <li>Category: Mix & Match<li>
+                  <li>Fit: Straight<li>
+                  <li>Color: Red<li>
+                  <li>Neckline: Round Neck<li>
+                  <li>Fabric: Poly Cotton<li>
+                  <li>Sleeve Length: 3/4 Sleeve<li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Sap Green Cotton Front Open Suit Set
+                <ul type="circle" id="ul1">
+                  <li>Color: Sap green</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Green Cotton A Line Kurta
+                <ul type="circle" id="ul1">
+                  <li>Category: Mix & Match<li>
+                  <li>Fit: A-Line<li>
+                  <li>Color: Green<li>
+                  <li>Neckline: Round Neck<li>
+                  <li>Fabric: Cotton<li>
+                  <li>Sleeve Length: Bell Sleeve<li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Off White Art Silk Straight Suit Set
+                <ul type="circle" id="ul1">
+                  <li>Category:	Suit Sets</li>
+                  <li>Fit:	Straight</li>
+                  <li>Color:	Off White</li>
+                  <li>Neckline:	Boat Neck</li>
+                  <li>Fabric:	Art Silk</li>
+                  <li>Sleeve Length:	Sleeveless</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <li id="list">Manyavar Mohey</li>
+      <table style="border-spacing: 13;">
+          <thead>
+            <tr>
+              <th>
+                <div class="contanier">
+                  <img src="https://images.manyavar.com/product_images/14216/qty_30/1.JPG?1548138460" class="image">
+                  <p><b>Type of cloth:Satin</b><br>MRP: <br>
+                    <del>Rs 3999</del><br>Rs 1999<br>
+                  <mark><em>Flat 50% off</em></mark></p>  
+                  </div>
+              </th>
+              <th>
+                <div class="contanier">
+                  <img src="https://images.manyavar.com/product_images/14967/qty_30/1.JPG?1554468921" class="image"> 
+                  <p><b>Type of cloth:Chiffon</b><br>MRP: <br>
+                    <del>Rs 3999</del><br>Rs 2400<br>
+                  <mark><em>Flat 40% off</em></mark></p>
+                  </div>
+              </th>
+              <th>
+                <div class="contanier">
+                  <img src="https://images.manyavar.com/product_images/17601/qty_30/alia_bhatt195895_resized.jpg?1568266718" class="image"> 
+                  <p><b>Type of cloth:Velvet</b><br>MRP: <br>
+                    <del>Rs 24999</del><br>Rs 7499<br>
+                  <mark><em>Flat 70% off</em></mark></p>
+                  </div>
+              </th>
+              <th>
+                <div class="contanier">
+                  <img src="https://images.manyavar.com/product_images/19880/qty_30/KSS_0128.JPG?1581679954" class="image"> 
+                  <p><b>Type of cloth:Net</b><br>MRP: <br>
+                    <del>Rs 11999</del><br>Rs 7199<br>
+                  <mark><em>Flat 40% off</em></mark></p>
+                  </div>
+              </th>
+              <th>
+                <div class="contanier">
+                  <img src="https://images.manyavar.com/product_images/16005/qty_30/KSS_4871.JPG?1558161584" class="image"> 
+                  <p><b>Type of cloth:Satin</b><br>MRP: <br>
+                    <del>Rs 24999</del><br>Rs 17499<br>
+                  <mark><em>Flat 30% off</em></mark></p>
+                  </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="text">High low kurti with embroidery & tassel work
+                  <ul type="circle" id="ul1">
+                    <li>Color: Maroon</li>
+                    <li>Garment Type: Kurti</li>
+                    <li>Fabric: Satin</li>
+                    <li>Design Type: Asymmetrical </li>
+                    <li>Occasion: Festive/Wedding </li>
+                    <li>Embroidery: Machine Embroidery</li>
+                    <li>Care: Dry Clean</li>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+              <td>
+                <div class="text">Bright light blue saree
+                  <ul type="circle" id="ul1">
+                    <li>Color: Blue </li>
+                    <li>Garment Type: Saree </li>
+                    <li>Fabric: Chiffon</li>
+                    <li> Design Type: All Over Boota & Border</li>
+                    <li>Occasion: Casual/Festive </li>
+                    <li>Embroidery: Silk Thread Machine Embroidery</li>
+                    <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  <option value="Free">Free Size</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+              <td>
+                <div class="text">Beautiful ethnic rani pink bridal lehenga
+                  <ul type="circle" id="ul1">
+                    <li>Color: Rani Pink</li>
+                    <li>Garment Type: Lehenga </li>
+                    <li>Fabric: Velvet</li>
+                    <li>Design Type: All Over Jaal Work</li>
+                    <li>Occasion: Wedding</li>
+                    <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  "size">
+                  <option value="Free">Free Size</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+              <td>
+                <div class="text">Graceful grey hand embroidered gown
+                  <ul type="circle" id="ul1">
+                    <li>Color: Grey</li>
+                    <li>Garment Type: Gown</li>
+                    <li>Fabric: Net </li>
+                    <li>Design Type: Flare</li>
+                    <li>Occasion: Party Wear</li>
+                    <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+              <td>
+                <div class="text">Rich green lehenga
+                  <ul type="circle" id="ul1">
+                    <li>Color: Green </li>
+                    <li>Garment Type: Lehenga</li>
+                    <li>Fabric: Satin </li>
+                    <li>Occasion: Wedding/Reception </li>
+                    <li>Embroidery: Machine Zari Embroidery</li>
+                    <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  "size">
+                  <option value="Free">Free Size</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>
+                <div class="contanier1">
+                  <img src="https://images.manyavar.com/product_images/12777/qty_30/2.jpg?1541418938" class="image">
+                  <p id="p1"><b>Type of cloth:Silk</b><br>MRP: <br>
+                    <del>Rs 3999</del><br>Rs 2400<br>
+                  <mark><em>Flat 40% off</em></mark></p>
+                    
+                  </div>
+              </th>
+              <th>
+                <div class="contanier1">
+                  <img src="https://images.manyavar.com/product_images/15163/qty_30/1.JPG?1554723015" class="image"> 
+                  <p id="p1"><b>Type of cloth:Satin</b><br>MRP: <br>
+                    <del>Rs 3999</del><br>Rs 1999<br>
+                  <mark><em>Flat 50% off</em></mark></p>
+                  </div>
+              </th>
+              <th>
+                <div class="contanier1">
+                  <img src="https://images.manyavar.com/product_images/11860/qty_30/1.jpg?1548137098" class="image"> 
+                  <p id="p1"><b>Type of cloth:Net</b><br>MRP: <br>
+                    <del>Rs 6999</del><br>Rs 3499<br>
+                  <mark><em>Flat 50% off</em></mark></p>
+                  </div>
+              </th>
+              <th>
+                <div class="contanier1">
+                  <img src="https://images.manyavar.com/product_images/15880/qty_30/1.JPG?1557820162" class="image"> 
+                  <p id="p1"><b>Type of cloth:Velvet</b><br>MRP: <br>
+                    <del>Rs 15999</del><br>Rs 7999<br>
+                  <mark><em>Flat 50% off</em></mark></p>
+                  </div>
+              </th>
+              <th>
+                <div class="contanier1">
+                  <img src="https://images.manyavar.com/product_images/19800/qty_30/KSS_9888.JPG?1581677720" class="image"> 
+                  <p id="p1"><b>Type of cloth:Chanderi</b><br>MRP: <br>
+                    <del>Rs 4999</del><br>Rs 2499<br>
+                  <mark><em>Flat 50% off</em></mark></p>
+                  </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="text">Bright green gown with light golden work
+                  <ul type="circle" id="ul1">
+                    <li>Color: Green</li>
+                    <li>Garment Type: Gown</li>
+                    <li>Fabric: Silk</li>
+                    <li> Design Type: Solid </li>
+                    <li>Occasion: Festive/Wedding </li>
+                    <li>Embroidery: Machine Embroidery</li>
+                    <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+              <td>
+                <div class="text">Sober rani coloured kurti
+                  <ul type="circle" id="ul1">
+                    <li>Color: Pink</li>
+                    <li>Garment Type: Kurti </li>
+                    <li>Fabric: Satin</li>
+                    <li>Design Type: Asymmetrical </li>
+                    <li>Occasion: Casual /Festive </li>
+                    <li>Embroidery: Hand Embroidery On Print</li>
+                    <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+              <td>
+                <div class="text">Sophisticated ethnic embroidered fawn saree
+                  <ul type="circle" id="ul1">
+                    <li>Color: Beige </li>
+                    <li>Garment Type: Saree</li>
+                    <li>Fabric: Net</li>
+                    <li>Design Type: All Over Jaal & Border</li>
+                    <li>Occasion: Festive/Wedding </li>
+                    <li>Embroidery: Silk Thread & Zari Machine Embroidery</li>
+                    <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  "size">
+                  <option value="Free">Free Size</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+              <td>
+                <div class="text">Majestic wine coloured velvet lehenga
+                  <ul type="circle" id="ul1">
+                    <li>Color: Purple</li>
+                    <li>Garment Type: Lehenga </li>
+                    <li>Fabric: Velvet </li>
+                    <li>Design Type: Patterned</li>
+                    <li>Occasion: Wedding/ Reception/Cocktail</li>
+                    <li>Embroidery: Machine Zari Embroidery</li>
+                    <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  "size">
+                  <option value="Free">Free Size</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+              <td>
+                <div class="text"> Pink gota patti kurti
+                  <ul type="circle" id="ul1">
+                  <li>Color: Pink</li>
+                  <li>Garment Type: Kurti</li>
+                  <li>Fabric: Chanderi </li>
+                  <li>Design Type: Flare </li>
+                  <li>Occasion: Party Wear</li>
+                  <li>Care: Dry Clean</li>
+                  </ul>
+                </div>
+                <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    <li id="list">Global Desi</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/W2lFEBt3Qho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw18gh011dsms.jpg" class="image">
+                <p><b>Type of cloth:Viscose</b><br>MRP: <br>
+                  <del>Rs 2999</del><br>Rs 900<br>
+                <mark><em>Flat 70% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw18gj001btryblack1.jpg" class="image"> 
+                <p><b>Type of cloth:Viscose</b><br>MRP: <br>
+                  <del>Rs 1499</del><br>Rs 450<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw18gu030skpsblack1.jpg" class="image"> 
+                <p><b>Type of cloth:Viscose, Polyster</b><br>MRP: <br>
+                  <del>Rs 3999</del><br>Rs 1200<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw17gh026kuawlmustard_1.jpg" class="image"> 
+                <p><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 2399</del><br>Rs 720<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/e/c/ec192g0342pry_cream_5_.jpg" class="image"> 
+                <p><b>Type of cloth:NA</b><br>MRP: <br>
+                  <del>Rs 3499</del><br>Rs 1750<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Berry Pant Saree
+                <ul type="circle" id="ul1">
+                  <li>Partially elasticated</li>
+                  <li>Side zip</li>
+                  <li>Pockets on both sides</li>
+                  <li>Drape pattern</li>
+                  <li>Full length</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP: Let this festive season be all about head turning styles! Team it with our antique gold crop top, gold tiered pendant neckpiece and beaded Kolhapuris. Don’t forget the black pearl drop tassel earrings!</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Black Pleated Dhoti Pants
+                <ul type="circle" id="ul1">
+                  <li>Partially elasticated</li>
+                  <li>Pleat pattern</li>
+                  <li>Tapered hemline</li>
+                  <li>Till the ankle</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP : Style it with our mustard embroidered crop top for a relaxed day look; accessorise with our tassel earrings and embroidered mojris</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Black Geometric Print Skirt
+                <ul type="circle" id="ul1">
+                  <li>Wide band</li>
+                  <li>Side zip</li>
+                  <li>Pocket on one side</li>
+                  <li>Full length</li>
+                  <li>Geometric print</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP: Pair it with our pink cold shoulder top, gold laser cut Kolhapuris and gold filigree earrings, and stand out in the crowd. </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Mustard Abstract Print Kurta
+                <ul type="circle" id="ul1">
+                  <li>Round neckline</li>
+                  <li>Full sleeves</li>
+                  <li>Slit on both sides</li>
+                  <li>Abstract print</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP: Style this kurta with a pair of black cropped pants. Wrap a scarf around your neck to lend a boho vibe. </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cream Coordinate
+                <ul type="circle" id="ul1">
+                  <li>Cream Coordinate</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/s/s/ss20gh0712pcvo_sage-green-_7_.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 2999</del><br>Rs 2099<br>
+                <mark><em>Flat 30% off</em></mark></p>
+                  
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/s/s/ss18gs070shrchd_6.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 3499</del><br>Rs 1050<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/2/0/204aw17gr293kupg_1.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Polyester</b><br>MRP: <br>
+                  <del>Rs 2999</del><br>Rs 900<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/a/w/aw18gp036kuvsc_ink_blue_.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Viscose, Polyester</b><br>MRP: <br>
+                  <del>Rs 1699</del><br>Rs 510<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://www.globaldesi.in/media/catalog/product/cache/8ba85772601582a264183d0a493354f1/s/s/ss20gv0233pcyd.jpg" class="image"> 
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs 4999</del><br>Rs 3499<br>
+                <mark><em>Flat 3s0% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Sage Green Coordinate
+                <ul type="circle" id="ul1">
+                  <li>Double the summer fun with our Printed Sage Green Coordinate. Style it with our metallic sliders and jhumkis for a trendy look.</li>
+                  <li>Double the summer fun with our Printed Sage Green Coordinate. Style it with our metallic sliders and jhumkis for a trendy look.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Beige Polka Dot Palazzos
+                <ul type="circle" id="ul1">
+                  <li>Partially elasticated waist</li>
+                  <li>Side zip with hook</li>
+                  <li>Gold polka dot</li>
+                  <li>Flared style</li>
+                  <li>Regular fit</li><li>STYLE TIP: Team a gold crop top or a kurta over this pair of palazzos. Accessorise with embroiderd mojris and drop earrings for an elegant appeal.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Aqua Double Front Slit Kurta
+                <ul type="circle" id="ul1">
+                  <li>Round neckline with a keyhole</li>
+                  <li>Three-quarter sleeves</li>
+                  <li>Double front slits</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP: Complete the look with a pair of golden crop pants and embroidered sandals.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Blue Solid Kurta
+                <ul type="circle" id="ul1">
+                  <li>Collar neckline</li>
+                  <li>Front button placket</li>
+                  <li>Three quarter sleeves</li>
+                  <li>Front pockets</li>
+                  <li>Till the knee</li>
+                  <li>Regular fit</li>
+                  <li>STYLE TIP: Wear it as a dress with a longline shrug or pair it with black trousers and beaded Kolhapuris. Wrap a  maroon scarf around your neck and look next level.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Blue Three Piece Kurta Set
+                <ul type="circle" id="ul1">
+                  <li>Add a twist to your wardrobe with our blue three piece set. It comes with a blue striped jacket a  kurta and palazzo pants. Wear it to work with your favourite shoe and golden hoop earrings.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </ol>
+</div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

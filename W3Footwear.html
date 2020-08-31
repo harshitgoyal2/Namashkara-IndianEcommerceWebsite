@@ -1,0 +1,1402 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W3Footwear</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 500px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;} 
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Women's Footwear</h1>
+<div class="cont">
+  <ol>
+    <li id="list">Liberty</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/cWCW-XghNs0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://www.libertyshoesonline.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/h/t/httpstaging.greenhonchos.comlibertypubmediaimagesgargi-01-pink-pu-cfb__1.jpg" class="image">
+              <p><b>Type of Sole:PU</b><br>MRP: <br>
+                <del>Rs 699</del><br>Rs 629<br>
+              <mark><em>Flat 10% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://www.libertyshoesonline.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/h/t/httpstaging.greenhonchos.comlibertypubmediaimagessparkle-02-black-pu-cfb__1.jpg" class="image"> 
+              <p><b>Type of Sole:PU</b><br>MRP: <br>
+                <del>Rs 399</del><br>Rs 359<br>
+              <mark><em>Flat 10% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://www.libertyshoesonline.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/h/t/httpstaging.greenhonchos.comlibertypubmediaimagesmartie-8-blue_1.jpg" class="image"> 
+              <p><b>Type of Sole:EVA</b><br>MRP: <br>
+                <del>Rs 899</del><br>Rs 719<br>
+              <mark><em>Flat 20% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://www.libertyshoesonline.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/h/t/httpstaging.greenhonchos.comlibertypubmediaimageslaf-0145-cherry-pu-cfb__1.jpg" class="image"> 
+              <p><b>Type of Sole:PVC</b><br>MRP: <br>
+                <del>Rs 999</del><br>Rs 749<br>
+              <mark><em>Flat 25% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://www.libertyshoesonline.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/a/v/avila-06nblue_1.jpg" class="image"> 
+              <p><b>Type of Sole:PU</b><br>MRP: <br>
+                <del>Rs 699</del><br>Rs 559<br>
+              <mark><em>Flat 20% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Gliders Women's Pink Sporty Casual Non Lacing (GARGI-01)
+              <ul type="circle" id="ul1">
+                <li>Heel Height:BALLERINA</li>
+                <li>Article Code:GARGI-01</li>
+                <li>Leather Quality:PU CFB</li>
+                <li>Upper Material:NON LEATHER</li>
+                <li>Size:No</li>
+                <li>Size:No</li>
+                <li>Brand:Gliders</li>
+                <li>Style Code:2151043123</li>
+                <li>Collection:Sporty Casual</li>
+                <li>Sole Material:PU</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Senorita Women's Black Fashion Thong (SPARKLE-02)
+              <ul type="circle" id="ul1">
+                <li>Heel Height:FLATS</li>
+                <li>Article Code:SPARKLE-02</li>
+                <li>Leather Quality:PU CFB</li>
+                <li>Upper Material:NON LEATHER</li>
+                <li>Size:No</li>
+                <li>Brand:Senorita</li>
+                <li>Style Code:5555250200</li>
+                <li>Collection:Fashion</li>
+                <li>Sole Material:PU</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Force 10 Women's Blue Sports Lacing (MARTIE-8)
+              <ul type="circle" id="ul1">
+                <li>Heel Height:FLATS</li>
+                  <li>Article Code:MARTIE-8</li>
+                  <li>Leather Quality:MESH</li>
+                  <li>Upper Material:NON LEATHER</li>
+                  <li>Size:No</li>
+                  <li>Size:No</li>
+                  <li>Brand:Force 10</li>
+                  <li>Style Code:5936008150</li>
+                  <li>Collection:Sports</li>
+                  <li>Sole Material:EVA</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Senorita Women's Cherry Fashion Sandal (LAF-0145)
+              <ul type="circle" id="ul1">
+                <li>Heel Height:MID</li>
+                <li>Article Code:LAF-0145</li>
+                <li>Leather Quality:PU CFB</li>
+                <li>Upper Material:NON LEATHER</li>
+                <li>Size:No</li>
+                <li>Size:No</li>
+                <li>Brand:Senorita</li>
+                <li>Style Code:5004498170</li>
+                <li>Collection:Fashion</li>
+                <li>Sole Material:PVC</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Force 10 Women's Blue Sporty Casual Non Lacing (AVILA-06)
+              <ul type="circle" id="ul1">
+                <li>Heel Height:Unknown</li>
+                <li>Leather Quality:CANVAS</li>
+                <li>Upper Material:NON LEATHER</li>
+                <li>Size:No</li>
+                <li>Size:No</li>
+                <li>Brand:Force 10</li>
+                <li>Style Code:8043003151</li>
+                <li>Collection:Sporty Casual</li>
+                <li>Sole Material:PU</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="Ad1.jpeg" alt="add" height="500" width="100%">
+    <li id="list">Mochi</li>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.metrobrands.com/mochi/media/images/products/31/31-8141M62.jpg?d=1000x1000" class="image">
+                <p><b>Type of Sole:PU</b><br>MRP: <br>
+                  <del>Rs 2290</del><br>Rs 1099<br>
+                <mark><em>Flat 52% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.metrobrands.com/mochi/media/images/products/36/36-7947M16.jpg?d=1000x1000" class="image"> 
+                <p><b>Type of Sole:PU</b><br>MRP: <br>
+                  <del>Rs 1690</del><br>Rs 799<br>
+                <mark><em>Flat 52% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.metrobrands.com/mochi/media/images/products/31/31-9062M24.jpg?d=1000x1000" class="image"> 
+                <p><b>Type of Sole:Sheet Sole</b><br>MRP: <br>
+                  <del>Rs 2290</del><br>Rs 1099<br>
+                  <mark><em>Flat 52% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.metrobrands.com/mochi/media/images/products/31/31-7539M11.jpg?d=1000x1000" class="image"> 
+                <p><b>Type of Sole:PU</b><br>MRP: <br>
+                  <del>Rs 3990</del><br>Rs 1995<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.metrobrands.com/mochi/media/images/products/31/31-8954M11.jpg?d=1000x1000" class="image"> 
+                <p><b>Type of Sole:PU</b><br>MRP: <br>
+                  <del>Rs 1990</del><br>Rs 995<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Mochi Khaki Formal Pumps
+                <ul type="circle" id="ul1">
+                  <li>Occasion: Formal</li>
+                  <li>Gender: Women</li>
+                  <li>Inner Material: Synthetic</li>
+                  <li>Outer Material: Synthetic</li>
+                  <li>Product Type: Pumps, Pumps</li>
+                  <li>Color: Khaki</li>
+                  <li>Sole Type: PU</li>
+                  <li>Heel Height: 2</li>
+                  <li>Heel Type: Stilettos</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Mochi White Casual Sneakers
+                <ul type="circle" id="ul1">
+                  <li>Sole Type: PU</li>
+                  <li>Product Type: Sneakers</li>
+                  <li>Outer Material: Synthetic</li>
+                  <li>Occasion: Casual</li>
+                  <li>Inner Material: Synthetic</li>
+                  <li>Heel Type: Flats</li>
+                  <li>Gender: Women</li>
+                  <li>Color: White</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Mochi Pink Formal Pumps
+                <ul type="circle" id="ul1">
+                  <li>Inner Material: Synthetic</li>
+                  <li>Product Type: Pumps, Pumps</li>
+                  <li>Sole Type: Sheet Sole</li>
+                  <li>Occasion: Formal</li>
+                  <li>Color: Pink</li>
+                  <li>Gender: Women</li>
+                  <li>Outer Material: Synthetic</li>
+                  <li>Heel Height: 3</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Mochi Black Casual Boots
+                <ul type="circle" id="ul1">
+                  <li>Heel Type: Wedges</li>
+                  <li>Product Type: Boots, Boots</li>
+                  <li>Color: Black</li>
+                  <li>Gender: Women</li>
+                  <li>Inner Material: Synthetic</li>
+                  <li>Outer Material: Synthetic</li>
+                  <li>Sole Type: PU</li>
+                  <li>Occasion: Casual</li>
+                  <li>Heel Height: 1</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Mochi Black Formal Pumps
+                <ul type="circle" id="ul1">
+                  <li>Outer Material: Synthetic</li>
+                  <li>Sole Type: PU</li>
+                  <li>Color: Black</li>
+                  <li>Product Type: Pumps, Pumps</li>
+                  <li>Gender: Women</li>
+                  <li>Heel Type: Kitten</li>
+                  <li>Inner Material: Synthetic</li>
+                  <li>Occasion: Formal</li>
+                  <li>Heel Height: 1</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Bata</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/Na3_85gtfig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://img2.bata.in/0/images/product/508-5007_700x650_2.jpeg" class="image">
+                <p><b>Type of Sole:TBA</b><br>MRP: <br>
+                  <del>Rs 3999</del><br>Rs 1999<br>
+                <mark><em>Flat 50% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://img2.bata.in/0/images/product/551-6102_700x650_2.jpeg" class="image"> 
+                <p><b>Type of Sole:NA</b><br>MRP: <br>
+                  <del>Rs 999</del><br>Rs 499<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://img2.bata.in/0/images/product/771-6115_700x650_2.jpeg" class="image"> 
+                <p><b>Type of Sole:NA</b><br>MRP: <br>
+                  <del>Rs 2999</del><br>Rs 2699<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://img2.bata.in/0/images/product/751-1101_700x650_2.jpeg" class="image"> 
+                <p><b>Type of Sole:NA</b><br>MRP: <br>
+                  <del>Rs 2999</del><br>Rs 2099<br>
+                <mark><em>Flat 30% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://img2.bata.in/0/images/product/761-8006_700x650_2.jpeg" class="image"> 
+                <p><b>Type of Sole:NA</b><br>MRP: <br>
+                  <del>Rs 2999</del><br>Rs 1019<br>
+                <mark><em>Flat 66% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Pink Lifestyle Shoes For Women
+                <ul type="circle" id="ul1">
+                  <li>Type:SportsShoes</li>
+                  <li>Colour:Beige</li>
+                  <li>Sole:EVA</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Black Ballerina For Women
+                <ul type="circle" id="ul1">
+                  <li>NA</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Black Chappals For Women
+                <ul type="circle" id="ul1">
+                  <li>Color:Blue</li>
+                  <li>Do not dry clean, gentle wash using cold water and mild detergent, do not bleach or soak, dry immediately after washing, do not leave garment wet in a heap, do not tumble dry, dry away from direct sunlight, do not iron.</li>
+                  <li>Style no:SS19ATHAND22</li>
+                  <li>STYLE TIP: Style these wardrobe-must-have leggings with a fun printed top and a pair of classic white sneakers.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">White Pumps For Women
+                <ul type="circle" id="ul1">
+                  <li>NA</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Grey Sandals For Women
+                <ul type="circle" id="ul1">
+                  <li>NA</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Clark</li>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://www.clarks.in/media/product/56/7/1-catalog_360.jpg" class="image">
+              <p><b>Type of Sole:Rubber</b><br>MRP: <br>
+                <del>Rs 7999</del><br>Rs 3999<br>
+              <mark><em>Flat 50% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://www.clarks.in/media/product/92/09/1-catalog_360.jpg" class="image"> 
+              <p><b>Type of Sole:Rubber</b><br>MRP: <br>
+                <del>Rs 5999</del><br>Rs 3599<br>
+              <mark><em>Flat 40% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://www.clarks.in/media/product/50/91/1-catalog_360.jpg" class="image"> 
+              <p><b>Type of Sole:Rubber</b><br>MRP: <br>
+                <del>Rs 8499</del><br>Rs 4249<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://www.clarks.in/media/product/80/98/1-catalog_360.jpg" class="image"> 
+              <p><b>Type of Sole:ER</b><br>MRP: <br>
+                <del>Rs 6999</del><br>Rs 3499<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://www.clarks.in/media/product/75/98/1-catalog_360.jpg" class="image"> 
+              <p><b>Type of Sole:Rubber</b><br>MRP: <br>
+                <del>Rs 6999</del><br>Rs 3499<br>
+              <mark><em>Flat 50% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Nature IV
+              <ul type="circle" id="ul1">
+                <li>UPPER MATERIAL Nubuck</li>
+                <li>LINING MATERIAL Unlined</li>
+                <li>HEEL HEIGHT Flat</li>
+                <li>SOLE MATERIAL Rubber</li>
+                <li>FASTENING TYPE Lace</li>
+                <li>REMOVABLE INSOLE Yes</li>
+                <li>TRIMS None</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Dana Skye
+              <ul type="circle" id="ul1">
+                <li>UPPER MATERIAL Leather</li>
+                <li>LINING MATERIAL Unlined</li>
+                <li>HEEL HEIGHT Flat</li>
+                <li>SOLE MATERIAL Rubber</li>
+                <li>FASTENING TYPE Lace</li>
+                <li>REMOVABLE INSOLE No</li>
+                <li>TRIMS None</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">NATUREVI SPORT
+              <ul type="circle" id="ul1">
+                <li>UPPER MATERIAL Nubuck</li>
+                <li>LINING MATERIAL Unlined</li>
+                <li>HEEL HEIGHT Flat</li>
+                <li>SOLE MATERIAL Rubber</li>
+                <li>FASTENING TYPE Lace</li>
+                <li>REMOVABLE INSOLE No</li>
+                <li>TRIMS None</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Laureti Grace
+              <ul type="circle" id="ul1">
+              <li>UPPER MATERIAL Leather</li>
+              <li>LINING MATERIAL Leather</li>
+              <li>HEEL HEIGHT Med</li>
+              <li>SOLE MATERIAL TR</li>
+              <li>FASTENING TYPE Buckle</li>
+              <li>REMOVABLE INSOLE No</li>
+              <li>TRIMS Buckle</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Maritsa Lara
+              <ul type="circle" id="ul1">
+                <li>UPPER MATERIAL Leather</li>
+                <li>LINING MATERIAL Leather</li>
+                <li>HEEL HEIGHT High</li>
+                <li>SOLE MATERIAL Rubber</li>
+                <li>FASTENING TYPE Riptape</li>
+                <li>REMOVABLE INSOLE No</li>
+                <li>TRIMS None</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <li id="list">Catwalk</li>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="http://43.242.214.247/catwalk/webstrpht/2219C_01.jpg" class="image">
+              <p><b>Type of Sole:NA</b><br>MRP: <br>
+                <del>Rs 2295</del><br>Rs 1836<br>
+              <mark><em>Flat 20% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="http://43.242.214.247/catwalk/webstrpht/3342SS_01.jpg" class="image"> 
+              <p><b>Type of Sole:NA</b><br>MRP: <br>
+                <del>Rs 1895</del><br>Rs 699<br>
+              <mark><em>Flat 63% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="http://43.242.214.247/catwalk/webstrpht/4361c_01.jpg" class="image"> 
+              <p><b>Type of Sole:NA</b><br>MRP: <br>
+                <del>Rs 2095</del><br>Rs 799<br>
+              <mark><em>Flat 62% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="http://43.242.214.247/catwalk/webstrpht/3229H_01.jpg" class="image"> 
+              <p><b>Type of Sole:NA</b><br>MRP: <br>
+                <del>Rs 3795</del><br>Rs 3036<br>
+              <mark><em>Flat 20% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="http://43.242.214.247/catwalk/webstrpht/3869D_01.jpg" class="image"> 
+              <p><b>Type of Sole:NA</b><br>MRP: <br>
+                <del>Rs 1995</del><br>Rs 899<br>
+              <mark><em>Flat 55% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">PEEP TOE CRISS CROSS BOOTIES
+              <ul type="circle" id="ul1">
+                <li>A pair of black open-toe pumps, has mid-top styling, ankle loop detail</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">DUAL TONE ANKLE STRAP SANDALS
+              <ul type="circle" id="ul1">
+                <li>NA</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">BOW STRAP FUR DETAIL SLIP ONS
+              <ul type="circle" id="ul1">
+                <li>A pair of BLACK FLAT sandals, has regular styling, Open back detail</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">HOLO PLATFORM SNEAKERS
+              <ul type="circle" id="ul1">
+                <li>A pair of round-toe blue sneakers, has regular styling, lace-up detail</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">TEXTURED SLIP ON SNEAKERS
+              <ul type="circle" id="ul1">
+                <li>A pair of round-toe blue sneakers, has regular styling, slip-on detail</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+      <li id="list">Metro</li>
+      <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/UvdKCx-1_ZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://static.metroshoes.net/media/catalog/product/cache/1/image/250x250/9df78eab33525d08d6e5fb8d27136e95/2/2/228-107m15.jpg" class="image">
+                <p><b>Type of Sole:TPR</b><br>MRP: <br>
+                  <del>Rs 6700</del><br>Rs 5025<br>
+                <mark><em>Flat 25% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://static.metroshoes.net/media/catalog/product/cache/1/image/250x250/9df78eab33525d08d6e5fb8d27136e95/3/2/32-7296m11.jpg" class="image"> 
+                <p><b>Type of Sole:PVC</b><br>MRP: <br>
+                  <del>Rs 299</del><br>Rs 149<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://static.metroshoes.net/media/catalog/product/cache/1/image/250x250/9df78eab33525d08d6e5fb8d27136e95/2/2/228-126m11.jpg" class="image"> 
+                <p><b>Type of Sole:TPR</b><br>MRP: <br>
+                  <del>Rs 6800</del><br>Rs 5440<br>
+                <mark><em>Flat 20% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://static.metroshoes.net/media/catalog/product/cache/1/image/250x250/9df78eab33525d08d6e5fb8d27136e95/2/2/228-142m58.jpg" class="image"> 
+                <p><b>Type of Sole:Rubber</b><br>MRP: <br>
+                  <del>Rs 8000</del><br>Rs 7200<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://static.metroshoes.net/media/catalog/product/cache/1/image/250x250/9df78eab33525d08d6e5fb8d27136e95/9/2/92-1m13.jpg" class="image"> 
+                <p><b>Type of Sole:Sheet Sole</b><br>MRP: <br>
+                  <del>Rs 2990</del><br>Rs 1196<br>
+                <mark><em>Flat 60% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">FITFLOP FINO HEXY GOLD
+                <ul type="circle" id="ul1">
+                  <li>Closure type	:	NA</li>
+                  <li>Heel Height	:	1</li>
+                  <li>Inner Material	:	Synthetic</li>
+                  <li>Outer Material	:	Synthetic</li>
+                  <li>Sole	:	TPR</li>
+                  <li>Shoe Type	:	Slippers</li>
+                  <li>Heel Type	: Wedges</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">WALKWAY 32-7296-BLACK CASUAL SLIP ONS
+                <ul type="circle" id="ul1">
+                  <li>Closure type	:	Slip On</li>
+                  <li>Inner Material	:	Synthetic</li>
+                  <li>Outer Material	:	Synthetic</li>
+                  <li>Sole	:	PVC</li>
+                  <li>Shoe Type	:	Slip Ons</li>
+                  <li>Heel Type	:	Flats</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">FITFLOP LOTTIE WICKER BLACK
+                <ul type="circle" id="ul1">
+                  <li>Closure type	:	Na</li>
+                  <li>Heel Height	:	1</li>
+                  <li>Inner Material	:	Synthetic</li>
+                  <li>Outer Material	:	Synthetic</li>
+                  <li>Sole	:	TPR</li>
+                  <li>Shoe Type	:	Slip Ons</li>
+                  <li>Heel Type	:	Wedges</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">FITFLOP 228-142-WINE CASUAL FLIP FLOPS
+                <ul type="circle" id="ul1">
+                  <li>Closure type	:	NA</li>
+                  <li>Heel Height	:	1</li>
+                  <li>Inner Material	:	Synthetic</li>
+                  <li>Outer Material	:	Synthetic</li>
+                  <li>Sole	:	Rubber</li>
+                  <li>Shoe Type	:	Flip Flops</li>
+                  <li>Heel Type	:	Wedges</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">CHEEMO 92-1-MULTI ETHNIC MOJARIS
+                <ul type="circle" id="ul1">
+                  <li>Closure type	:	NA
+                    <li>Inner Material	:	Synthetic</li>
+                    <li>Outer Material	:	Zari Work</li>
+                    <li>Sole	:	Sheet Sole</li>
+                    <li>Shoe Type	:	Mojaris</li>
+                    <li>Heel Type	:	Flats</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>>
+  </ol>
+</div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

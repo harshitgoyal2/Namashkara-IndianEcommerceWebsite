@@ -1,0 +1,1269 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toys</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 300px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;}
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Kids Toys</h1>
+
+
+<div class="cont">
+  <ol>
+
+
+
+
+<!-- working of images and content for them-->
+
+
+
+<!-- 1st line of images-->
+    <li id="list">Lego </li>
+      <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/jd7p18w0/vehicle-pull-along/p/4/w/innova-police-car-for-kids-centy-original-imaf22pggmew5s86.jpeg?q=70" class="image">
+              <p><br>MRP: <br>
+                <del>Rs254</del><br>Rs189<br>
+              <mark><em> 24% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/jwtkk280/remote-control-toy/y/z/s/musical-self-rotating-air-bus-toy-skyler-collection-original-imaf8uqgynghzzgq.jpeg?q=70" class="image">
+              <p><br>MRP: <br>
+                <del>Rs999</del><br>Rs299<br>
+              <mark><em>Flat 70% off</em></mark></p>
+
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/jhgl5e80/vehicle-pull-along/r/m/u/3-car-pack-hot-wheels-original-imaf5hbwkhpchaft.jpeg?q=70" class="image">
+              <p><br>MRP: <br>
+                <del>Rs349</del><br>Rs279<br>
+              <mark><em> 20% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/k5jxfgw0/vehicle-pull-along/d/a/u/jcb-dig-dump-construction-toy-construction-truck-toy-for-kids-original-imafz4bbzwgdfeqb.jpeg?q=70" class="image">
+              <p><br>MRP: <br>
+                <del>Rs759</del><br>Rs459<br>
+              <mark><em>Flat 34% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/jvy4vbk0/musical-toy/2/w/2/37-key-piano-keybt-for-kids-black-bigfun-original-imafexy9ve5hfpkf.jpeg?q=70" class="image">
+              <p><br>MRP: <br>
+                <del>Rs1277</del><br>Rs615<br>
+              <mark><em>Flat 51% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text"> CENTY INNOVA POLICE CAR FOR KIDS  (White)
+              <ul type="circle" id="ul1">
+                Description
+Attractive Price, Non Toxic Material, No Sharp Edges, Workable Wheels. If Your Kid Loves Speed, He Will Surely Love This Toy. It Is Designed Like A Real And Gives A Realistic Feel. This Is Not A Battery-Operated Vehicle, So No Need To Worry About Battery Consumption. It Is Coated With A Non-Toxic Paint That Makes It Safe For Your Kids. Let Your Kid Play With This Toy From Centy Toys. Get It Now For Your Sweet Little Kid. Colours Can Vary According To Availability.
+              </ul>
+            </div>
+
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Global Kids Musical Air Plane(Running with music #not flying )  (White)
+              <ul type="circle" id="ul1">
+                <li>
+Kids Musical Air plane(Running with music #not flying )</li>
+
+              </ul>
+              </ul>
+            </div>
+
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Hot Wheels 3 car gift pack  (Multicolor)
+              <ul type="circle" id="ul1">
+                <li>  Material: Plastic
+Non-battery Operated
+Non-rechargeable Batteries
+Age: 3+ Years
+Packs Include Three Hot Wheels Vehicles With Genuine Die-Cast Parts.
+Kids Can Collect Their Favorites And Trade With Friends.
+Each 3-Car Pack Is An Instant Collection!</li>
+              </ul>
+              </ul>
+            </div>
+
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Smartcraft JCB Dig & Dump Construction Toy, Construction Truck Toy for Kids - Yellow  (Yellow, Pack of: 1)
+              <ul type="circle" id="ul1">
+                <li>
+Material: Plastic
+Non-battery Operated
+Non-rechargeable Batteries
+Age: 1+ Years</li>
+              </ul>
+              </ul>
+            </div>
+
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">BIGFUN 37 Key Piano Keybt For Kids  (Black)  (Black)
+              <ul type="circle" id="ul1">
+                <li>
+This is the Latest Offering from TinyTales , TinyTales 37 Keys Piano Keyboard Toy with Recording,Mic & Mobile Charger Power Option Easily Powered on by connecting Android Mobile Phone Charger Or By Usb Cable Connected Other Functions: Song Record And Play Function, Single Finger Chord and Fingered Chord All our toys are designed to help children explore the boundaries of their imaginations and creativity, to make learning fun and help children be all they can be. In our endeavor to Provide the best quality Products to our esteemed Customer's Possible, we periodically make product modifications, therefore actual Product may vary a little than shown in the Images .</li>
+              </ul>
+              </ul>
+            </div>
+
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>
+            <!--2nd  line of images-->
+
+
+
+
+
+
+      </tbody>
+    </table>
+
+
+
+
+
+
+        <!--3rd new line of images-->
+    <li id="list">Mattel Inc</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k08gfbk0/learning-toy/y/r/w/8906054469089-itoys-original-imafk2hykzrrkxbx.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs399</del>Rs259<br>Rs<br>
+                <mark><em> 35% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k4k7f680/stacking-toy/s/h/h/7-stacking-rings-for-toddlers-el-figo-original-imafndzdahrx5hvt.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs399</del><br>Rs189<br>
+                <mark><em> 52% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jwgple80/role-play-toy/f/s/f/kitchen-cook-set-roll-play-toy-kitchen-set-for-your-kids-pink-h-original-imafdzruq5tbq77c.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1300</del><br>Rs699<br>
+                <mark><em>Flat 46% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jfoac280/vehicle-pull-along/n/r/b/happy-engineering-unbreakable-automobile-car-hariom-enterprise-original-imaf438xfszafjhg.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1599</del><br>Rs499<br>
+                <mark><em>Flat 68% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k7m8brk0/paint/n/k/5/poster-color-set-of-15-faber-castell-original-imafptbftcj6zakz.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs210</del><br>Rs149<br>
+                <mark><em>29% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Itoys 4-in-1 magnetic slate with alphabets and numbers  (Multicolor)
+                <ul type="circle" id="ul1">
+                  <li>   Introducing a Multipurpose board with magnetic letter & numbers, symbols, marker pen and a puzzle on box. Children learn basic language in an interesting way with this 4 in 1 board. It allows you to teach child to practice alphabet on one side and to identify letters & numbers by placing them on magnetic side of the board. It contains 42 magnetic pieces including 26 alphabets, 10 numeric digits, and 5 mathematical symbols. Many ways to play Identify alphabets and place them on magnetic board to create different spellings or to create alphabetic sequence. Write alphabets on practice board with marker pen to enhance writing skills. Puzzle on box to spend hours of fun with this complete package of unlimited fun.</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">EL FIGO 7 Stacking Rings For Toddlers  (Multicolor)
+                <ul type="circle" id="ul1">
+                  <li>
+Plastic Material
+Multicolor
+Age: 12+ Months</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">h.b.fashion Kitchen Cook Set Roll Play Toy Kitchen Set For Your Kids (Pink)
+                <ul type="circle" id="ul1">
+                  For Boys and Girls
+Width x Height: 25 cm x 10 cm
+Plastic Material
+Age: 3+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Hariom Enterprise Happy Engineering Unbreakable Automobile Car  (Multicolor, Pack of: 4)
+                <ul type="circle" id="ul1">
+                  <li>
+Material: Plastic
+Non-battery Operated
+Non-rechargeable Batteries
+Age: 1+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Faber-Castell Poster Color Set of 15  (Set of 1, Transparent)
+                <ul type="circle" id="ul1">
+                  <li>
+Number of Paint Shades: 15
+Quantity: 10 ml
+Paint Medium: Poster Color
+Container Type: Bottle
+Set of 1</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+                <!--4th  line of images-->
+
+
+
+
+
+
+
+
+
+                  </tbody>
+      </table>
+
+
+
+
+
+    <!--5th new line of images-->
+
+
+
+
+
+
+
+    <li id="list">MEGA Bloks.</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k1b1bbk0/vehicle-pull-along/a/s/c/metal-plane-pull-back-door-open-stylo-original-imafkwpedywsb3mz.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs999</del><br>Rs749<br>
+                <mark><em>25% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/j110uq80/vehicle-pull-along/m/m/8/wheel-action-drivers-fillmore-disney-cars-original-imaesp2cfkqygwfc.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs799</del><br>Rs599<br>
+                <mark><em>30% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jpcxrww0/remote-control-toy/r/t/x/3d-flashing-led-light-robot-races-car-toy-2-in-1-transform-car-original-imafbh52rp3spkg3.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1350</del><br>Rs399<br>
+                <mark><em>Flat 70% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k3q76a80/vehicle-pull-along/v/p/f/pull-and-go-monster-car-toy-for-kids-and-boys-spincart-original-imafmshfrweqt3hc.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs900<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jvb9tow0/vehicle-pull-along/b/r/b/air-force-awacs-radar-aircraft-plane-die-cast-metal-children-s-original-imafg5rgfhyghtkr.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1500</del><br>Rs1200<br>
+                <mark><em>Flat Rs300 off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Stylo Metal Plane Pull Back & Door Open  (Multicolor)
+                <ul type="circle" id="ul1">
+                  <li>
+1 Metal plane</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Disney Cars Wheel Action Drivers Fillmore  (Multicolor)
+                <ul type="circle" id="ul1">
+                  <li>   Material: Plastic
+Non-battery Operated
+Non-rechargeable Batteries
+Age: 3+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Vnex 3D Flashing Led Light Robot Races Car Toy 2 in 1 Transform Car Toy with 3D Bright Lights and Music  (White)
+                <ul type="circle" id="ul1">
+                  <li>   Material: Plastic
+Battery Operated, 3 Battteries
+Non-rechargeable Batteries
+Age: 3+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">spincart pull and Go Monster Car Toy For Kids And Boys  (Multicolor, Pack of: 2)
+                <ul type="circle" id="ul1">
+                  <li>   Material: Plastic
+Non-battery Operated
+Non-rechargeable Batteries
+Age: 3+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Play King Air Force AWACS Radar Aircraft Plane, Die Cast Metal Children's Toys  (Military, White, Pack of: 1)
+                <ul type="circle" id="ul1">
+                  <li>  Description
+Playking Smart Toys Air Force AWACS Radar Aircraft Plane, Die Cast Metal Children's Toys with Lights and Sounds An airborne early warning and control (AWACS) system is an airborne radar picket system designed to detect aircraft, ships and vehicles at long ranges and perform command and control of the battlespace in an air engagement by directing fighter and attack aircraft strikes. AWACS units are also used to carry out surveillance, including over ground targets. When used at altitude, the radar on the aircraft allows the operators to detect and track targets and distinguish between friendly and hostile aircraft much farther away than a similar ground-based radar. Playking Smart Toys are designed to help children explore the boundaries of their imaginations and creativity, to make learning fun and help child</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+                  <!--6th  line of images-->
+
+
+
+
+
+
+
+
+        </tbody>
+      </table>
+
+
+
+
+      <!--7th  line of images-->
+
+
+
+
+    <li id="list">K'nex.</li>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+
+
+
+
+
+
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k2arbm80/gag-toy/c/v/y/2000rs-100-each-for-fun-pack-of-600-vk-mart-original-imafg6x5gzn7fkcn.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs499</del><br>Rs249<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k48rwcw0/bath-toy/n/h/z/lovely-attractive-colorful-new-baby-born-14-piece-bath-animal-original-imafn6yjamwat6h5.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1199</del><br>Rs619<br>
+                <mark><em>Flat 48% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jx502vk0/toy-sport/s/8/c/1-boxing-exaltedcollection-original-imafhm4auczxzgea.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs999</del><br>Rs251<br>
+                <mark><em>Flat 74% off</em></mark></p>
+                </div
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jp8ngcw0/role-play-toy/f/r/g/bahubali-warrior-set-knights-fancy-dress-kids-cosplay-bow-original-imafbfq4pvexwpzf.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs900<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k7jdg280/vehicle-pull-along/c/t/a/diy-dissembled-assembled-recycle-garbage-sanitation-truck-original-imafprcpuxztpy5z.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1499</del><br>Rs499<br>
+                <mark><em>Flat 66% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Mallexo Fake Money note for kids - Money for kids to play Buy from Mallexo Money Gag Toy
+                <ul type="circle" id="ul1">
+                  <li>
+Learn Foundation Practical Skill of Money Handling. Engage kids in a money operations learning games & activities Soft Laminated Good Quality Notes It includes 80 notes of each denomination. Its a perfect gift for kids. Buy money notes for kids from MALLEXO seller othe seller give you cheap qality of products and less in qty of notes. Mallexo perfect notes for kids</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Learn With Fun Lovely Attractive Colorful New Baby Born 14 piece Bath Animal Shape and 8 Rattle Toy Intelligence Education Develop for kids Child Toddlers Infants Babies Gift Bath Toy  (Multicolor)
+
+                <ul type="circle" id="ul1">
+                  Age Group: 6 Months to 60 Month
+  Skillset: Hand & Eye Co-ordination, Sensory Development, Color & Shape Recognition, Problem Solving
+  Character: Bath and Rattle Toy Set
+  Material: ABS Plastic</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Kiyara Collection Doraemon punching bag kids Boxing kit toy for kids Boxing
+                <ul type="circle" id="ul1">
+                  <li> Material: PVC
+Age: 3+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">PS AAKRITI Bahubali Warrior Set - Knights Fancy Dress Kids Cosplay - Bow Archery & King's Sword
+                <ul type="circle" id="ul1">
+                  <li>   Care Instructions: Wash gently.Do not use hard water. </li>
+                  <li> If  Clothes are wet after cleanin, let them air-dry before your proceed with the next </li>
+                    <li> Iron gently</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">TEMSON DIY Dissembled Assembled Recycle Garbage/ Sanitation Truck Vehicle Set Toy With Serviceman & Cleaning Tools For Kids  (Green)
+                <ul type="circle" id="ul1">
+                  <li> Material: Plastic
+Non-battery Operated
+Age: 3+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+          <!--9th  line of images-->
+    <li id="list">SKIP HOP</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jfk00i80/remote-control-toy/v/h/s/venneno-style-rc-car-with-fully-function-doors-miss-chief-original-imaf3zktp5frgjqg.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k0flmkw0/remote-control-toy/g/u/b/hummer-with-open-door-1-16-5-channel-r-c-miss-chief-original-imafk83zcmza8dcy.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1899</del><br>Rs890<br>
+                <mark><em>Flat 53% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/vehicle-pull-along/v/4/e/a-r-enterprises-baby-toy-vip-texi-car-original-imaejhzb4nuvmq4d.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs499</del><br>Rs179<br>
+                <mark><em>Flat 64% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jumzc7k0/pencil-box/h/m/x/pencil-case-fun-theme-smily-kiddos-original-imafez8564hzbzta.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>Rs1450</del><br>Rs812<br>
+                <mark><em>Flat 44% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/612/612/k0flmkw0/remote-control-toy/m/k/r/big-and-mean-rock-crawling-1-20-scale-modified-off-road-hummer-original-imafk84fmfefhyvt.jpeg?q=70" class="image">
+                <p><br>MRP: <br>
+                  <del>2000Rs</del><br>1000Rs<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Miss & Chief Venneno Style RC Car With Fully Function Doors  (Yellow)
+
+                <ul type="circle" id="ul1">
+                  <li> Material: Plastic
+Battery Operated, 6 Battteries
+Rechargeable Batteries
+Width x Height: 39 cm x 14 cm
+Age: 3+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Miss & Chief Hummer with open door 1:16 5-channel RC
+                <ul type="circle" id="ul1">
+                  <li> Material: Plastic
+Battery Operated, 4 Battteries
+Rechargeable Batteries
+Width x Height: 10 cm x 10 cm
+Age: 3+ Years</li>
+                </ul>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">AR Enterprises BABY TOY VIP TEXI CAR  (Multicolor)
+                <ul type="circle" id="ul1">
+                  <li>
+Material: Plastic
+Non-battery Operated
+Non-rechargeable Batteries
+Age: 3+ Years</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Smily Kiddos 1 sun, icecream,fruit,lolipop Art Artificial Leather Pencil Box  (Set of 1, Pink)
+                <ul type="circle" id="ul1">
+                  <li>   Material: Artificial Leather
+Color: Pink
+1 Pencil Box</li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Miss & Chief Big and Mean Rock Crawling 1:20 Scale Modified Off-Road Hummer RC Car/Monster Truck  (Green)
+                <ul type="circle" id="ul1">
+                  <li>
+Dominate any type of terrain with the all new Miss & Chief off road hummer electric monster car. Featuring a full function transmitter, this awesome hummer monster car allows you to control every single move it makes with ease. But dont think this remote controlled hummer is only good for off reading because this bad boy can haul on and off the road. The body is extremely durable while the huge front and rear bumpers make this rc extremely rugged. Miss & Chief off road 1:20 monster hummer car comes with a rechargeable battery for the truck, a charger and a transmitter. This awesome rc car stand out whether it is night or day. A must have for fans of off reading, get the Miss & Chief off road hummer monster </li>
+                </ul>
+              </div>
+
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+
+</table>
+
+        <li id="list">CHICCO</li>
+
+        <table style="border-spacing: 13;">
+            <thead>
+              <tr>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/kdhphu80/block-construction/c/r/a/excellent-building-blocks-for-kids-ratnas-original-imafudr6xzrqnxaa.jpeg?q=70" class="image">
+                    <p><br>MRP: <br>
+                      <del>Rs660</del><br>Rs567<br>
+                    <mark><em>Flat 14% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/jhi0l8w0/vehicle-pull-along/6/s/f/metal-die-cast-1-56-fast-furious-car-model-3-pc-free-wheel-original-imaf5g8pcjt9dyj2.jpeg?q=70" class="image">
+                    <p><br>MRP: <br>
+                      <del>Rs499</del><br>Rs299<br>
+                    <mark><em>Flat 15% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/k37mg7k0/toy-tricycle/g/x/m/ftry5y-xhaiden-original-imafm6hed9qtywzc.jpeg?q=70" class="image">
+                    <p><br>MRP: <br>
+                      <del>Rs999</del><br>Rs539<br>
+                    <mark><em>Flat 46% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/jxapua80/learning-toy/c/f/2/lcd-writing-board-tablet-veedee-original-imafhsafthxmnbcz.jpeg?q=70" class="image">
+                    <p><br>MRP: <br>
+                      <del>Rs600</del><br>Rs300<br>
+                    <mark><em>Flat 50% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/j77xjm80/remote-control-toy/e/j/x/4ch-r-c-stunt-car-on-double-faced-miss-chief-original-imaexgasssa8tcka.jpeg?q=70" class="image">
+                    <p><br>MRP: <br>
+                      <del>Rs3099</del><br>Rs1099<br>
+                    <mark><em>Flat 64% off</em></mark></p>
+                    </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="text">Ratnas EXCELLENT BUILDING BLOCKS FOR KIDS  (Multicolor)
+                    <ul type="circle" id="ul1">
+                      <li>
+Skillset:Creativity & Imagination
+Non Battery Operated
+Age: 3+ Years</li>
+                    </ul>
+                  </div>
+
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">  DealBindaas Metal Die Cast 1:56 Fast & Furious Car Model 3 Pc | Free Wheel Action | Dinky Car | Toys | Children Gift Collection | Least Price  (Red, White, Blue, Pack of: 3)
+                    <ul type="circle" id="ul1">
+                      <li>  Material: Metal
+Non-battery Operated
+Non-rechargeable Batteries
+Age: 2+ Years
+</li>
+                    </ul>
+                  </div>
+
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">Fiddlerz 360 Degree Rotating Spot Stunt Tricycle Motorcycle , Bump & Go Toy with Flashing Light & Sound  (Multicolor)
+                    <ul type="circle" id="ul1">
+                      <li>
+Material: Plastic
+Battery Operated, 3 Battteries
+Age: 2+ Years</li>
+                    </ul>
+                  </div>
+
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">VeeDee LCD Writing Board Tablet  (Multicolor)
+                    <ul type="circle" id="ul1">
+                      <li>
+PVC Material
+Lithium Battery
+Non Rechargeable
+Width x Height: 155 mm x 230 mm</li>
+                    </ul>
+                  </div>
+
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">Miss & Chief 6 in 1 Double sided Stunt Car with Rechargeable Battery and Charger Toy for Kids and Adults  (Red)
+                    <ul type="circle" id="ul1">
+                      <li>
+Material: Plastic
+Battery Operated, 1 Battteries
+Rechargeable Batteries
+Width x Height: 29 cm x 19 cm
+Age: 3+ Years</li>                    </ul>
+                  </div>
+
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+
+
+
+
+
+
+        </tbody>
+      </table>
+  </ol>
+</div>
+<br><br>
+
+
+
+    <!--working of footer-->
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>
+</body>
+</html>

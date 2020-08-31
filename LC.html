@@ -1,0 +1,1387 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laptop & Computer</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 200px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;} 
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Laptop & Computer</h1>
+<div class="cont">
+    <br><img src="https://www.who.int/images/default-source/health-topics/coronavirus/risk-communications/general-public/protect-yourself/blue-3.tmb-1920v.png?sfvrsn=b1ef6d45_5" alt="ad" width="100%" height="600"><br>
+  <ol>
+    <li id="list">Apple</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/ysRigNyavF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 5;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/jsnjbm80/computer/j/8/c/apple-na-thin-and-light-laptop-original-imafe6f78hur4jbh.jpeg?q=70" class="image">
+              <p>MRP: <br><del>Rs 84900</del><br>Rs 72990<br>
+              <mark><em>Flat 14% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/k7xnukw0/computer/z/q/y/apple-na-laptop-original-imafq2efkbb4bwc8.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 199900</del><br>Rs 189990<br>
+                <mark><em>Flat 4% off</em></mark>
+          </p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/kamtsi80/computer/k/a/v/apple-na-thin-and-light-laptop-original-imafs5nmg3kxcqnz.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 174900</del><br>Rs 167904<br>
+                <mark><em>Flat 4% off</em></mark>
+                </p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/k7xnukw0/computer/z/q/y/apple-na-laptop-original-imafq2efkbb4bwc8.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 239900</del><br>Rs 224900<br>
+                <mark><em>Flat 6% off</em></mark></p> 
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/kamtsi80/computer/g/g/f/apple-na-thin-and-light-laptop-original-imafs5nmfuxmhnhh.jpeg?q=70" class="image">
+              <p>MRP: <br><del>Rs 142990</del><br>Rs 128691<br>
+              <mark><em>Flat 10% off</em></mark></p>  
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra) MQD32HN/A A1466  (13.3 inch, Silver, 1.35 kg)
+              <ul type="circle" id="ul1">
+                <li>Stylish & Portable Thin and Light Laptop</li>
+                <li>13.3 inch HD+ LED Backlit Display</li>
+                <li>Light Laptop without Optical Disk Drive</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple MacBook Pro Core i7 9th Gen - (16 GB/512 GB SSD/Mac OS Catalina/4 GB Graphics) MVVJ2HN/A  (16 inch, Space Grey, 2 kg)
+              <ul type="circle" id="ul1">
+                <li>Light Laptop without Optical Disk Drive</li>
+                <li>16 inch Quad HD LED Backlit IPS Retina Display (500 nits Brightness, Wide Color (P3), True Tone Technology)</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple MacBook Pro with Touch Bar Core i5 10th Gen - (16 GB/512 GB SSD/Mac OS Catalina) MWP42HN/A  (13 inch, Space Grey, 1.4 kg)
+              <ul type="circle" id="ul1">
+                <li>Stylish & Portable Thin and Light Laptop</li>
+                <li>13 inch Full HD+ LED Backlit IPS Retina Display (227 PPI, 500 nits Brightness, Wide Color (P3), True Tone Technology)</li>
+                <li>Light Laptop without Optical Disk Drive</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple MacBook Pro Core i9 9th Gen - (16 GB/1 TB SSD/Mac OS Catalina/4 GB Graphics) MVVK2HN/A  (16 inch, Space Grey, 2 kg)
+              <ul type="circle" id="ul1">
+                <li>Light Laptop without Optical Disk Drive</li>
+                <li>16 inch Quad HD LED Backlit IPS Retina Display (500 nits Brightness, Wide Color (P3), True Tone Technology)</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple MacBook Pro with Touch Bar Core i5 8th Gen - (8 GB/512 GB SSD/Mac OS Catalina) MXK52HN/A  (13 inch, Space Grey, 1.4 kg)
+              <ul type="circle" id="ul1">
+                <li>Stylish & Portable Thin and Light Laptop</li>
+                <li>13 inch Full HD+ LED Backlit IPS Retina Display (227 PPI, 500 nits Brightness, Wide Color (P3), True Tone Technology)</li>
+                <li>Light Laptop without Optical Disk Drive</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/allinone-desktop/9/r/n/apple-i-mac-original-imaejgxryyxmghes.jpeg?q=70" class="image">
+              <p>MRP: <br><del>Rs 107900</del><br>Rs 95990<br>
+              <mark><em>Flat 11% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/allinone-desktop/m/x/g/apple-imac-original-imaejxpjgm4xrtym.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 188900</del><br>Rs 179990<br>
+                <mark><em>Flat 4% off</em></mark>
+          </p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/j4n1x8w0/allinone-desktop/z/e/u/apple-mned2hn-a-original-imaevdwvynk7vmdc.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 190400</del><br>Rs 189306<br>
+                <mark><em>Flat 1% off</em></mark>
+                </p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/j1pbc7k0/allinone-desktop/p/v/z/apple-mk142hn-a-original-imaet84zf9xrb2bh.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 91900</del><br>Rs 86386<br>
+                <mark><em>Flat 6% off</em></mark></p> 
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/allinone-desktop/d/n/q/apple-imac-21-5-inch-4k-retina-core-i5-3-1ghz-8gb-1tb-intel-iris-original-imaeh5h77usrhhmg.jpeg?q=70" class="image">
+              <p>MRP: <br><del>Rs 115000</del><br>Rs 112700<br>
+              <mark><em>Flat 2% off</em></mark></p>  
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Apple Core i5 (5th Gen) (8 GB DDR3/1 TB/Mac OS X Lion/1 GB/21.5 Inch Screen)  (Silver)
+              <ul type="circle" id="ul1">
+                <li>Mac OS X Lion</li>
+                <li>Intel Core i5 (5th Gen)</li>
+                <li>HDD Capacity 1 TB</li>
+                <li>RAM 8 GB DDR3</li>
+                <li>21.5 inch Display</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple Core i5 (6th Gen) (8 GB DDR3/2 TB/Mac OS X Lion/2 GB/27 Inch Screen)  (Silver)
+              <ul type="circle" id="ul1">
+                <li>Mac OS X Lion</li>
+                <li>Intel Core i5 (6th Gen)</li>
+                <li>HDD Capacity 2 TB</li>
+                <li>RAM 8 GB DDR3</li>
+                <li>27 inch Display</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple Core i5 (7th Gen) (8 GB DDR4/1 TB/Mac OS X Sierra/8 GB/27 Inch Screen)  (White, 516 mm x 650 mm x 203 mm, 9.44 kg)
+              <ul type="circle" id="ul1">
+                <li>Mac OS X Sierra</li>
+                <li>Intel Core i5 (7th Gen)</li>
+                <li>HDD Capacity 1 TB</li>
+                <li>RAM 8 GB DDR4</li>
+                <li>27 inch Display</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple Core i5 (5th Gen) (8 GB DDR3/1 TB/Mac OS X Sierra/21.5 Inch Screen)  (White, 450 mm x 528 mm x 175 mm, 5.68 kg)
+              <ul type="circle" id="ul1">
+                <li>Mac OS X Sierra</li>
+                <li>Intel Core i5 (5th Gen)</li>
+                <li>HDD Capacity 1 TB</li>
+                <li>RAM 8 GB DDR3</li>
+                <li>21.5 inch Display</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple Core i5 (8 GB DDR3/1 TB/Mac OS X Mavericks/512 MB/21.5 Inch Screen)  (Silver, 45 cm x 52.8 cm x 17.5 cm, 5.68 kg)
+              <ul type="circle" id="ul1">
+                <li>Mac OS X Mavericks</li>
+                <li>Intel Core i5</li>
+                <li>HDD Capacity 1 TB</li>
+                <li>RAM 8 GB DDR3</li>
+                <li>21.5 inch Display</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <li id="list">Dell</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/VNvRJRYYM4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 5;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kb5eikw0/computer/y/e/9/dell-na-gaming-laptop-original-imafsjzhg7zyzbyz.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 89210</del><br>Rs 84990<br>
+                <mark><em>Flat 4% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kcc9q4w0/computer/w/h/k/dell-original-imafthm5dfhccawe.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 74,802</del><br>Rs 73990<br>
+                  <mark><em>Flat 1% off</em></mark>
+            </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jm0wscw0/computer/j/t/6/dell-na-gaming-laptop-blk-b568103win9-original-imaf9y7enqjsfmc4.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 167003</del><br>Rs 138945<br>
+                  <mark><em>Flat 16% off</em></mark>
+                  </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jgqv8280/computer/f/v/p/dell-na-gaming-laptop-original-imaf4x6v7fnqgchh.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 90495</del><br>Rs 74735<br>
+                  <mark><em>Flat 17% off</em></mark></p> 
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k19lvgw0/computer/v/d/y/dell-na-gaming-laptop-original-imafktetgs57qs7x.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 104776</del><br>Rs 93490<br>
+                <mark><em>Flat 10% off</em></mark></p>  
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Dell G3 Core i7 9th Gen - (8 GB/1 TB HDD/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA Geforce GTX 1650) G3 3590 Gaming Laptop  (15.6 inch, Eclipse Black, 2.5 kg, With MS Office)
+                <ul type="circle" id="ul1">
+                    <li>NVIDIA Geforce GTX 1650 for Desktop Level Performance</li>
+                    <li>15.6 inch Full HD LED Backlit Anti-glare IPS Display</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                    <li>Preloaded MS Office Home and Student 2016</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dell G3 Core i5 10th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA Geforce GTX 1650) Inspiron 15-3500 Gaming Laptop  (15.6 inch, Eclipse Black, 2.3 kg)
+                <ul type="circle" id="ul1">
+                    <li>NVIDIA Geforce GTX 1650 for Desktop Level Performance</li>
+                    <li>15.6 inch Full HD LED Backlit Anti-glare IPS Display</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dell G7 15 7000 Series Core i9 8th Gen - (16 GB/1 TB HDD/128 GB SSD/Windows 10 Home/6 GB Graphics/NVIDIA Geforce GTX 1060)
+                <ul type="circle" id="ul1">
+                    <li>NVIDIA Geforce GTX 1060 for Desktop Level Performance</li>
+                    <li>15.6 inch Full HD LED Backlit Anti-glare IPS Display</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                    <li>Preloaded MS Office Home and Student 2016</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dell Inspiron 15 7000 Core i7 7th Gen - (8 GB/1 TB HDD/Windows 10 Home/4 GB Graphics/NVIDIA Geforce GTX 1050Ti) 7567 Gaming Laptop  (15.6 inch, Matt Black, 2.62 kg, With MS Office)
+                <ul type="circle" id="ul1">
+                    <li>NVIDIA Geforce GTX 1050Ti for Desktop Level Performance</li>
+                    <li>15.6 inch Full HD LED Backlit Anti-glare Display</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                    <li>Preloaded MS Office Home and Student 2016</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dell Inspiron 3000 Core i7 9th Gen - (8 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA Geforce GTX 1650) G3 3590 Gaming Laptop  (15.6 inch, White, 2.5 kg, With MS Office)
+                <ul type="circle" id="ul1">
+                    <li>NVIDIA Geforce GTX 1650 for Desktop Level Performance</li>
+                    <li>15.6 inch Full HD LED Backlit Anti-glare IPS Display</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                    <li>Preloaded MS Office Home and Student 2016</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jmqmpow0/allinone-desktop/f/e/r/dell-5720-original-imaf9jmyhmzzwt5f.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 250000</del><br>Rs 245000<br>
+                <mark><em>Flat 2% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jeykeq80/allinone-desktop/t/p/y/dell-7775-original-imaf3j82s3shzgbb.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 108990</del><br>Rs 104634<br>
+                  <mark><em>Flat 4% off</em></mark>
+            </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/j13vqfk0/allinone-desktop/e/e/n/dell-3459-original-imaesrc2ftsnuggt.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 54570</del><br>Rs 49113<br>
+                  <mark><em>Flat 10% off</em></mark>
+                  </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jeykeq80/allinone-desktop/j/a/q/dell-3064-original-imaf3j8fdczdfyva.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 44169</del><br>Rs 32390<br>
+                  <mark><em>Flat 26% off</em></mark></p> 
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jeykeq80/allinone-desktop/k/y/v/dell-3052-original-imaf3j7zdz2asyzj.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 28668</del><br>Rs 28094<br>
+                <mark><em>Flat 2% off</em></mark></p>  
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Dell Core i7 (16 GB DDR4/1 TB/Windows 10 Pro/4 GB/27 Inch Screen)  (Silver)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Pro</li>
+                    <li>Intel Core i7</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 16 GB DDR4</li>
+                    <li>27 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dell Ryzen 5 (8 GB DDR4/1 TB/Windows 10 Home/4 GB GDDR5/27 Inch Screen)  (Grey, 394.1 mm x 613.8 mm x 53 mm, 10.1 kg)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Home</li>
+                    <li>AMD Ryzen 5</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 8 GB DDR4</li>
+                    <li>27 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dell Core i3 (6th Gen) (4 GB DDR3/1 TB/Windows 10 Home/23.8 Inch Screen)  (Black)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Home</li>
+                    <li>Intel Core i3 (6th Gen)</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 4 GB DDR3</li>
+                    <li>23.8 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dell Core i3 (7th Gen) (4 GB DDR4/1 TB/Windows 10 Home/19.5 Inch Screen)  (Black, 317.64 mm x 480.52 mm x 56.7 mm)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Home</li>
+                    <li>Intel Core i3 (7th Gen)</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 4 GB DDR4</li>
+                    <li>19.5 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dell Pentium Quad Core (4 GB DDR3/1 TB/Ubuntu/19.5 Inch Screen)  (Black, 312.6 mm x 489.6 mm x 25.8 mm)
+                <ul type="circle" id="ul1">
+                    <li>Ubuntu</li>
+                    <li>Intel Pentium Quad Core</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 4 GB DDR3</li>
+                    <li>19.5 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">HP</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/Zy0cZ-7_ATU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 5;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kbqu4cw0/computer/t/d/f/hp-original-imaftyzafphshjge.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 53751</del><br>Rs 49990<br>
+                <mark><em>Flat 6% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k5bcscw0/computer/f/u/j/hp-na-laptop-original-imaferegbpwq9bhc.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 36740</del><br>Rs 35740<br>
+                  <mark><em>Flat 2% off</em></mark>
+            </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kcm9t3k0/computer/q/x/r/hp-na-gaming-laptop-original-imaftpesbvfxgw9t.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 61934</del><br>Rs 59990<br>
+                  <mark><em>Flat 3% off</em></mark>
+                  </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/ka1e6q80/computer/g/y/n/hp-na-laptop-original-imafrpcdrze7fxjh.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 54671</del><br>Rs 52990<br>
+                  <mark><em>Flat 3% off</em></mark></p> 
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k5fn3ww0/computer/c/n/f/hp-na-original-imafz4duhht4zbnx.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 31555</del><br>Rs 25990<br>
+                <mark><em>Flat 17% off</em></mark></p>  
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">HP 15s Core i5 10th Gen - (8 GB/512 GB SSD/Windows 10 Home) 15s-du2078TU Thin and Light Laptop  (15.6 inch, Jet Black, 1.75 kg, With MS Office)
+                <ul type="circle" id="ul1">
+                    <li>Stylish & Portable Thin and Light Laptop</li>
+                    <li>15.6 inch HD WLED Backlit SVA BrightView Display (220 nits Brightness, 45% NTSC)</li>
+                    <li>Light Laptop without Optical Disk Drive </li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">HP 15q Core i3 8th Gen - (8 GB/1 TB HDD/Windows 10 Home) 15q-ds0059TU Thin and Light Laptop  (15.6 inch, Black, 1.77 kg, With MS Office)
+                <ul type="circle" id="ul1">
+                    <li>Stylish & Portable Thin and Light Laptop</li>
+                    <li>15.6 inch Full HD WLED Backlit Anti-glare SVA BrightView Display</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">HP Pavilion Gaming Ryzen 5 Quad Core - (8 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA Geforce GTX 1650) 15-ec0104AX Gaming Laptop  (15.6 inch, Black, 1.98 kg)
+                <ul type="circle" id="ul1">
+                    <li>NVIDIA Geforce GTX 1650 for Desktop Level Performance</li>
+                    <li>15.6 inch Full HD LED Backlit Display</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">HP 14s Core i5 10th Gen - (8 GB/512 GB SSD/Windows 10 Home) 14s-cs3010TU Laptop  (14 inch, Natural Silver, 1.47 kg, With MS Office)
+                <ul type="circle" id="ul1">
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                    <li>Preloaded MS Office Home and Student 2016</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>14 inch HD WLED Backlit SVA Anti-glare Display (220 nits Brightness, 45% NTSC)</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">HP 15 Ryzen 3 Dual Core - (4 GB/1 TB HDD/Windows 10 Home) 15-db1069AU Laptop  (15.6 inch, Jet Black, 2.04 kg, With MS Office)
+                <ul type="circle" id="ul1">
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                    <li>Preloaded MS Office Home and Student 2016</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>15.6 inch HD WLED Backlit Brightview Display (220 nits Brightness, 101 ppi, 45% Color Gamut)</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jubjte80/allinone-desktop/f/8/k/hp-24f0043in-original-imaffgxr4srzbyda.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 36611</del><br>Rs 34089<br>
+                <mark><em>Flat 6% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k6tniq80/allinone-desktop/3/p/g/hp-22-c1063in-original-imafp6zezv3qfa9g.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 44529 </del><br>Rs 42990<br>
+                  <mark><em>Flat 3% off</em></mark>
+            </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jubjte80/allinone-desktop/g/m/r/hp-all-in-one-pc-20-c419in-original-imaffgxrhpcfbeff.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 30990</del><br>Rs 30060<br>
+                  <mark><em>Flat 3% off</em></mark>
+                  </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/allinone-desktop/u/z/u/hp-20-c103in-original-imaerqkth9navhzs.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 27,072</del><br>Rs 26530<br>
+                  <mark><em>Flat 2% off</em></mark></p> 
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kdhphu80/allinone-desktop/m/q/g/hp-all-in-one-20-c426in-intel-celeron-dual-core-j4005-windows-10-original-imafud3f6jrhcgg9.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 33263</del><br>Rs 32,263<br>
+                <mark><em>Flat 3% off</em></mark></p>  
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">HP Pentium Quad Core (4 GB DDR4/1 TB/Windows 10 Home/21.5 Inch Screen)  (Snow White, 390.7 mm x 490.3 mm x 204.1 mm, 5.39 kg)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Home</li>
+                    <li>Intel Pentium Quad Core</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 4 GB DDR4</li>
+                    <li>21.5 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">HP Ryzen 3 Dual Core (8 GB DDR4/1 TB/Windows 10 Home/21.5 Inch Screen)  (Jet Black, 390.7 mm x 490.3 mm x 204.1 mm, 5.39 kg)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Home</li>
+                    <li>AMD Ryzen 3 Dual Core</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 8 GB DDR4</li>
+                    <li>21.5 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">HP Celeron Dual Core (4 GB DDR4/1 TB/Windows 10 Home/19.5 Inch Screen)  (Black)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Home</li>
+                    <li>Intel Celeron Dual Core</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 4 GB DDR4</li>
+                    <li>19.5 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">HP Celeron Dual Core (4 GB DDR3/500 GB/Windows 10 Home/19.45 Inch Screen)  (Black)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Home</li>
+                    <li>Intel Celeron Dual Core</li>
+                    <li>HDD Capacity 500 GB</li>
+                    <li>RAM 4 GB DDR3</li>
+                    <li>19.45 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">HP Celeron Dual Core (4 GB DDR4/1 TB/Windows 10 Home/19.5 Inch Screen)  (Jet Black)
+                <ul type="circle" id="ul1">
+                    <li>Windows 10 Home</li>
+                    <li>Intel Celeron Dual Core</li>
+                    <li>HDD Capacity 1 TB</li>
+                    <li>RAM 4 GB DDR4</li>
+                    <li>19.5 inch Display</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Asus</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/6ZJcY36F4Sw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe><br>
+    <table style="border-spacing: 5;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kao98cw0/computer/g/9/u/asus-na-laptop-original-imafs6v8wzctgeau.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 34091</del><br>Rs 32990<br>
+                <mark><em>Flat 3% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k91o6fk0/computer/d/x/z/asus-original-imafqxfeecxfeeff.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 66990</del><br>Rs 52990<br>
+                  <mark><em>Flat 20% off</em></mark>
+            </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kao98cw0/computer/e/f/f/asus-na-laptop-original-imafs6v7zyrggpmc.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 40880</del><br>Rs 39990<br>
+                  <mark><em>Flat 2% off</em></mark>
+                  </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k91o6fk0/computer/m/h/g/asus-original-imafqxfepbjgxjt4.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 38111</del><br>Rs 35,990<br>
+                  <mark><em>Flat 5% off</em></mark></p> 
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k91o6fk0/computer/k/8/h/asus-original-imafqxfewfakvj64.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 66990</del><br>Rs 52990<br>
+                <mark><em>Flat 20% off</em></mark></p>  
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Asus Core i3 10th Gen - (4 GB/1 TB HDD/Windows 10 Home) X509JA-EJ485T Laptop  (15.6 inch, Slate Grey, 1.9 kg))
+                <ul type="circle" id="ul1">
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>15.6 inch Full HD LED Backlit Anti-glare Display (200 nits Brightness, 45% NTSC, 82.5% Screen-to-body Ratio)</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Asus VivoBook 14 Core i5 10th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home) X412FA-EK512T Thin and Light Laptop  (14 inch, Slate Grey, 1.50 kg)
+                <ul type="circle" id="ul1">
+                    <li>Stylish & Portable Thin and Light Laptop</li>
+                    <li>14 inch Full HD LED Backlit Anti-glare Display (200 nits Brightness, 16:9 Aspect Ratio, 45% NTSC, 87% Screen-to-body Ratio)</li>
+                    <li>Finger Print Sensor for Faster System Access</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Asus Core i3 10th Gen - (4 GB/1 TB HDD/256 GB SSD/Windows 10 Home) X509JA-EJ654T Laptop  (15.6 inch, Transparent Silver, 1.9 kg)
+                <ul type="circle" id="ul1">
+                    <li>Pre-installed Genuine Windows 10 OS</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    <li>15.6 inch Full HD LED Backlit Anti-glare Display (200 nits Brightness, 45% NTSC, 82.5% Screen-to-body Ratio)</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Asus VivoBook 14 Core i3 10th Gen - (4 GB/256 GB SSD/Windows 10 Home) X412FA-EK363T Thin and Light Laptop  (14 inch, Peacock Blue, 1.50 kg)
+                <ul type="circle" id="ul1">
+                    <li>Stylish & Portable Thin and Light Laptop</li>
+                    <li>14 inch Full HD LED Backlit Anti-glare Display (200 nits Brightness, 16:9 Aspect Ratio, 45% NTSC, 87% Screen-to-body Ratio)</li>
+                    <li>Finger Print Sensor for Faster System Access</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                    
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Asus VivoBook 14 Core i5 10th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home) X412FA-EK511T Thin and Light Laptop  (14 inch, Transparent Silver, 1.50 kg)
+                <ul type="circle" id="ul1">
+                    <li>Stylish & Portable Thin and Light Laptop</li>
+                    <li>14 inch Full HD LED Backlit Anti-glare Display (200 nits Brightness, 16:9 Aspect Ratio, 45% NTSC, 87% Screen-to-body Ratio)</li>
+                    <li>Finger Print Sensor for Faster System Access</li>
+                    <li>Light Laptop without Optical Disk Drive</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kazor680/monitor/h/w/4/vp228h-vp228h-asus-original-imafsg66zhzjjyzt.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 11629</del><br>Rs 9299<br>
+                <mark><em>Flat 20% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kazor680/monitor/5/v/v/vz249-vz249-asus-original-imafsg66pmkwa9jk.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 16275</del><br>Rs 13699<br>
+                  <mark><em>Flat 15% off</em></mark>
+            </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jzhb24w0/monitor/h/k/a/g-sync-compatible-vg278qr-90lm03p3-b01320-asus-original-imafj5gghzxcnh5z.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 31500</del><br>Rs 27499<br>
+                  <mark><em>Flat 12% off</em></mark>
+                  </p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kdga1zk0/monitor/s/a/d/va24ehe-90lm0560-b01110-asus-original-imafucqwn3zfff4x.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 16500</del><br>Rs 12999<br>
+                  <mark><em>Flat 21% off</em></mark></p> 
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kb5eikw0/monitor/k/g/2/rog-strix-xg32vq-90lm03s0-b01120-asus-original-imafsjza62emygtn.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 47000</del><br>Rs 42300<br>
+                <mark><em>Flat 10% off</em></mark></p>  
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Asus 21.5 inch Full HD TN Panel Gaming Monitor (VP228H)
+                <ul type="circle" id="ul1">
+                    <li>Panel Type: TN Panel</li>
+                    <li>Screen Resolution Type: Full HD</li>
+                    <li>HDMI</li>
+                    <li>DVI | Inbuilt Speaker</li>
+                    <li>Brightness: 250 nits</li>
+                    <li>Response Time: 1 ms | Refresh Rate: 60 Hz</li>
+                    <li>HDMI Ports - 1</li>
+                    
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Asus 23.8 inch Full HD LED Backlit IPS Panel Monitor (VZ249)  (Frameless)
+                <ul type="circle" id="ul1">
+                    <li>Panel Type: IPS Panel</li>
+                    <li>Screen Resolution Type: Full HD</li>
+                    <li>HDMI</li>
+                    <li>DVI | Inbuilt Speaker</li>
+                    <li>Brightness: 250 nits</li>
+                    <li>Response Time: 5 ms | Refresh Rate: 60 Hz</li>
+                    <li>HDMI Ports - 1</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Asus 27 inch Full HD LED Backlit TN Panel Gaming Monitor (VG278QR)  (AMD Free Sync, Nvidia G-Sync)
+                <ul type="circle" id="ul1">
+                    <li>Panel Type: TN Panel</li>
+                    <li>Screen Resolution Type: Full HD</li>
+                    <li>VGA Support | HDMI</li>
+                    <li>DVI | Inbuilt Speaker</li>
+                    <li>Brightness: 400 nits</li>
+                    <li>Response Time: 0.5 ms | Refresh Rate: 165 Hz</li>
+                    <li>HDMI Ports - 1</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Asus 23.8 inch Full HD LED Backlit IPS Panel Gaming Monitor (VA24EHE)
+                <ul type="circle" id="ul1">
+                    <li>Panel Type: IPS Panel</li>
+                    <li>Screen Resolution Type: Full HD</li>
+                    <li>Brightness: 250 nits</li>
+                    <li>Response Time: 5 ms</li>
+                    <li>HDMI Ports - 1</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Asus 31.5 inch Curved WQHD LED Backlit VA Panel Gaming Monitor (ROG Strix XG32VQ)  (AMD Free Sync)
+                <ul type="circle" id="ul1">
+                    <li>Panel Type: VA Panel</li>
+                    <li>Screen Resolution Type: WQHD</li>
+                    <li>VGA Support | HDMI</li>
+                    <li>Brightness: 300 nits</li>
+                    <li>Response Time: 4 ms | Refresh Rate: 144 Hz</li>
+                    <li>HDMI Ports - 1</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </ol>
+</div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

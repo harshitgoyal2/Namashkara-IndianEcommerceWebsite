@@ -1,0 +1,2150 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informal</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 500px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;}
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Men's Clothings</h1>
+<h2 id="M2">Informal Wearings</h2><br>
+<div class="cont">
+  <ol>
+
+
+
+
+<!-- working of images and content for them-->
+
+
+
+<!-- 1st line of images-->
+    <li id="list">Levis</li>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81oz99FLt0L._UL1500_.jpg" class="image">
+              <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                <del>Rs700</del><br>Rs500<br>
+              <mark><em> Rs200 off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://lsco.scene7.com/is/image/lsco/levis/clothing/177830137-alt1-pdp.jpg?$regular_mobile$" class="image">
+              <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs900</del><br>Rs700<br>
+              <mark><em>Flat Rs200 off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://medias-cache.placedestendances.com/en/levis-round-neck-cotton-t-shirt-white/image/66/1/2430661.png?func=fit&bg_color=f7f7f7&w=533&h=730" class="image">
+              <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs1000</del><br>Rs800<br>
+              <mark><em> Rs200 off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://slimages.macysassets.com/is/image/MCY/products/5/optimized/9850215_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$" class="image">
+              <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs799</del><br>Rs699<br>
+              <mark><em>Flat Rs100 off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/91v9D1sNj5L._AC_UL1500_.jpg" class="image">
+              <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs1200</del><br>Rs999<br>
+              <mark><em>Flat Rs300 off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text"> Red color Men's Slim Fit T-shirt
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Black Shade Men's Slim T.shirt .
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> White Shade Men's Slim Fit T-shirt.
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Grey Shade Slim Fit T-shirt
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Round neck white colour Slim Fit T-Shirt
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>
+            <!--2nd  line of images-->
+
+
+
+
+
+
+
+
+            <div class="contanier1">
+              <img src="https://media.titus.de/media/image/20/3b/aa/levis-skate-jeans-501-original-sage-vorderansicht-0227134_600x600.jpg" class="image">
+              <p id="p1"><b>Type of cloth:Jean</b><br>MRP: <br>
+                <del>Rs2000</del><br>RS1800<br>
+              <mark><em>Flat 10% off</em></mark></p>
+
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://sslimages.shoppersstop.com/B8AC9759D45547D9AEF177F0DE13B7C8/img/FECF35B6BEE7429AA0B97CB77D866D3D/205074232_9465_FECF35B6BEE7429AA0B97CB77D866D3D.jpg" class="image">
+              <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs2000</del><br>Rs1800<br>
+              <mark><em>Flat 10% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://lsco.scene7.com/is/image/lsco/levis/clothing/396360000-front-pdp.jpg?$grid_desktop_full$" class="image">
+              <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                <del>Rs4000</del><br>RS3800<br>
+              <mark><em> 200Rs off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://lsco.scene7.com/is/image/lsco/levis/clothing/798300011-alt3-pdp.jpg?$regular_mobile$" class="image">
+              <p id="p1"><b>Type of cloth:jean</b><br>MRP: <br>
+                <del>RS6000</del><br>RS4500<br>
+              <mark><em>Flat 25% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier1">
+              <img src="https://lsco.scene7.com/is/image/lsco/Levis/clothing/045111150-front-pdp.jpg?$regular_mobile$" class="image">
+              <p id="p1"><b>Type of cloth:jean</b><br>MRP: <br>
+                <del>7000Rs</del><br>6300Rs<br>
+              <mark><em>Flat 10% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text"> Men's Slim Fit jean blue colour
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Black and white stripe checq shirt
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> Blue Jean
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Cotton Mazanta colour Bow Men's Slim Fit Formal Two Piece  Suit
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text" > slim fit Blue Jean
+              <ul type="circle" id="ul1">
+                <li>Care Instructions: Wash gentely with warm water</li>
+                <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                <li>Package includes one Shit.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+        <!--3rd new line of images-->
+    <li id="list">Van Huesan</li>
+    <br> <iframe width="100%" height="400" src="https://www.youtube.com/embed/2104YUcrkgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://assets.abfrlcdn.com/img/app/product/2/281146-1172108-large.jpg" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs1999</del>999<br>Rs<br>
+                <mark><em> Rs200  off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://vanheusenindia.imgix.net/img/app/product/2/285739-1207112.jpg?auto=format&wa=91" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs999</del><br>Rs899<br>
+                <mark><em> Rs100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://assets.abfrlcdn.com/img/app/product/2/219132-722134-large.jpg" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs1300</del><br>Rs1170<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://vanheusenindia.imgix.net/img/app/product/2/281178-1172270.jpg" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs800</del><br>Rs500<br>
+                <mark><em>Flat Rs300 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://vanheusenindia.imgix.net/img/app/product/2/281187-1172311.jpg?auto=format&wa=91" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs900<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Dark black  Men's Slim Fit T-Shirt
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Grey colour  Men's Slim Fit T-shirt
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Grey and blue Shade Men's Slim Fit T-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dark Red colour  Men's Slim Fit T-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dark black colour  Men's Slim Fit T-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+
+                <!--4th  line of images-->
+
+
+
+
+
+
+
+
+
+            <th>
+              <div class="contanier">
+                <img src="https://vanheusenindia.imgix.net/img/app/product/3/355695-1774878.jpg?auto=format&wa=91" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs800</del><br>Rs720<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://vanheusenindia.imgix.net/img/app/product/2/232525-813347.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs600</del><br>Rs500<br>
+                <mark><em>Flat RS100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://vanheusenindia.imgix.net/img/app/product/2/259010-996844.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs800</del><br>Rs700<br>
+                <mark><em>Flat Rs100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://vanheusenindia.imgix.net/img/app/product/3/335585-1561839.jpg?auto=format&wa=91" class="image">
+                <p id="p1"><b>Type of cloth:jean</b><br>MRP: <br>
+                  <del>5000Rs</del><br>4800Rs<br>
+                <mark><em> 200Rs off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://vanheusenindia.imgix.net/img/app/product/2/295120-1281315.jpg?auto=format&wa=91" class="image">
+                <p id="p1"><b>Type of cloth:Jean</b><br>MRP: <br>
+                  <del>5000Rs</del><br>4800Rs<br>
+                <mark><em> 200Rs off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Red  Men's Slim Fit Piece T-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Grey Men's Slim Fit T-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dark black  Men's Slim Fit Formal Two Piece  Suit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Men's Slim Fit Blue Jean.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade Jean size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Jean.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dark blue Bow Men's Slim Fit Jean.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade Jean size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Jean.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+    <!--5th new line of images-->
+
+
+
+
+
+
+
+    <li id="list">Allen Solly</li>
+    <br><iframe width="100%" height="400" src="https://www.youtube.com/embed/_G9Ed_wtaDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://allensolly.imgix.net/img/app/product/2/254840-960884.jpg" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs1500</del><br>Rs1300<br>
+                <mark><em>Flat Rs200 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://allensolly.imgix.net/img/app/product/1/198497-592393-large.jpg" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs1400</del><br>Rs1300<br>
+                <mark><em>Flat Rs100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://allensolly.imgix.net/img/app/product/3/383061-1947875.jpg" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs800<br>
+                <mark><em>Flat 20% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://allensolly.imgix.net/img/app/product/4/470866-3344644.jpg" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs900<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://allensolly.imgix.net/img/app/product/4/478261-3452217.jpg" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs1500</del><br>Rs1200<br>
+                <mark><em>Flat Rs300 off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Sky Blue Men's Slim Fit Men T-Shit.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dark Black Men's Slim Fit T-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">White Men's Slim Fit T-Shit.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dark Green Men's Slim Fit T-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Blue and Red Strip Men's Slim Fit T-Shirt
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+                  <!--6th  line of images-->
+
+
+
+
+
+
+
+
+
+              <div class="contanier1">
+                <img src="https://allensolly.imgix.net/img/app/product/3/319208-1488171.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Jean</b><br>MRP: <br>
+                  <del>7000Rs</del><br>3900Rs<br>
+                <mark><em>Flat 30% off</em></mark></p>
+
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://assets.abfrlcdn.com/img/app/product/2/293584-1267756-large.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Jean</b><br>MRP: <br>
+                  <del>7000Rs</del><br>3900Rs<br>
+                <mark><em>Flat 30% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://assets.abfrlcdn.com/img/app/product/2/293581-1267735-large.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Jean</b><br>MRP: <br>
+                  <del>5000Rs</del><br>4500Rs<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7812353/2018/12/3/4096e075-2fa0-4d41-8e7d-e2c9690e87d71543831237161-Allen-Solly-Men-White-Printed-Round-Neck-T-shirt-51615438312-1.jpg" class="image">
+                <p id="p1"><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>2000Rs</del><br>1800Rs<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://allensolly.imgix.net/img/app/product/4/470824-3344170.jpg" class="image">
+                <p id="p1"><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>5999Rs</del><br>4999Rs<br>
+                <mark><em> 1000Rs off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text"> Men's Slim Dark blue jean
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Jean.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Cream colour Men's Slim Fit jean
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one jean.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Sky blue colour Men's Slim Fit jean.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Jean.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Green and white Men's Slim Fit Round neck T-Shirt
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Red Men's Slim Fit Round Neck T-shirt
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Monte Carlo</li>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+                <!--7th  line of images-->
+
+
+
+
+
+
+
+
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81xj8CWQTPL._UX466_.jpg" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs1800</del><br>Rs1500<br>
+                <mark><em>Flat 300Rs off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPMONTE-CARLO-MONT79213EB9DC427/1567580190377_0..jpg?imwidth=282&impolicy=hq" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs2000</del><br>Rs1800<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81Y-T48ktIL._UL1500_.jpg" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs800</del><br>Rs500<br>
+                <mark><em>Flat Rs300 off</em></mark></p>
+                </div
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn.shopclues.com/images/thumbnails/24560/320/320/1221441485633.jpg" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs900<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://cdn10.montecarlo.in/images/ProductImages/large/_1%20(1)-92Z-100639-Zdj.JPG" class="image">
+                <p><b>Type of cloth:cotton</b><br>MRP: <br>
+                  <del>Rs900</del><br>Rs700<br>
+                <mark><em>Flat Rs200 off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">White and grey Stripe Men's T-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Grey color full sleve  Men's Slim Fit Round Neck T-Shirt
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">White Men's Slim Fit Round neck T-Shit.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one t-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">White and blue strip Men's Slim Fit T-shirt.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Yellow colour Men's Slim Fit T-shirt.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one T-Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+
+
+
+
+
+
+
+
+
+                  <!--8th  line of images-->
+              <div class="contanier1">
+                <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPMONTE-CARLO-MONT79213A085C547/1582008573738_0..jpg?imwidth=320&impolicy=hq" class="image">
+                <p id="p1"><b>Type of cloth:Jean</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPMONTE-CARLO-MONT7921327B4AF34/1582008568605_0..jpg?imwidth=320&impolicy=hq" class="image">
+                <p id="p1"><b>Type of cloth:Blue Strechable denim Jean</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/1331680/2016/9/7/11473239769045-ether-Men-White-Skinny-Fit-Mid-Rise-Clean-Look-Jeans-7501473239768894-1.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Crushed denim Jean</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://rukminim1.flixcart.com/image/714/857/js7th8w0/jean/t/h/j/32-2190870088dn-1-monte-carlo-original-imafduassgg6vvaa.jpeg?q=50" class="image">
+                <p id="p1"><b>Type of cloth:Brown crushed denim jean</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11484374/2020/3/19/56d46dec-181f-4abe-aedb-800122996c6f1584603862944-Monte-Carlo-Men-Jeans-8961584603861162-1.jpg" class="image">
+                <p id="p1"><b>Type of cloth:White jean</b><br>MRP: <br>
+                  <del>3500Rs</del><br>2975Rs<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Streachable denim jean for men
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one pent.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Denim Men's Slim Fit jean .
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one pent.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">White colour Men's Slim Fit pent.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one pent.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Brown colour Men's Slim Fit pent.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one pent.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">White colour Men's Slim pent.
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one pent.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+          <!--9th  line of images-->
+    <li id="list">Park avenue</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/gQlsCLwTv2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="http://n4.sdlcdn.com/imgs/a/h/6/Van-Heusen-Light-Blue-Faded-SDL600783377-1-55147.jpg" class="image">
+                <p><b>Type of cloth:Cotton</b><br>MRP: <br>
+                  <del>Rs1000</del><br>Rs850<br>
+                <mark><em>Flat 200 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.JxqO-O1gr9ZdUQgJsXQwLwHaIq&pid=Api&P=0&w=300&h=300" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs3258</del><br>Rs2769<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://n1.sdlcdn.com/imgs/a/h/6/Van-Heusen-Light-Blue-Faded-SDL601043307-2-84c22.jpg" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs3000</del><br>Rs2550<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="http://n3.sdlcdn.com/imgs/a/5/j/Van-Heusen-Navy-Blue-Jeans-SDL858587460-1-f5f53.jpg" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs1002</del><br>Rs851.500<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="http://n3.sdlcdn.com/imgs/a/j/2/Van-Heusen-Blue-Slim-Fit-SDL886391207-1-b2637.jpg" class="image">
+                <p><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>rs3500</del><br>Rs2975<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Blue Men's Slim Fit JEANS
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one TShit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Dark Blue men's jeans
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Blue men's jeans
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Dark Blue men's jeans
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Light Blue men's jeans
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>
+
+
+
+
+                  <!--10th line of images-->
+              <div class="contanier1">
+                <img src="http://www.bobstores.com/on/demandware.static/-/Sites-vestis-master-catalog/default/dw08251697/product/images/2029/319/2029319/2029319_404_main.jpg" class="image">
+                <p id="p1"><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs1100</del><br>Rs1000<br>
+                <mark><em>Flat 100 off</em></mark></p>
+
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP._0nHrLxocoJ3KuwN9G2GCwHaJ4&pid=Api&P=0&w=300&h=300" class="image">
+                <p id="p1"><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs2000</del><br>Rs1700<br>
+                <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.kvWxtKxUmY4NMq-d2TKpLQAAAA&pid=Api&P=0&w=300&h=300" class="image">
+                <p id="p1"><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs1400</del><br>Rs1300<br>
+                <mark><em>Flat 100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.eDhiEsv8QjpDl4hsZrTIUQHaIq&pid=Api&P=0&w=300&h=300" class="image">
+                <p id="p1"><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs800</del><br>Rs700<br>
+                <mark><em>Flat 100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.IXGKnADZY9ksuf0EEaoG8AHaJ4&pid=Api&P=0&w=300&h=300" class="image">
+                <p id="p1"><b>Type of cloth:Fabric</b><br>MRP: <br>
+                  <del>Rs500</del><br>Rs450<br>
+                <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Blue Bow Men's Slim Fit t-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Red Bow Men's Slim Fit t-shirt
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+			<div class="text"> Grey Men's Slim Fit pants
+
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> Yellow Men's Slim Fit Formal t-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Black and grey  Men's Slim Fit t-Shit
+                <ul type="circle" id="ul1">
+                  <li>Care Instructions: Wash gentely with warm water</li>
+                  <li>Measure your chest carefully according to the last product image and order that same size for cloth.</li>
+
+                  <li>NOTE: Do Not order according to your Readymade T-Shirt size because it's different with all brands and always wrong.</li>
+                  <li>Package includes one Shit.</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </ol>
+</div>
+<br><br>
+
+
+
+    <!--working of footer-->
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>
+</body>
+</html>

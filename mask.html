@@ -1,0 +1,551 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mask</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+div.box
+        {
+            border: 3px solid #14aed4;
+            height: 20 px;
+            margin: 0vw;
+            display: flex;
+        }
+        .co{
+            display: block;
+            position: relative;
+
+        }
+        p{
+            position: absolute;
+  bottom: 0;
+  background: #14aed4;
+  background: rgba(20, 174, 212, 0.5);
+  color:#f1f1f1;
+  width: 160px;
+  transition: 4s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+
+ 
+        }
+        .co:hover p{
+            opacity: 1;
+            margin-left: 140px;
+        }
+        .display{
+            padding-left: 50px;
+            margin-top: 90px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #ul1{
+            padding-left: 50px;
+            color: red;
+            font-weight: bolder;
+            font-size: 30px;
+            margin: auto;
+        }
+        .cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Mask</h1>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/91uaqLEETaL._SL1500_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 700</del><br>Rs 400<br><mark>Flat 43% off</mark></p></div>
+        <div class="display">
+          INDIAN CRAFT CASTLE 4 Layer Fully Washable Cotton Mask
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>2 Layer filter inside mask</li>
+            <li>Protect from dust, smoke, and infectious viruses</li>
+            <li>Reversible and washable</li>
+            <li>Pure cotton mask</li>
+            <li>Water and spit droplets resistant</li>
+            
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/618YLa-wrVL._UL1100_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 796</del><br>Rs 599<br><mark>Flat 25% off</mark></p></div>
+        <div class="display">
+            Asian Ultra-Sublimation Indian Flag Reusable Cloth mask large For Men
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Care Instructions: Washable</li>
+            <li>Technology: Made in India | Engineered with a 6-layer triple filtration system, Asian HyperProtect A95 masks provide protection</li>
+            <li>Use Cases: This pocket friendly reusable face mask is perfect for all weather conditions. It can be used in travel, outdoor usage, biking, cycling, office use, school and is also suited for police, traffic, security and delivery personnel</li>
+            <li>Friendly Customer Service: What you see is what you get. If there is anything wrong with the purchase, please message and get easy solution to your queries, enjoy your online shopping freely
+</li>
+           
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="data:image/webp;base64,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" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 121</del><br>Rs 78<br><mark>Flat 39% off</mark></p></div>
+        <div class="display">
+           Asian air mesh fabric washable reusable face masks for adults
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Reusable and environment friendly: These masks are washable and reusable. Use and simply wash gently under tap water and leave to dry. One mask lasts up to 30 washes. This prevents wastage and environmental burden caused from use and throw masks, while delivering savings to you and your family</li>
+            <li>se Cases: This pocket friendly reusable face mask is perfect for all weather conditions. It can be used in travel, outdoor usage, biking, cycling, office use, school and is also suited for police, traffic, security and delivery personnel</li>
+           
+            
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/71wNycbqB1L._UL1000_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 499</del><br>Rs  299.<br><mark>Flat 40% off</mark></p></div>
+        <div class="display">
+           Mediweave Reusable 100% Cotton Cloth Face Mask with Non-Woven Filter Mix Color  
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Care Instructions: Washable</li>
+            <li>USE CASE: The mask is not intended for medical use. The CDC (Center for Disease Control) recommends use of cotton or cloth face coverings in public to reduce community spread by asymptomatic persons</li>
+            <li>WASH INSTRUCTION: Please remove the filler before washing. Wash with detergent in a washing machine and dry in sunlight. Note that there is slit in the masks in one of the foldings, that allows you to remove the non-woven filter.</li>
+            
+           
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/81mrC1wCVyL._SL1500_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 699</del><br>Rs 123<br><mark>Flat 82% off</mark></p></div>
+        <div class="display">
+            Cotson 5 Layers Antibacterial KN95 Safety Mask With Air Filter
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Washable,Breathable and Light ; High Elastic Ear Loop Help Fit Different Users ;At Least 95% Filtration Efficiency</li>
+            <li>Application- Hospital, Medical, Dental, Daily use Style</li>
+           
+           
+            
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/61VvD0PZMQL._SL1235_.jpg" alt="co" width="310" height="400"><p>MRP: <br><del>Rs 1000</del><br>Rs 799<br><mark>Flat 20% off</mark></p></div>
+        <div class="display">
+            Xtore ® N95/PM 2.5 Ultra Comfortable Anti Pollution Mask Breathing Valve Premium Quality
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="cart.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="checkout.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Certified Protection : Its an certified mask (when used with supplied filters) tested as per NIOSH standards in an ISO Certified lab.</li>
+            <li>Durable and Extreme Comfortable: Washable anti dust mask made of 100% cotton</li>
+            <li>The Best Health Care & Widely Use: The air pollution mask ideal for dust, germs, allergies, smoke, pollution, ash,</li>
+            
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/81uOd13vO3L._UX679_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 90</del><br>Rs 62<br><mark>Flat 31% off</mark></p></div>
+        <div class="display">
+        Face Mask pack of 3
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Anti-Bacterial, Anti-Pollution, Anti-Dust Reusable Outdoor Safeguard Mask</li>
+            <li>> 95% Bacterial filtration efficiency for >3 µm</li>
+            <li>Splash and Fluid resistance</li>
+            <li>Reusable upto 30 gentle hand washes
+</li>
+           
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/61JSw23XqCL._SL1200_.jpg" alt="co" width="310" height="500"><p>MRP: <br><del>Rs 2600</del><br>Rs 1075<br><mark>Flat 59% off</mark></p></div>
+        <div class="display">
+            Case Creation Face Shield Mask Protection with full 180 Degree Protective Face Cover
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Equipped with an elastic band and forehead sponge, easy to adjust and install. Make it comfortable to wear a long time</li>
+            <li>Large clear visor, to maximum visibility, durable and practical.</li>
+            <li>Flexible PET material</li>
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/71-OsbrtocL._SL1500_.jpg" alt="co" width="310" height="400"><p>MRP: <br><del>Rs 650</del><br>Rs 605<br><mark>Flat 10% off</mark></p></div>
+        <div class="display">
+            Shocknshop Cotton Multicolor Printed Reusable And Washable Face Mask 
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>Material: Cotton material which is breathable,soft and comfortable to wear.</li>
+            <li>Material is a bit stretchable, hence once size fits all</li>
+            <li>Reusable: This dust mask is washable and reusable. Wear this face mouth mask, you could be protected from dust,</li>
+            <li>Adjustable: Ear loops are stretchy so you can enlarge the size. One size fit most people, it suitable for adult, men and women.</li>
+            
+           
+          </ul>
+    </div>
+    <br>
+    <div class="box">
+        <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/71UycFxSiqL._SL1500_.jpg" alt="co" width="290" height="340"><p>MRP: <br><del>Rs 78</del><br>Rs 70<br><mark>Flat 10% off</mark></p></div>
+        <div class="display">
+         Tinny Tots Children Safety Mouth Mask face masks 
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+        </div>
+        <ul type="circle" id="ul1">
+            <li>The ear loops are easy to adjust so the Face cover can fit perfectly over your nose and mouth. Size can be adjusted to meet most people head type</li>
+            <li>This Face cover will help you breath in a cleaner, healthier way</li>
+            <li>haped to increase Face cover sealing effect, and avoid the fog of glasses when breathing</li>
+            <li>It is the best gift for parents to give to their children. It makes them cool in the hot summe</li>
+            
+            
+          
+          </ul>
+    </div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

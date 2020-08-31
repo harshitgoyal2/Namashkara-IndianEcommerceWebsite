@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>Form</title>
+
+<style>
+
+body
+  {
+    background-color: hsl(224, 100%, 95%);
+  }
+
+.name
+  {
+    height: 80px;
+    width: 100%;
+  }
+
+  img
+  {
+    position: absolute;
+    top:95px;
+    left:40%;
+  }
+
+  .a
+  {
+    position: absolute;
+    top:95px;
+    left:45%;
+    color: #0091B5;
+    font-size: 30px;
+  }
+
+input[type=text]:hover{
+  border: 2px solid #006d90;
+
+}
+input[type=number]:hover{
+  border: 2px solid #006d90;
+
+}input[type=email]:hover{
+  border: 2px solid #006d90;
+
+}input[type=password]:hover{
+  border: 2px solid #006d90;
+  align-items: right;
+
+}
+input[type=button]{
+  width:300px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #006d90;
+}
+
+h1{
+  font-size: 20px;
+  text-align: center;
+
+
+}
+fieldset{
+  margin: auto;
+  width: 300px;
+  height: 480px;
+  margin-top:80px
+
+
+}
+#i{
+  font-size: 13px;
+}
+#plast{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+#paraforbuttons{
+  text-align: left;
+  font-size: 16px;
+}
+
+input[type=button]
+{
+background-color: #006d90;
+color: white;
+}
+
+body{
+  font-family:Georgia, serif
+  text-align:left;
+}
+
+a:link 
+    {
+        color: red;
+    }
+
+    a:visited 
+    {
+        color: #006D90;
+    }
+
+    a:hover 
+    {
+       color: hotpink;
+    }
+
+    a:active 
+    {
+       color: blue;
+    }
+
+</style>
+
+<script>
+  function myfn()
+  {
+    alert("You have been registered successfully");
+  }
+</script>
+</head>
+
+<body>
+  <div class="name"><img src="logo.jpeg" height="70px;" width="70px"><h1 class="a">Namashkara</h1></div>
+<form action="file:///home/jatin/Desktop/projectform.html?text=#" method="get" align="center">
+<fieldset>
+
+<h1 class="h1"> Create Account</h1>
+<p id="paraforbuttons">
+<br>
+Your name<br>
+<input type="text" name="text" text-align:center;>
+<br>
+<br>
+Mobile number
+<label for="num">(+91)</label> <br><input type="text" id="num" name="number">
+<br>
+<br>
+Email(optional)<br>
+<input type="email" name="email"><br><br>
+Password<br>
+
+<input type="password" name="password"><br>
+
+<span id="i"><em style="font-size:17px;color: blue;">i </em> Password must be at least 6 characters</span><br>
+</p>
+<br>
+<small>
+We will send you a text to verify your phone.
+Message and Data rates may apply.</small>
+<br><br><br>
+<a href="mainpg1.html"><input type="Button" class="But" value="REGISTER" name="Button" onclick="myfn()"></a>
+</p>
+<p id="plast">Already have a Account <a href="login.html" style="text-decoration: none;">Sign in</a>
+</p>
+
+</form>
+</body>
+</html>

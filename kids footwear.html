@@ -1,0 +1,1495 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kid's Footwear</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 300px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;}
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Kids footwear</h1>
+
+<div class="cont">
+  <ol>
+
+
+
+
+<!-- working of images and content for them-->
+
+
+
+<!-- 1st line of images-->
+    <li id="list">Gini & jony</li>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/832/832/jlb6v0w0/bootie/z/3/p/0-12-infantboties-neska-moda-12-original-imaf8gxgdwheu6py.jpeg?q=70" class="image">
+              <p><b>Type of Sole:cotton</b><br>MRP: <br>
+                <del>Rs799</del><br>Rs284<br>
+              <mark><em> 66% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/832/832/k4lmv0w0/bootie/c/a/a/3-12-baby-girls-and-baby-boys-ankle-length-with-heart-print-soft-original-imafnh5rcvrk7nmz.jpeg?q=70" class="image">
+              <p><b>Type of Sole:cotton</b><br>MRP: <br>
+                <del>Rs599</del><br>Rs280<br>
+              <mark><em>Flat 53% off</em></mark></p>
+
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/832/832/jw9ke4w0/bootie/f/3/m/0-9-pink-yellow-dark-blue-teddy-bootie-shop-frenzy-6-original-imafgygfabyzdxph.jpeg?q=70" class="image">
+              <p><b>Type of Sole:soft sole</b><br>MRP: <br>
+                <del>Rs499</del><br>Rs298<br>
+              <mark><em> 40% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/800/960/kbzergw0/kids-shoe/5/z/k/4c-chu-chu-1-smartots-original-imaft7v8smbrcyey.jpeg?q=50" class="image">
+              <p><b>Type of Sole:soft</b><br>MRP: <br>
+                <del>Rs499</del><br>Rs184<br>
+              <mark><em>Flat 63% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/800/960/k5fn3ww0/kids-shoe/c/c/r/1c-30-neobaby-original-imafnz23ezmtzg84.jpeg?q=50" class="image">
+              <p><b>Type of Sole:cotton</b><br>MRP: <br>
+                <del>Rs499</del><br>Rs176<br>
+              <mark><em>Flat 64% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">pink & black cotton shoes.
+              <ul type="circle" id="ul1">
+
+              <li>  To remove dirt, wipe gently with a dry cloth to remove any dried-on dirt and dust.
+                 Then dampen the cloth with warm water and wipe again. </li>
+
+       <li>Avoid liquid shoe polishes and silicone sprays.</li>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:in cm</b></label><br><select id="size">
+              <option value="12cm">12</option>
+              <option value="12cm">12</option>
+              <option value="12cm">12</option>
+              <option value="12cm">12</option>
+			  </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">grey cotton shoes
+              <ul type="circle" id="ul1">
+                <li>  To remove dirt, wipe gently with a dry cloth to remove any dried-on dirt and dust.
+                   Then dampen the cloth with warm water and wipe again. </li>
+
+         <li>Avoid liquid shoe polishes and silicone sprays.</li>
+                </ul>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:in cm</b></label><br><select id="size">
+              <option value="12">12</option>
+              <option value="12">12</option>
+              <option value="12">12</option>
+              <option value="12">12</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> blue,pink&yellow shoes
+              <ul type="circle" id="ul1">
+                <li>  To remove dirt, wipe gently with a dry cloth to remove any dried-on dirt and dust.
+                   Then dampen the cloth with warm water and wipe again. </li>
+
+         <li>Avoid liquid shoe polishes and silicone sprays.</li>
+                </ul>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:in cm</b></label><br><select id="size">
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> pink & black checked shoes
+              <ul type="circle" id="ul1">
+                <li>  To remove dirt, wipe gently with a dry cloth to remove any dried-on dirt and dust.
+                   Then dampen the cloth with warm water and wipe again. </li>
+
+         <li>Avoid liquid shoe polishes and silicone sprays.</li>
+                </ul>
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:in c</b></label><br><select id="size">
+              <option value="1c">1c</option>
+              <option value="2c">2c</option>
+              <option value="3c">3c</option>
+              <option value="4c">4c</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text"> black and pink shoes
+              <ul type="circle" id="ul1">
+                <li>  To remove dirt, wipe gently with a dry cloth to remove any dried-on dirt and dust.
+                   Then dampen the cloth with warm water and wipe again. </li>
+
+                </ul>
+
+              </ul>
+            </div>
+            <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:in c</b></label><br><select id="size">
+              <option value="1c">1c</option>
+              <option value="2c">2c</option>
+              <option value="3c">3c</option>
+              <option value="4c">4c</option>
+
+            </select>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>
+            <!--2nd  line of images-->
+
+
+
+
+
+
+      </tbody>
+    </table>
+
+
+
+
+
+  <!--2nd  line of images-->
+    <li id="list">Liberty</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/jwxuvm80/kids-sandal/s/y/g/12c-kdl-004-purple-liberty-original-imaf7jz9yf6vwt6g.jpeg?q=50" class="image">
+                <p><b>Type of sole:rubber</b><br>MRP: <br>
+                  <del>Rs500</del><br>Rs400<br>
+                <mark><em> Rs100  off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k5fn3ww0/kids-shoe/f/p/9/10c-ksn-207-red-liberty-original-imafz4hbrtfz79fc.jpeg?q=50" class="image">
+                <p><b>Type of sole:cotton</b><br>MRP: <br>
+                  <del>Rs499</del><br>Rs399<br>
+                <mark><em> Rs100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k6wiefk0/kids-shoe/u/u/k/13c-casio-1e-black-liberty-original-imafp8xexmka7dzk.jpeg?q=50" class="image">
+                <p><b>Type of sole:synthetic</b><br>MRP: <br>
+                  <del>Rs999</del><br>Rs499<br>
+                <mark><em>Flat 50& off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k2w6xe80/kids-shoe/h/h/n/11c-zap-1e-blue-liberty-original-imafhc9hs5qqcegc.jpeg?q=50" class="image">
+                <p><b>Type of sole:Leather</b><br>MRP: <br>
+                  <del>Rs999</del><br>Rs699<br>
+                <mark><em>Flat 30% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/800/960/k2w6xe80/kids-shoe/s/c/6/2-zap-1e-black-liberty-original-imafhc9gdmz3wzbz.jpeg?q=50" class="image">
+                <p><b>Type of sole:Mesh</b><br>MRP: <br>
+                  <del>Rs999</del><br>Rs699<br>
+                <mark><em>Flat 30% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">purple velcro flat shoes
+                <ul type="circle" id="ul1">
+
+
+                  <li>clean with water  </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="5c">5c</option>
+                <option value="6c">6c</option>
+                <option value="7c">7c</option>
+                <option value="8c">8c</option>
+                <option value="9c">9c</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Slip on Casual Boots For Boys & Girls  (Red)
+
+                <ul type="circle" id="ul1">
+                <li>  clean with water ,do not use polishes </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">7c</option>
+                <option value="14">8c</option>
+                <option value="13">9c</option>
+                <option value="12">10c</option>
+                <option value="11">11c</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Velcro Walking Shoes For Boys & Girls  (Black).
+                <ul type="circle" id="ul1">
+
+                  <li> To remove dirt, wipe gently with a dry cloth to remove any dried-on dirt and dust.
+                   Then dampen the cloth with warm water and wipe again</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">7c</option>
+                <option value="14">8c</option>
+                <option value="13">9c</option>
+                <option value="12">10c</option>
+                <option value="11">11c</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">.Lace Running Shoes For Boys & Girls  (Blue)
+                <ul type="circle" id="ul1">
+
+                  <li>To remove dirt, wipe gently with a dry cloth to remove any dried-on dirt and dust.
+                   Then dampen the cloth with warm water and wipe again</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">7c</option>
+                <option value="14">8c</option>
+                <option value="13">9c</option>
+                <option value="12">10c</option>
+                <option value="11">11c</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">red colour kids sports shoes.
+                <ul type="circle" id="ul1">
+
+                  <li> To remove dirt, wipe gently with a dry cloth to remove any dried-on dirt and dust.
+                   Then dampen the cloth with warm water and wipe again</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">7c</option>
+                <option value="14">8c</option>
+                <option value="13">9c</option>
+                <option value="12">10c</option>
+                <option value="11">11c</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                  </tbody>
+      </table>
+
+
+
+
+
+    <!--3nd  line of images-->
+
+
+
+
+
+
+
+    <li id="list">Bata</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71MoeARx3cL._UL1500_.jpg" class="image">
+                <p><b>Type of Sole:synthetic</b><br>MRP: <br>
+                  <del>Rs699</del><br>Rs349<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71JpTu0B%2B4L._UL1500_.jpg" class="image">
+                <p><b>Type of Sole:synthetic</b><br>MRP: <br>
+                  <del>Rs599</del><br>Rs300<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61AZwNSr5WL._UL1211_.jpg" class="image">
+                <p><b>Type of Sole:pu</b><br>MRP: <br>
+                  <del>Rs899</del><br>Rs450<br>
+                <mark><em>Flat 50% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61pwCXt4joL._UL1500_.jpg" class="image">
+                <p><b>Type of Sole:canvas</b><br>MRP: <br>
+                  <del>Rs600</del><br>Rs500<br>
+                <mark><em>Flat 100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61MbGrNLaqL._UL1451_.jpg" class="image">
+                <p><b>Type of Sole:canvas</b><br>MRP: <br>
+                  <del>Rs700</del><br>Rs600<br>
+                <mark><em>Flat Rs100 off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">pink shoes .
+                <ul type="circle" id="ul1">
+
+                    <li> Care Instructions: Allow your pair of shoes to air and de-odorize at regular basis; use shoe bags to prevent any stains or mildew; dust any dry dirt from the surface using a clean cloth; do not use polish or shiner</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">10</option>
+                <option value="14">10</option>
+                <option value="13">10</option>
+                <option value="12">10</option>
+                <option value="11">10</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">blue snikers
+                <ul type="circle" id="ul1">
+
+                    <li> Shoe Width: Regular
+Outer Material: Textile
+Closure Type: Slip On
+Toe Style: Round Toe
+Warranty Type: Manufacturer
+Warranty Description: 90 days</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">2</option>
+                <option value="14">3</option>
+                <option value="13">4</option>
+                <option value="12">5</option>
+                <option value="11">5</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">BATA Boy's Wheel Brown Sandal
+                <ul type="circle" id="ul1">
+
+                    <li>Closure: Adjustable Strap
+Shoe Width: Medium
+Durability </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">2</option>
+                <option value="14">3</option>
+                <option value="13">4</option>
+                <option value="12">5</option>
+                <option value="11">6</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">BATA Boy's Loop Sneakers
+                <ul type="circle" id="ul1">
+                    <li> Closure: Lace Up
+Shoe Width: Regular
+Outer Material: Canvas
+Closure Type: Lace-Up
+Toe Style: Round Toe
+Warranty Type: Manufacturer
+Warranty Description: 90 days
+</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">2</option>
+                <option value="14">3</option>
+                <option value="13">4</option>
+                <option value="12">5</option>
+                <option value="11">6</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> BATA Boy's B.First Sneakers.
+                <ul type="circle" id="ul1">
+
+                    <l>Closure: Hook & Loop
+Shoe Width: Regular
+Outer Material: Canvas
+Closure Type: Hook & Loop
+Toe Style: Round Toe
+Warranty Type: Manufacturer
+Warranty Description: 90 days
+</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">2</option>
+                <option value="14">3</option>
+                <option value="13">4</option>
+                <option value="12">5</option>
+                <option value="11">6</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+
+
+
+
+
+
+
+
+
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+    <!--4nd  line of images-->
+
+
+
+
+    <li id="list">coolz</li>
+    <table style="border-spacing: 13;">
+
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61XcYkk5XKL._UL1208_.jpg" class="image">
+                <p><b>Type of Sole:pvc</b><br>MRP: <br>
+                  <del>Rs299</del><br>Rs399<br>
+                <mark><em>Flat Rs100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/513lblzA-4L._UX695_.jpg" class="image">
+                <p><b>Type of Sole:pvc</b><br>MRP: <br>
+                  <del>Rs299</del><br>Rs399<br>
+                <mark><em>Flat Rs100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51b2zQLNiFL._UL1204_.jpg" class="image">
+                <p><b>Type of Sole:pvc</b><br>MRP: <br>
+                  <del>Rs299</del><br>Rs399<br>
+                <mark><em>Flat Rs100 off</em></mark></p>
+                </div
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51sOlKCBcrL._UL1182_.jpg" class="image">
+                <p><b>Type of Sole:pvc</b><br>MRP: <br>
+                  <del>Rs225</del><br>Rs210<br>
+                <mark><em>Flat 7% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61qQ6S%2BnjwL._UL1280_.jpg" class="image">
+                <p><b>Type of Sole:pvc</b><br>MRP: <br>
+                  <del>Rs399</del><br>Rs499<br>
+                <mark><em>Flat Rs100 off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Coolz Kids Chu-Chu Sound Musical First Walking Sandals
+                <ul type="circle" id="ul1">
+				<li> For perfect fit: Kindly measure the foot length of your baby in cm and refer to our size chart shown in the photos section. Also its better to purchase footwear 1/2 cm bigger than your baby's foot size.
+Very comfortable, durable and lightweight. Weight: 200g
+Velcro closure makes it easy to wear.
+Sole material: PVC, Upper material: PVC Rexine
+</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">12months</option>
+                <option value="14">16months</option>
+                <option value="13">19months</option>
+                <option value="12">24months</option>
+                <option value="11">27 months</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Coolz Kids Chu-Chu Sound Musical First Walking Shoes
+                <ul type="circle" id="ul1">
+                 <li> For perfect fit: Kindly measure the foot length of your baby in cm and refer to our size chart shown in the photos section. Also its better to purchase footwear 1/2 cm bigger than your baby's foot size.
+Baby's first walking sandals for casual and party wear.
+Very comfortable, durable and lightweight.
+Velcro closure makes it easy to wear.
+Sole material: PVC, Upper material: Mesh and Rexine
+</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">12months</option>
+                <option value="14">16months</option>
+                <option value="13">19months</option>
+                <option value="12">24months</option>
+                <option value="11">29months</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Coolz Kids Chu-Chu Sound Musical First Walking Shoes
+                <ul type="circle" id="ul1">
+ <li> For perfect fit: Kindly measure the foot length of your baby in cm and refer to our size chart shown in the photos section. Also its better to purchase footwear 1/2 cm bigger than your baby's foot size.
+Baby's first walking sandals for casual and party wear.
+Very comfortable, durable and lightweight.
+Velcro closure makes it easy to wear.
+Sole material: PVC, Upper material: Mesh and Rexine
+</li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">12months</option>
+                <option value="14">16months</option>
+                <option value="13">19months</option>
+                <option value="12">24months</option>
+                <option value="11">29months</option>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Coolz Kids Chu-Chu Sound Musical First Walking Shoes
+                <ul type="circle" id="ul1">
+
+                    <li>For perfect fit: Kindly measure the foot length of your baby in cm and refer to our size chart shown in the photos section. Also its better to purchase footwear 1/2 cm bigger than your baby's foot size.
+Baby's first walking sandals for casual and party wear.
+Very comfortable, durable and lightweight.
+Velcro closure makes it easy to wear.
+Sole material: PVC, Upper material: Mesh and Rexine </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">12months</option>
+                <option value="14">16months</option>
+                <option value="13">19months</option>
+                <option value="12">24months</option>
+                <option value="11">29months</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Coolz Kids Chu-Chu Sound Musical First Walking Shoes
+                <ul type="circle" id="ul1">
+
+                    <li>For perfect fit: Kindly measure the foot length of your baby in cm and refer to our size chart shown in the photos section. Also its better to purchase footwear 1/2 cm bigger than your baby's foot size.
+Baby's first walking sandals for casual and party wear.
+Very comfortable, durable and lightweight.
+Velcro closure makes it easy to wear.
+Sole material: PVC, Upper material: Mesh and Rexine
+ </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">12months</option>
+                <option value="14">16months</option>
+                <option value="13">19months</option>
+                <option value="12">24moths</option>
+
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+          <!--9th  line of images-->
+    <li id="list">kitten</li>
+
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="data:image/webp;base64,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" class="image">
+                <p><b>Type of sole:leather and rubber</b><br>MRP: <br>
+                  <del>Rs500</del><br>Rs400<br>
+                <mark><em>Flat 100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71uQdNmAOTL._UY695_.jpg" class="image">
+                <p><b>Type of sole:leather and rubber</b><br>MRP: <br>
+                  <del>Rs500</del><br>Rs400<br>
+                <mark><em>Flat % off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="data:image/webp;base64,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" class="image">
+                <p><b>Type of sole:leather and rubber</b><br>MRP: <br>
+                  <del>Rs500</del><br>Rs400<br>
+                <mark><em>Flat 100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/6160AYA5BxL._UY695_.jpg" class="image">
+                <p><b>Type of sole:leather and rubber</b><br>MRP: <br>
+                  <del>Rs500</del><br>Rs400<br>
+                <mark><em>Flat 100 off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61fJ0pO%2BC%2BL._UY695_.jpg" class="image">
+                <p><b>Type of sole:leather and rubber</b><br>MRP: <br>
+                  <del>Rs300</del><br>Rs200<br>
+                <mark><em>Flat 100 off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">KITTENS Girl's Sneakers
+                <ul type="circle" id="ul1">
+
+                    <li>Shoe Width: Medium
+Customer satisfaction Guaranteed!!!. Buy original product from kittens
+Outer Materail : Canvas
+Sole Material : TPR
+Closure Type : Slip-On </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="34">1</option>
+                <option value="36">2</option>
+                <option value="38">3</option>
+                <option value="40">4</option>
+                <option value="42">5</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">KITTENS Pink Girls Lofers
+                <ul type="circle" id="ul1">
+
+                    <li>Closure: Slip-On
+Shoe Width: Medium
+Customer satisfaction Guaranteed!!!. Buy original product from kittens
+Outer Material : Synthetic
+Sole Material : TPR
+Closure Type : Slip-On </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">1</option>
+                <option value="14">2</option>
+                <option value="13">3</option>
+                <option value="12">4</option>
+                <option value="11">5</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">.KITTENS Pink Girls Mary Jane Shoes
+                <ul type="circle" id="ul1">
+
+                    <li>Closure: Slip-On
+Shoe Width: Medium
+Customer satisfaction Guaranteed!!!. Buy original product from kittens
+Outer Materail : Synthetic
+Sole Material : TPR
+Closure Type : Slip-On
+ </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">1</option>
+                <option value="14">2</option>
+                <option value="13">3</option>
+                <option value="12">4</option>
+                <option value="11">5</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">KITTENS Girls Pink Mary Jane Shoes.
+                <ul type="circle" id="ul1">
+
+                    <li>Closure: Slip-On
+Shoe Width: Regular
+Customer satisfaction Guaranteed!!!. Buy original product from kittens
+Outer Material : Synthetic
+Sole Material : TPR
+Closure Type : Slip On
+ </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">1</option>
+                <option value="14">2</option>
+                <option value="13">3</option>
+                <option value="12">4</option>
+                <option value="11">5</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text"> KITTENS Boys Orange_Navy Flip Flops
+                <ul type="circle" id="ul1">
+
+                    <li>Closure: Slip-On
+Shoe Width: Regular
+Customer satisfaction Guaranteed!!!. Buy original product from kittens
+Outer Material : Synthetic
+Sole Material : TPR
+Closure Type : Slip On
+ </li>
+                </ul>
+              </div>
+              <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                <option value="15">1</option>
+                <option value="14">2</option>
+                <option value="13">3</option>
+                <option value="12">4</option>
+                <option value="11">5</option>
+              </select>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+
+</table>
+
+        <li id="list">Fashion shoes</li>
+
+        <table style="border-spacing: 13;">
+            <thead>
+              <tr>
+                <th>
+                  <div class="contanier">
+                    <img src="data:image/webp;base64,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" class="image">
+                    <p><b>Type of sole:leather</b><br>MRP: <br>
+                      <del>Rs2500</del><br>Rs2125<br>
+                    <mark><em>Flat 15% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/613BYnPxmdL._UL1500_.jpg" class="image">
+                    <p><b>Type of sole:leather</b><br>MRP: <br>
+                      <del>Rs699</del><br>Rs399<br>
+                    <mark><em>Flat 52% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51ebYdxMNdL._UL1100_.jpg" class="image">
+                    <p><b>Type of sole:leather</b><br>MRP: <br>
+                      <del>Rs800</del><br>Rs700<br>
+                    <mark><em>Flat 100 off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71tie9b11JL._UL1500_.jpg" class="image">
+                    <p><b>Type of sole:leather</b><br>MRP: <br>
+                      <del>Rs699</del><br>Rs299<br>
+                    <mark><em>Flat 57% off</em></mark></p>
+                    </div>
+                </th>
+                <th>
+                  <div class="contanier">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41bpJAw-OTL.jpg" class="image">
+                    <p><b>Type of sole:rubber</b><br>MRP: <br>
+                      <del>Rs299</del><br>Rs244<br>
+                    <mark><em>Flat 5% off</em></mark></p>
+                    </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="text">FASHION SHOES Kids Brogues
+
+                    <ul type="circle" id="ul1">
+
+                        <li>Closure: Lace-Up
+Shoe Width: Narrow
+Glossy look makes it elegant and fashionable
+Outer material is leather that is suitable in any weather or climate
+Comfortable to wear and airy that provides comfortness to the little foot
+Lace up closure makes it perfect fit for your lovely one
+Guarateed a perfect pick in easy budget </li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="34">3</option>
+                    <option value="36">4</option>
+                    <option value="38">5</option>
+                    <option value="40">6</option>
+                    <option value="42">7</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">.Fashion shoes Girl's Long White Leather Baby Shoes
+                    <ul type="circle" id="ul1">
+
+                        <li> clean with neat cloth ,Dont use water or other detergents </li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="15">1</option>
+                    <option value="14">2</option>
+                    <option value="13">3</option>
+                    <option value="12">4</option>
+                    <option value="11">5</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">Fashion Booties
+                    <ul type="circle" id="ul1">
+
+                        <li> Closure: slip on
+Desent colors
+Beaded band for size fit
+GOOD QUALITY AT VERY REASONABLE PRICES
+Easily wearable and comfortable</li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="15">1</option>
+                    <option value="14">2</option>
+                    <option value="13">3</option>
+                    <option value="12">4</option>
+                    <option value="11">5</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text"> Fashion shoes Baby's Pink Leather
+                    <ul type="circle" id="ul1">
+
+                        <li> Closure: Zip
+Shoe Width: Medium
+*Fully comfortable with proper fitting.
+*Wearable on all types of occasional dresses.whether it is small functional party ,weddings ,festives etc
+*Zip closure gives extra fitting to the shoes. The shoe is also free of laces easy to wear by your baby also.
+*The lovely pair of long shoes is in your budget</li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="15">1</option>
+                    <option value="14">2</option>
+                    <option value="13">3</option>
+                    <option value="12">4</option>
+                    <option value="11">5</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+                <td>
+                  <div class="text">.Fashion shoes
+                    <ul type="circle" id="ul1">
+
+                        <li>Closure: Hook and Loop
+Shoe Width: Medium
+The upper material of the shoes are canvas mixed cotton that makes it extra durable and soft .
+Velcro closure gives It extra fitting and easy to wear .
+The belly look are specially given to these footwear to make it wearable in any type of occasion and in daily wear as well.
+The whistle makes cute sound when your lovely kid takes a step that makes him/her happy.
+Sole material is leather mixed rubber that makes its light in weight and makes it easy to walk on any surface without any irritation </li>
+                    </ul>
+                  </div>
+                  <br><label for="size" style="font-size: larger;font-weight: bold;"><b>Size:</b></label><br><select id="size">
+                    <option value="15">1</option>
+                    <option value="14">2</option>
+                    <option value="13">3</option>
+                    <option value="12">4</option>
+                    <option value="11">5</option>
+                  </select>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+
+
+
+
+
+
+        </tbody>
+      </table>
+  </ol>
+</div>
+<br><br>
+
+
+
+    <!--working of footer-->
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>
+</body>
+</html>

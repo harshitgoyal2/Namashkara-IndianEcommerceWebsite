@@ -1,0 +1,648 @@
+<html>
+<head><title>Checkout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+     div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 150px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 16px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+	    .out
+	    {
+		height: 500px;
+		width: 100%;
+		background-color: hsl(224, 100%, 95%);
+	    }
+	   .o1
+	    {
+		height: 600px;
+        width: 50%;
+        background-color: hsl(224, 100%, 95%);
+        float: left;
+	   }
+	   .o2
+	   {
+		height: 600px;
+        width: 50%;
+        background-color: hsl(224, 100%, 95%);
+        float: right;
+	    }
+	    #like
+	    {
+	    	font-size: 20px;
+	    	font-family: cursive;
+	    	font-weight: bolder;
+	    }
+	    input.like2
+	    {
+	    	height: 30px;
+	    	width: 300px;
+	    }
+	    #state
+	    {
+	    	height: 30px;
+	    	width: 300px;
+	    }
+	    input[type=checkbox]
+	    {
+	    	height: 30px;
+	    	width: 30px;
+        }
+        #hr1
+        {
+        	height: 4px;
+        	background-color: grey;
+        }
+        #hr2
+        {
+       	    height: 20px;
+        	background-color: grey;
+        }
+        #Car1
+        {
+        	width=5px;
+        }
+	    .footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+       clear: both;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}     
+</style>
+<script src="checkout.js"></script>
+</head>
+<body>
+    <div class="header">
+		<img src="logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+
+	<div class="out">
+		<div class="o1">
+			<h1 style="padding-left: 30px;">Billing Address</h1>
+			<table style="margin-left: 30px; width: 80%;" cellspacing="7">
+				<tr>
+					<td>
+						<lable id="like">First Name:</lable>
+					</td>
+					<td>
+						<input type="text" onblur="firstname();" id="fn" class="like2" required>
+					</td>
+					<td>
+                        <span id="firstprompt" style="font-size: 100%;">&nbsp;</span>
+                    </td>
+				</tr>
+				<tr>
+					<td>
+						<lable id="like">Last Name:</lable>
+					</td>
+					<td>
+						<input type="text" onblur="lastname();" id="ln" class="like2" required>
+					</td>
+					<td>
+                        <span id="middleprompt" style="font-size: 100%;">&nbsp;</span>
+                    </td>
+				</tr>
+				<tr>
+					<td>
+						<lable id="like">Email:</lable>
+					</td>
+					<td>
+						<input type="Email" class="like2" required>
+					</td>
+					<td>
+						<span >&nbsp;</span>
+					</td>
+				</tr>
+				<tr>
+                    <td>
+                        <lable id="like">Mobile Number:</lable> 
+                    </td>
+                    <td>
+                        <input type="text" onblur="mobnum();" id="num" class="like2">
+                    </td>
+                    <td>
+                        <span id="numprompt" style="font-size: 100%;">&nbsp;</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <lable id="like">Address 1:</lable>
+                    </td>
+                    <td>
+                        <textarea rows="4" cols="39" name="Address" id="add" class="like2"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable id="like">Address 2:</lable>
+                    </td>
+                    <td>
+                        <textarea rows="4" cols="39" name="Address" id="add" class="like2"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                		<lable id="like">City</lable>
+                	</td>
+                	<td>
+                		<input type="text" class="like2" required>
+                	</td>
+                </tr>
+                <tr>
+                	<td>
+                		<label id="like" for="state">State</label>
+                	</td>
+                	<td>
+                		<select name="State" id="state" class="like2">
+         						<option value="">------------Select State------------</option>
+         						<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+         						<option value="Andhra Pradesh">Andhra Pradesh</option>
+         						<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+         						<option value="Assam">Assam</option>
+         						<option value="Bihar">Bihar</option>
+         						<option value="Chandigarh">Chandigarh</option>
+         						<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+         						<option value="Daman and Diu">Daman and Diu</option>
+         						<option value="Delhi">Delhi</option>
+         						<option value="Goa">Goa</option>
+         						<option value="Gujarat">Gujarat</option>
+         						<option value="Haryana">Haryana</option>
+         						<option value="Himachal Pradesh">Himachal Pradesh</option>
+         						<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+         						<option value="Karnataka">Karnataka</option>
+         						<option value="Kerala">Kerala</option>
+         						<option value="Lakshadweep">Lakshadweep</option>
+         						<option value="Madhya Pradesh">Madhya Pradesh</option>
+         						<option value="Maharashtra">Maharashtra</option>
+         						<option value="Manipur">Manipur</option>
+         						<option value="Meghalaya">Meghalaya</option>
+         						<option value="Mizoram">Mizoram</option>
+         						<option value="Nagaland">Nagaland</option>
+         						<option value="Orissa">Orissa</option>
+         						<option value="Pondicherry">Pondicherry</option>
+         						<option value="Punjab">Punjab</option>
+         						<option value="Rajasthan">Rajasthan</option>
+         						<option value="Sikkim">Sikkim</option>
+         						<option value="Tamil Nadu">Tamil Nadu</option>
+         						<option value="Tripura">Tripura</option>
+         						<option value="Uttaranchal">Uttaranchal</option>
+         						<option value="Uttar Pradesh">Uttar Pradesh</option>
+         						<option value="West Bengal">West Bengal</option>
+                        </select>
+                	</td>
+                </tr>
+                <tr>
+                	<td>
+                		<label id="like">Pincode:</label>
+                	</td>
+                	<td>
+                		<input type="Pincode" max="5" class="like2"required>
+                	</td>
+                	<td></td>
+                </tr> 
+                <tr>
+                	<td colspan="2" align="center">
+                		<input type="checkbox"><label id="like">Ship to the same address</label>
+                	</td>
+                	<td></td>
+                </tr> 
+			</table>
+		</div>
+		<div class="o2">
+			<h1 style="padding-left: 30px;">Payment method</h1>
+			<table style="margin-left: 30px;" cellspacing="7" width="97%">
+				<tr>
+					<td>
+						<img src="creditcard.png" alt="cc" height="30px;" width="30px">
+						<label id="like">Credit card</label>
+					</td>
+					<td>
+						<input type="radio" value="credit card" onclick="myfunction(1)"  class="like2" id="a1">
+						<div id="a" style="display: none;width: 100%;">
+
+							<table>
+								<tr>
+									<td><label>Card Holder Name:</label></td>
+									<td style="padding-left: 15px;"  colspan="4">
+										<input type="text" name="" style="width: 180px">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Card Number:</label>
+									</td>
+									<td style="padding-left: 15px;">
+										<input type="text" name="" style="width: 40px">
+									</td>
+									<td>
+										<input type="text" name="" style="width: 40px">
+									</td>
+									<td>
+										<input type="text" name="" style="width: 40px">
+									</td>
+									<td>
+										<input type="text" name="" style="width: 40px">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Expiry date:</label>
+									</td>
+									<td style="padding-left: 15px;">
+										<input type="text" name="" style="width: 35px">
+									</td>
+									<td colspan="2" align="left"><b style="font-size: 20px;">/</b>&nbsp<input type="text" name="" style="width: 45px"></td>
+									<td >
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>CVV:</label>
+									</td>
+									<td style="padding-left: 15px;">
+										<input type="text" name="" style="width: 30px">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="https://www.sonalia.com/wp-content/uploads/2019/04/credit_card_logo.png" alt="debit" height="30px" width="30px">
+						<label id="like">Debit card</label>
+					</td>
+					<td>
+						<input type="radio" value="Debit card"  class="like2" onclick="myfunction(2)"  id="b1"> 
+						<div id="b" style="display: none;width: 100%;">
+							<table>
+								<tr>
+									<td><label>Card Holder Name:</label></td>
+									<td style="padding-left: 15px;" colspan="4">
+										<input type="text" name="" style="width: 180px">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Card Number:</label>
+									</td>
+									<td style="padding-left: 15px;">
+										<input type="text" name="" style="width: 40px">
+									</td>
+									<td>
+										<input type="text" name="" style="width: 40px">
+									</td>
+									<td>
+										<input type="text" name="" style="width: 40px">
+									</td>
+									<td>
+										<input type="text" name="" style="width: 40px">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Expiry date:</label>
+									</td>
+									<td style="padding-left: 15px;">
+										<input type="text" name="" style="width: 35px">
+									</td>
+									<td colspan="2" align="left"><b style="font-size: 20px;">/</b>&nbsp<input type="text" name="" style="width: 45px"></td>
+									<td >
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>CVV:</label>
+									</td>
+									<td style="padding-left: 15px;">
+										<input type="text" name="" style="width: 30px">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="https://i0.wp.com/financebuddha.com/blog/wp-content/uploads/2016/12/23155635/UPI1.jpg?fit=945%2C709&ssl=1" alt="upi"
+						height="30px" width="30px">
+						<label id="like">PhonePe(UPI,Wallet)</label>
+
+					</td>
+					<td>
+						<input type="radio" value="PhonePe"  class="like2" id="c1" onclick="myfunction(3)">
+                        <div id="c" style="display: none;width: 100%;">
+							<table>
+								<tr>
+									<td><label>Phone Number:</label></td>
+									<td style="padding-left: 15px;" colspan="4">
+										<input type="text" name="" style="width: 180px">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQglrBkiNu4ReCfXpN984cT4jnNpb8enlOMvQ&usqp=CAU" height="30px" 
+						width="30px">
+						<label id="like">Cash on delivery</label>
+					</td>
+					<td>
+						<input type="radio" value="cod"  class="like2" id="d1" onclick="myfunction(4)">
+					</td> 
+				</tr>
+				<tr>
+					<td>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQo4W6IsJw_NcEjB0H_4Fa3t9K8PW6J1NkSPQ&usqp=CAU" height="30px" width="30px">
+						<label id="like">EMI(Easy Installments)</label>
+					</td>
+					<td>
+						<input type="radio" value="emi"  class="like2" id="e1" onclick="myfunction(5)">
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOv2v_oT6Fz5xSySwl_RasE-67A_vVLqb06Q&usqp=CAU" height="30px" width="30px">
+						<label id="like">Gift card</label>
+					</td>
+					<td>
+						<a href="#" style="text-decoration: none; font-size: 20px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAdd new</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+				      <hr id="hr2">
+			        </td>
+			    </tr>
+			   <tr>
+					<td style="font-size: 20px;">
+						Price detail<br><b>Rs 3700</b><br><a href="cart.html" style="text-decoration: none;">View Price details</a>
+					</td>
+					<td align="center">
+						<a href="mainpg1.html"><button onclick="myfunc()" style="height: 30px; width: 200px; background-color: #006D90; color: white; border: 3px solid #006D90;">Place order</button></a>
+					</td>
+				</tr> 
+			</table>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="f1">
+			<br><br>
+            <h2>Namashkara</h2><br>
+             For best Indian products<br>
+             and Exciting deals.
+		</div>
+		<div class="f2">
+			 <br><br>
+             <h3>Explore</h3>
+             <a href="mainpg1.html" id="f">Home</a>
+             <a href="login.html" id="f">Login</a>
+             <a href="aboutus.html" id="f">About Us</a>
+		</div>
+		<div class="f2">
+			 <br><br>
+             <h3>Connect</h3>
+             <a href="#" id="f">Instagram</a>
+             <a href="#" id="f">Facebook</a>
+             <a href="#" id="f">Twitter</a>
+		</div>
+		<div class="f3">
+			<br><br>
+            <h3>Contact Us</h3><br>
+             9988776655,4433221100<br>
+             Email: namashkara@gmail.com
+		</div>
+	</div>	
+</body>
+</html>

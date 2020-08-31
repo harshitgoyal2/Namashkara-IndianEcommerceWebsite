@@ -1,0 +1,1061 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+	
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+	
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+    
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a 
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a 
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.image{
+  width: 300px;
+  height: 600px;
+}
+.text
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+.text:hover #ul1
+{
+  color: red;
+  display: contents;
+}
+select
+{
+  border-radius: 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+p{
+    font-size: 24px;
+}
+.cart
+{
+    border-radius: 4px;
+    height: 50px;
+    width: 130px;
+    background-color: 14aed4;
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+#ul1{display: none;} 
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}  
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Mobile</h1>
+<div class="cont">
+  <ol>
+    <li id="list">XOLO</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/K1jGYIoEwuQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/jc7z0y80/mobile/y/m/s/xolo-era-3x-era-3x-original-imaffeeatkagjky9.jpeg?q=70" class="image">
+              <p>MRP: <br><del>Rs 8499</del><br>Rs 7649<br>
+              <mark><em>Flat 10% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/mobile/2/6/s/xolo-omega-5-5-original-imae2zkmnsgwuang.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 8990</del><br>Rs 8540<br>
+                <mark><em>Flat 5% off</em></mark>
+          </p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/mobile/f/g/k/xolo-a500s-lite-original-imadwhvpttwxvwaf.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 5999</del><br>Rs 5519<br>
+                <mark><em>Flat 8% off</em></mark>
+                </p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/mobile/z/6/d/xolo-play-play-t1000-original-imadmkddygbszqay.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 14153</del><br>Rs 12737<br>
+                <mark><em>Flat 10% off</em></mark></p> 
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/mobile/8/7/s/xolo-black-na-original-imae97svbsgzqxyu.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 11936</del><br>Rs 11339<br>
+                <mark><em>Flat 5% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">XOLO ERA 3X (Posh Black, 16 GB)  (3 GB RAM)
+              <ul type="circle" id="ul1">
+                <li>3 GB RAM | 16 GB ROM | Expandable Upto 64 GB</li>
+                <li>12.7 cm (5 inch) HD Display</li>
+                <li>13MP Rear Camera | 13MP Front Camera</li>
+                <li>3000 mAh Battery</li>
+                <li>Mediatek MTK 6737 Quad Core 1.25 GHz Processor</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">XOLO Omega 5.0 (Black, 8 GB)  (1 GB RAM)
+              <ul type="circle" id="ul1">
+                <li>1 GB RAM | 8 GB ROM | Expandable Upto 32 GB</li>
+                <li>12.7 cm (5 inch) HD Display</li>
+                <li>8MP Rear Camera | 2MP Front Camera</li>
+                <li>2100 mAh Li-Ion Battery</li>
+                <li>MTK 6592M Processor</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">XOLO A500S Lite (Black, 4 GB)  (512 MB RAM)
+              <ul type="circle" id="ul1">
+                <li>512 MB RAM | 4 GB ROM | Expandable Upto 32 GB</li>
+                <li>10.16 cm (4 inch) WVGA Display</li>
+                <li>3MP Rear Camera | 0.3MP Front Camera</li>
+                <li>1400 mAh Battery</li>
+                <li>MTK 6572 Processor</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">XOLO T1000 (Black, 4 GB)  (1 GB RAM)
+              <ul type="circle" id="ul1">
+                <li>1 GB RAM | 4 GB ROM | Expandable Upto 32 GB</li>
+                <li>11.94 cm (4.7 inch) HD Display</li>
+                <li>8MP Rear Camera | 2MP Front Camera</li>
+                <li>2000 mAh Battery</li>
+                <li>NVIDIA Tegra 3 Processor</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">XOLO BLACK (Black, 16 GB)  (2 GB RAM)
+              <ul type="circle" id="ul1">
+                <li>2 GB RAM | 16 GB ROM | Expandable Upto 32 GB</li>
+                <li>13.97 cm (5.5 inch) Full HD Display</li>
+                <li>13MP Rear Camera | 5MP Front Camera</li>
+                <li>3200 mAh Li-Polymer Battery</li>
+                <li>Qualcomm Snapdragon 615 MSM8939 64-bit Cortex-A53 Processor</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <li id="list">Samsung</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/itZKXXmUwNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k51cpe80pkrrdj/mobile/t/p/8/samsung-galaxy-m40-m40-original-imafgrennxenxgfh.jpeg?q=70" class="image">
+                <p>MRP: <br><del>Rs 17938</del><br>Rs 17172<br>
+                    <mark><em>Flat 4% off</em></mark></p> 
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/m/3/w/galaxy-note-10-plus-512-a-sm-n975fzsgins-samsung-12-original-imafj58vd3nxggwr.jpeg?q=70
+                " class="image"> 
+                <p>MRP: <br><del>Rs 85000</del><br>Rs 80750<br>
+                    <mark><em>Flat 5% off</em></mark></p> 
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kah413k0/mobile/d/m/z/samsung-galaxy-m21-b07hgh8d2r-original-imafsfexgymaayrk.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 15988</del><br>Rs 15668<br>
+                    <mark><em>Flat 2% off</em></mark></p>  
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k7f34i80/mobile/k/g/h/samsung-galaxy-m31-sm-m315fzkgins-original-imafpnrzzt9krr9a.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 18990</del><br>Rs 17091<br>
+                    <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kb1470w0/mobile/n/h/6/samsung-galaxy-m30s-sm-m307fzkdinsfg-original-imafsh7b3zcjtk2e.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 17999</del><br>Rs 17499 <br>
+                    <mark><em>Flat 2% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Samsung Galaxy M40 (Midnight Blue, 128 GB)  (6 GB RAM)
+                <ul type="circle" id="ul1">
+                    <li>6 GB RAM | 128 GB ROM</li>
+                    <li>16.0 cm (6.3 inch) Display</li>
+                    <li>32MP Rear Camera</li>
+                    <li>3500 mAh Battery</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Samsung Galaxy Note 10 Plus (Aura Glow, 256 GB)  (12 GB RAM)
+                <ul type="circle" id="ul1">
+                    <li>12 GB RAM | 256 GB ROM | Expandable Upto 1 TB</li>
+                    <li>17.27 cm (6.8 inch) Display</li>
+                    <li>12MP (Dual Aperture) + 12MP + 16MP + TOF | 10MP Front Camera</li>
+                    <li>4300 mAh Battery</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Samsung Galaxy M21 (Raven Black, 64 GB)  (4 GB RAM)
+                <ul type="circle" id="ul1">
+                    <li>4 GB RAM | 64 GB ROM | Expandable Upto 512 GB</li>
+                    <li>16.26 cm (6.4 inch) Full HD+ Display</li>
+                    <li>48MP + 8MP + 5MP | 20MP Front Camera</li>
+                    <li>6000 mAh Battery</li>
+                    <li> Exynos 9611-Octa Core processor Processor</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Samsung Galaxy M31 (Space Black, 64 GB)  (6 GB RAM)
+                <ul type="circle" id="ul1">
+                    <li>6 GB RAM | 64 GB ROM | Expandable Upto 512 GB</li>
+                    <li>16.26 cm (6.4 inch) Full HD+ Display</li>
+                    <li>64MP + 8MP + 5MP + 5MP | 32MP Front Camera</li>
+                    <li>6000 mAh Battery</li>
+                    <li>Samsung Exynos 9 Octa 9611 Processor</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Samsung Galaxy M30S (Black, 128 GB)  (4 GB RAM)
+                <ul type="circle" id="ul1">
+                    <li>4 GB RAM | 128 GB ROM | Expandable Upto 512 GB</li>
+                    <li>16.26 cm (6.4 inch) Display</li>
+                    <li>48MP + 8MP | 16MP Front Camera</li>
+                    <li>6000 mAh Battery</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Karbonn</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/nrvzqJKIKx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe><br>
+    <table style="border-spacing: 13;">
+        <thead>
+          <tr>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/mobile/y/h/f/karbonn-k9-spy-k9-spy-original-imaeedh99sdhuvuv.jpeg?q=70" class="image">
+                <p>MRP: <br><b><del>Rs 1399</del><br>Rs 1299<br>
+                    <mark><em>Flat 7% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k0lbdzk0/mobile/h/n/f/karbonn-k9-na-original-imafkcquxdnhckkx.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 1275</del><br>Rs 1211<br>
+                    <mark><em>Flat 5% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k33c4nk0pkrrdj/mobile/w/f/w/karbonn-k140-pop-k140-pop-original-imafhfffpfzamhts.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 840</del><br>Rs 756<br>
+                    <mark><em>Flat 10% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k33c4nk0pkrrdj/mobile/c/q/y/karbonn-kx3-8-90389e-11-original-imafh4v2rqqb3zbv.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 839</del><br>Rs 713<br>
+                    <mark><em>Flat 15% off</em></mark></p>
+                </div>
+            </th>
+            <th>
+              <div class="contanier">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jyxaw7k0/mobile/c/s/u/karbonn-k-pebble-k-pebble-original-imafh8zrbqhrvpem.jpeg?q=70" class="image"> 
+                <p>MRP: <br><del>Rs 1599</del><br>Rs 1495<br>
+                    <mark><em>Flat 6% off</em></mark></p>
+                </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="text">Karbonn K9 SPY  (BLACK AND RED)
+                <ul type="circle" id="ul1">
+                    <li>Expandable Upto 16 GB</li>
+                    <li>6.1 cm (2.4 inch) QVGA Display</li>
+                    <li>1.3MP Rear Camera</li>
+                    <li>1750 mAh Battery</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Karbonn Jumbo K9  (Black and Red)
+                <ul type="circle" id="ul1">
+                    <li>Expandable Upto 8 GB</li>
+                    <li>6.6 cm (2.6 inch) QVGA Display</li>
+                    <li>1.3MP Rear Camera</li>
+                    <li>1800 mAh Li-Ion Battery</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Karbonn K140 Pop  (White)
+                <ul type="circle" id="ul1">
+                    <li>32 MB RAM | 32 MB ROM</li>
+                    <li>4.57 cm (1.8 inch) Display</li>
+                    <li>0.3MP Rear Camera</li>
+                    <li>1000 mAh Battery</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Karbonn KX3  (Black,Red)
+                <ul type="circle" id="ul1">
+                    <li>32 MB RAM | 32 MB ROM | Expandable Upto 32 GB</li>
+                    <li>4.57 cm (1.8 inch) Quarter QVGA Display</li>
+                    <li>0.3MP Rear Camera</li>
+                    <li>800 mAh Battery</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div class="text">Karbonn K Pebble  (Red)
+                <ul type="circle" id="ul1">
+                    <li>32 MB RAM | 32 MB ROM</li>
+                    <li>6.1 cm (2.4 inch) Display</li>
+                    <li>0.3MP Rear Camera</li>
+                    <li>800 mAh Battery</li>
+                </ul>
+              </div>
+                <table style="border-spacing: 15;">
+                  <tr>
+                    <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                      <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    <li id="list">Apple</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/cVEemOmHw9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/c/u/e/iphone-11-pro-512-u-mwcd2hn-a-apple-0-original-imafkg2fhzhzzh5s.jpeg?q=70" class="image">
+              <p>MRP: <br><del>Rs 131900</del><br>Rs 111520<br>
+                <mark><em>Flat 20% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/jm9hfgw0/mobile/f/t/a/apple-iphone-xs-max-mt532hn-a-original-imaf97f6y3spd7yz.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 119900</del><br>Rs 95920<br>
+                <mark><em>Flat 20% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/k12go7k0/mobile/7/e/e/apple-iphone-7-mn8x2hn-a-original-imafkqcqhzxuvcpd.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 31500</del><br>Rs 28350<br>
+                <mark><em>Flat 10% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmfxhcrpsb.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 47800</del><br>Rs 40630<br>
+                <mark><em>Flat 15% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://rukminim1.flixcart.com/image/416/416/mobile/b/u/e/apple-iphone-6s-plus-na-original-imaeby7yqedxtcwv.jpeg?q=70" class="image"> 
+              <p>MRP: <br><del>Rs 42990</del><br>Rs 38691<br>
+                <mark><em>Flat 10% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Apple iPhone 11 Pro Max (Space Grey, 256 GB)
+              <ul type="circle" id="ul1">
+                <li>256 GB ROM</li>
+                <li>16.51 cm (6.5 inch) Super Retina XDR Display</li>
+                <li>12MP + 12MP + 12MP | 12MP Front Camera</li>
+                <li>A13 Bionic Chip Processor</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple iPhone XS Max (Space Grey, 512 GB)
+              <ul type="circle" id="ul1">
+                <li>512 GB ROM</li>
+                <li>16.51 cm (6.5 inch) Super Retina HD Display</li>
+                <li>12MP + 12MP | 7MP Front Camera</li>
+                <li>A12 Bionic Chip Processor</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple iPhone 7 (Black, 32 GB)
+              <ul type="circle" id="ul1">
+                <li>32 GB ROM</li>
+                <li>11.94 cm (4.7 inch) Retina HD Display</li>
+                <li>12MP Rear Camera | 7MP Front Camera</li>
+                <li>Apple A10 Fusion 64-bit processor and Embedded M10 Motion Co-processor</li>
+                <li>iOS 13 Compatible</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple iPhone SE (Red, 128 GB)
+              <ul type="circle" id="ul1">
+                <li>128 GB ROM</li>
+                <li>11.94 cm (4.7 inch) Retina HD Display</li>
+                <li>12MP Rear Camera | 7MP Front Camera</li>
+                <li>A13 Bionic Chip with 3rd Gen Neural Engine Processor</li>
+                <li>Water and Dust Resistant (1 meter for Upto 30 minutes, IP67)</li>
+                <li>Fast Charge Capable</li>
+                <li>Wireless charging (Works with Qi Chargers | Qi Chargers are Sold Separately</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Apple iPhone 6s Plus (Space Grey, 16 GB)
+              <ul type="circle" id="ul1">
+                <li>16 GB ROM</li>
+                <li>13.97 cm (5.5 inch) Retina HD Display</li>
+                <li>12MP Rear Camera | 5MP Front Camera</li>
+                <li>Apple A9 64-bit processor and Embedded M9 Motion Co-processor</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <li id="list">Micromax</li>
+    <br><iframe width="100%" height="500" src="https://www.youtube.com/embed/MBUR6fOfoPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <table style="border-spacing: 13;">
+      <thead>
+        <tr>
+          <th>
+            <div class="contanier">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/41vVZcZOVPL._AC_US240_FMwebp_QL65_.jpg" class="image">
+              <p>MRP: <br><del>Rs 1399</del><br>Rs 1329<br>
+              <mark><em>Flat 5% off</em></mark></p>  
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/41FZ6dor1OL._AC_US240_FMwebp_QL65_.jpg" class="image"> 
+              <p>MRP: <br><del>Rs 1299</del><br>Rs 1000<br>
+                <mark><em>Flat 23% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/41Y75Hf0UtL._AC_US240_FMwebp_QL65_.jpg" class="image"> 
+              <p>MRP: <br><del>Rs 1999</del><br>Rs 1599<br>
+                <mark><em>Flat 20% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://images-eu.ssl-images-amazon.com/images/I/51pA6mh5kmL._AC_US240_FMwebp_QL65_.jpg" class="image"> 
+              <p>MRP: <br><del>Rs 9999</del><br>Rs 7999<br>
+                <mark><em>Flat 20% off</em></mark></p>
+              </div>
+          </th>
+          <th>
+            <div class="contanier">
+              <img src="https://m.media-amazon.com/images/I/61HF8QiZk9L._AC_UY327_FMwebp_QL65_.jpg" class="image"> 
+              <p>MRP: <br><del>Rs 10999</del><br>Rs 9899<br>
+                <mark><em>Flat 10% off</em></mark></p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="text">Micromax X746 (Power Saving Mode, Torch Link on Call, 3000mAh, Blue)
+              <ul type="circle" id="ul1">
+                <li>6.1 cm (2.4inch) Screen, Wireless Fm Radio </li>
+                <li>3000 mah battery, Dual Sim, Digital Camera, Video/Music Player </li>
+                <li>Power Saving Mode, Anti Theft </li>
+                <li>Power Torch Blink On Call </li>
+                <li>RAM	32 MB </li>
+                <li>Item Weight	191 g </li>
+                <li>Product Dimensions	12.2 x 5.2 x 5 cm </li>
+                <li>Batteries:	1 Lithium Polymer batteries required. (included) </li>
+                <li>Item model number:	X746 </li>
+                <li>Connectivity technologies:	GPRS </li>
+                <li>Special features:	Auto Call Recorder, Dual Sim, Multi Language, Power Saving Mode, Anti Theft </li>
+                <li>Form factor:	Feature Phone </li>
+                <li>Weight:	191 Grams </li>
+                <li>Colour:	Blue </li>
+                <li>Battery Power Rating:	3000 milliamp_hours </li>
+                <li>Phone Standby Time (with data):	24 Hours </li>
+                <li>Whats in the box:	1 Each of Transceiver, Charger, Battery, User Guide </li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Micromax X421 Black, Dual Sim
+              <ul type="circle" id="ul1">
+                <li>Dual Sim</li>
+                <li>Bluetooth Calling | Torch Blink on call</li>
+                <li>Number talk back</li>
+                <li>1800 mAh battery</li>
+                <li>RAM:	32 MB</li>
+                <li>Item Weight:	191 g</li>
+                <li>Product Dimensions:	14 x 14 x 5 cm</li>
+                <li>Batteries:	1 Lithium Polymer batteries required. (included)</li>
+                <li>Wireless communication technologies:	Bluetooth</li>
+                <li>Connectivity technologies:	GPRS</li>
+                <li>Special features:	Bluetooth Tethering, Dual SIM, Radio</li>
+                <li>Weight:	191 Grams</li>
+                <li>Colour:	Black</li>
+                <li>Battery Power Rating:	1800 milliamp_hours</li>
+                <li>Phone Standby Time (with data):	18 Days</li>
+                <li>Whats in the box:	Transceiver, Charger, Battery, User Guide</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Micromax X809 (Black, Anti Theft, 1000mAh)
+              <ul type="circle" id="ul1">
+                <li>Power Saving Mode | Auto Call Record</li>
+                <li>Anti Theft | Super Battery Mode</li>
+                <li>Bright Torch | Blink on Call</li>
+                <li>Robust & Reliable Design</li>
+                <li>Wireless FM | Number Talk Back</li>
+                <li>RAM:	32 MB</li>
+                <li>Item Weight:	200 g</li>
+                <li>Package Dimensions:	14.4 x 13.8 x 0.2 cm</li>
+                <li>Batteries:	1 Lithium Polymer batteries required. (included)</li>
+                <li>Connectivity technologies:	GPRS</li>
+                <li>Form factor:	Feature Phone</li>
+                <li>Weight:	200 Grams</li>
+                <li>Colour:	Black</li>
+                <li>Battery Power Rating:	1000 milliamp_hours</li>
+                <li>Phone Standby Time (with data):	24 Hours</li>
+                <li>Whats in the box:	1 Each of Transceiver, Charger, Battery, User Guide</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Micromax Canvas Infinity 18:9
+              <ul type="circle" id="ul1">
+                <li>18:9 display with a 5.7-inch HD IPS touchscreen and 1440 x 720 pixels resolution</li>
+                <li>16MP front camera and 13MP rear camera with auto scene detection, bokeh effect, super pixel and panorama</li>
+                <li>3GB RAM and 32GB internal memory expandable up to 128GB in a dedicated slot | Dual SIM (4G+4G)</li>
+                <li>Android v7 Nougat OS with a 1.4GHz Qualcomm Snapdragon 425 quad-core processor</li>
+                <li>2900 mAh lithium-ion battery | Fingerprint sensor Includes an earphone, screen guard and protective cover in the box</li>
+                <li>OS:	Android</li>
+                <li>RAM:	3 GB</li>
+                <li>Item Weight:	472 g</li>
+                <li>Package Dimensions:	17.5 x 10.5 x 6.2 cm</li>
+                <li>Batteries:	1 Lithium Polymer batteries required. (included)</li>
+                <li>Connectivity technologies:	4G</li>
+                <li>Special features:	Dual Sim, Front Camera, Touchscreen, Rear Camera</li>
+                <li>Display technology:	LCD</li>
+                <li>Form factor	:Touchscreen</li>
+                <li>Weight:	472 Grams</li>
+                <li>Battery Power Rating:	2900 milliamp_hours</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+          <td>
+            <div class="text">Micromax canvas 2 Plus
+              <ul type="circle" id="ul1">
+                <li>5.7 inch Screen | 18:9 Ratio</li>
+                <li>3 Gb RAM | 32Gb ROM</li>
+                <li>4000 mAh Battery</li>
+                <li>Fingerprint & Face UnLock</li>
+                <li>8MP | 13MP Camera</li>
+                <li>OS:	Android</li>
+                <li>RAM:	3 GB</li>
+                <li>Item Weight:	150 g</li>
+                <li>Package Dimensions:	18.8 x 10.6 x 4.6 cm</li>
+                <li>Batteries:	1 A batteries required. (included)</li>
+                <li>Item model number:	C2A+</li>
+                <li>Connectivity technologies:	wifi</li>
+                <li>Special features:	Camera</li>
+                <li>Display technology	:IPS LCD</li>
+                <li>Form factor	:touchscreen</li>
+                <li>Weight	:150 Grams</li>
+                <li>Colour:	black</li>
+                <li>Battery Power Rating:	4000 milliampere_hour</li>
+                <li>Whats in the box:	User Guide, Charger, USB Cable, Screen Guard, Handset, Sim Tray</li>
+              </ul>
+            </div>
+              <table style="border-spacing: 15;">
+                <tr>
+                  <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                    <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </ol>
+</div>
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>	
+</body>
+</html>

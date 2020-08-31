@@ -1,0 +1,988 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Equipments</title>
+<style type="text/css">
+/* CSS for body */
+body{
+            background-color: hsl(224, 100%, 95%);
+        }
+/* CSS for header*/
+	    div.header
+	   {
+		background-color: #14aed4;
+		height: 60px;
+		width: 100%;
+	   }
+
+	#img1
+	   {
+		position: absolute;
+		left: 146px;
+	   }
+
+	#h1
+	   {
+		position: absolute;
+		top: 0px;
+		left: 205px;
+		color: white;
+	   }
+
+	#gsearch
+ 	   {
+		position: absolute;
+		left: 400px;
+		top: 4%;
+        width: 300px;
+	   }
+
+    div.header button
+	   {
+		color: #0091B5;
+		background-color: white;
+		border: #0091B5;
+		position: absolute;
+		right: 300px;font-size: 100%;
+		top:25px;height: 30px;width:100px;
+	   }
+
+	#img2
+	   {
+		position: absolute;
+		right: 150px;
+		top: 10px;
+	   }
+/* CSS for navigation bar */
+		div.nav
+		   {
+			height: 60px;
+			background-color: #A9C6D5;
+			z-index: 1;
+            margin: 0%;
+		   }
+
+		.ul2 
+       {
+        list-style-type: none;
+          margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border: #0091B5;
+       }
+
+    .ul2>li 
+       {
+          float: left;
+        display: block;
+        padding-left: 84px;
+        padding-right: 84px;
+        padding-top: 20px;
+        text-align: center; 
+        border: #0091B5;
+        color: #483D41;
+        font-size: 20px;
+        }
+      .ul2>li:hover .dropdown-content
+               {
+             display: block;
+         }
+
+      .dropdown-content
+	     {
+  	 	 display: none;
+  		 position: absolute;
+  		 background-color: #0091B5;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content a
+	     {
+  		 float: none;
+  		 color: white;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+
+      .dropdown-content:hover .dropdown-content2
+	     {
+		 display: block;
+	     }
+
+      .dropdown-content2
+	     {
+  		 display: none;
+  		 position: relative;
+  		 background-color: white;
+  		 min-width: 160px;
+  		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		 z-index: 1;
+	     }
+
+      .dropdown-content2 a
+	     {
+  		 float: none;
+  		 color: black;
+  		 padding: 12px 16px;
+  		 text-decoration: none;
+  		 display: block;
+  		 text-align: center;
+	     }
+/* CSS for Men's Formal*/
+         #list{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #14aed4;
+}
+.cont > ol{
+  list-style: none;
+}
+#M1 {
+text-align: center;
+  color: #0091B5;
+  font-size: xxx-large;
+  margin-top: 30px;
+}
+#M2{
+  color: 14aed4;
+  text-align:center;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+.cart
+{
+
+  border-radius: 4px;
+  height: 50px;
+  width: 130px;
+  background-color: 14aed4;
+  color: white;
+  font-family: cursive;
+  font-weight: bolder;
+  overflow: hidden;
+  text-align: left;
+  font-size: 18px;
+}
+.container
+{
+    display: inline-flex;
+    height: 650px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container1
+{
+    display: inline-flex;
+    height: 650px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+.container2
+{
+    display: inline-flex;
+    height: 650px;
+    width: 100%;
+    border: 4px solid #14aed4;
+}
+
+.box
+{
+         float: left;
+		 height: 650px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+
+.box2
+{
+         float: left;
+		 height: 650px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.box1
+{
+         float: left;
+		 height: 650px;
+		 width: 25%;
+		 text-align: center;
+         border: 0.5px solid #14aed4;
+}
+.co{
+            display: block;
+            position: relative;
+
+}
+p{
+            position: absolute;
+  bottom: 0;
+  background: #14aed4;
+  background: rgba(20, 174, 212, 0.6);
+  color:#f1f1f1;
+  width: 160px;
+  transition: 4s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+
+
+        }
+        .co:hover p{
+            opacity: 1;
+            margin-left: 90px;
+            margin-bottom: 50px;
+
+        }
+        .display{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+
+        .co{
+                    display: block;
+                    position: relative;
+
+        }
+
+        #ul1{color: red;
+  display: contents;
+  list-style: none;}
+/* CSS for footer*/
+.footer
+	{
+       background-color: #172337;
+       width: 96%;
+       height: 200px;
+       padding-left: 4%;
+	}
+	.f1
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	.f2
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: left;
+	}
+	#f
+	{
+        text-decoration: none;
+        color: white;
+        display: block;
+	}
+	.f3
+	{
+		color: white;
+		width: 25%;
+		height: 200px;
+		text-align: left;
+		float: right;
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="Logo.jpeg" id="img1" style="height: 60px; width:60px;">
+		<h1 id="h1">Namashkara</h1>
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search for products,brands and more">
+		<a href="login.html"><button><b>Login</b></button></a>
+		<a href="cart.html"><img src="cart.jpg" id="img2" style="height: 50px; width:60px;"></a>
+	</div>
+	<div class="nav">
+		<ul class="ul2">
+                  <li><b>Fashion</b>
+                <div class="dropdown-content">
+                            <a href="#">Women
+                            <div class="dropdown-content2">
+                                    <a href="W1Western.html">Western wear</a>
+                                    <a href="W2Ethinic.html">Ethnic wear</a>
+                                    <a href="W3Footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Men
+                          <div class="dropdown-content2">
+                                    <a href="Menformal.html">Formals</a>
+                                    <a href="informal.html">Informals</a>
+                                    <a href="shoes.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="#">Kids
+                            <div class="dropdown-content2">
+                                    <a href="kidsclothes.html">Clothes</a>
+                                    <a href="toys.html">Toys</a>
+                                    <a href="kids footwear.html">Footwear</a>
+                            </div> 
+                            </a>
+                            <a href="mask.html">Masks
+                            </a>
+         
+        </div>
+             </li>
+                   <li><b>Electronics</b>
+                   <div class="dropdown-content">
+                             <a href="Mobile.html">Mobiles</a>
+                             <a href="LC.html">Laptop & Computer</a>
+                   </div>
+                   </li>
+    
+                   <li><b>Homedecor</b>
+                 <div class="dropdown-content">
+                             <a href="Homedecor.html">Interior decor and furnishings</a>
+                   </div>
+                   </li>
+
+                   <li><b>TV & Appliances</b>
+                   <div class="dropdown-content">
+                             <a href="tv.html">TV</a>
+                             <a href="kitchen.html">Kitchen Appliances</a>
+                             <a href="Homeapp.html">Home Appliances</a>
+                   </div>
+                   </li>
+
+                   <li><b>Pantry</b>
+                   <div class="dropdown-content">
+                             <a href="Foodpantry.html">Food Pantry</a>
+                             <a href="Cook.html">Cooking essentials</a>
+                             <a href="SB.html">Snackes and Beverages</a>
+                   </div>
+                   </li>
+
+                   <li><b>Sports and Books</b>
+                   <div class="dropdown-content">
+                             <a href="sports.html">Sports product</a>
+                             <a href="Books.html">Books</a>
+                   </div>
+                   </li>
+   </ul>
+    </div>
+    </div>
+    <h1 id="M1">Sports</h1>
+
+    <!--1st line-->
+<div class="cont">
+  <ol>
+    <li id="list">Sports Equipments</li><br>
+    <div class="container">
+          <div class="box">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jy3anbk0/bottle/w/f/a/500-bpa-free-gym-bottle-with-mixer-ball-ad-s-5-1-adrenex-by-original-imafgfyvjfnebjtk.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 379</del><br>Rs 99<br><mark>Flat 73% off</mark></p></div>
+            <div class="display">
+        Adrenex by Flipkart BPA Free Gym Bottle with Mixer Ball 500 ml Shaker  (Pack of 1, Black, Grey, Plastic)
+                <ul type="circle" id="ul1">
+                    <li>Made of: Plastic
+Bottle Type: Shaker
+Capacity: 500 ml
+Pack of: 1 </li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/kdkkdjk0/shuttle/u/r/3/mavis-350-green-cap-6-75-nylon-yonex-slow-original-imafug3vnxye6skh.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1040</del><br>Rs 749<br><mark>Flat 27% off</mark></p></div>
+            <div class="display">
+            Yonex MAVIS 350 - Green Cap Nylon Shuttle - Yellow  (Slow, 75, Pack of 6)
+                <ul type="circle" id="ul1">
+                    <li>Nylon
+Slow, 75 </li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://images.smartpricedeal.com/cache/catalog/deals-coupons/2019/Aug/08/112388-500x500.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 99</del><br>Rs 79<br><mark>Flat 20% off</mark></p></div>
+            <div class="display">
+              Marvel Spider-Man My First Bat & Ball Cricket Kit
+                <ul type="circle" id="ul1">
+                    <li>Material: Plastic
+Age: 4+ Years
+Width: 7 cm
+Depth: 3 cm</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jqy3dzk0/sport-mat/d/h/r/6mm-yoga-mat-100-eva-eco-friendly-premium-quality-6mm-24-quick-original-imaf5fhghk4qanzp.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 999</del><br>Rs 399<br><mark>Flat 60% off</mark></p></div>
+            <div class="display">
+              Quick Shel 100%EVA Eco Friendly Mat, Exercise & Gym Mat With Bag Blue 6 mm Yoga Mat
+                <ul type="circle" id="ul1">
+
+                    <li>Highlights
+Type: Yoga
+Thickness: 6 mm
+Reversible
+Slip Resistant</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+
+
+    <div class="container">
+        <div class="box">
+
+
+
+
+
+
+
+
+            <!--2 line-->
+
+            <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/51ENHmfqDRL._SL1212_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 195</del><br>Rs 95<br><mark>Flat 20% off</mark></p></div>
+            <div class="display">
+            Disney Winnie The Pooh My First Hockey Kit
+                <ul type="circle" id="ul1">
+                    <li>Material: Plastic
+Age: 4+ Years</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jrtj2q80/dumbbell/x/z/f/4-pvc-plates-of-2-5-kg-each-2-dumbell-rod-10-n-original-imafdgbpvfzdyf6y.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 2999</del><br>Rs 1799<br><mark>Flat 18% off</mark></p></div>
+            <div class="display">
+        N.VCOMMUNICATION24X7 4 Pvc plates of 2.5 kg each + 2 dumbell rod Adjustable Dumbbell  (10 kg)
+                <ul type="circle" id="ul1">
+                <li>Type: Adjustable Dumbbell</li>
+
+<li> Weight: 10 kg</li>
+
+
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jxc5a4w0/kit/j/j/q/sports-jump-rope-with-rope-length-adjuster-2pcs-handgrip-na-l-original-imafhq6c7gvfbn4g.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 500</del><br>Rs 160<br><mark>Flat 67% off</mark></p></div>
+            <div class="display">
+            Proactive Sports & Fitness Wooden Rope with Rope Length Adjuster & 2pcs. Handgrip Gym & Fitness Kit
+                <ul type="circle" id="ul1">
+                    <li>Sport Type: Gym & Fitness</li>
+  <li>Ideal For: Boys, Girls, Men, Women</li>
+
+  <li>Width: 9 cm, Height: 20 cm, Depth: 13 cm</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jxc5a4w0/kit/g/s/u/sports-fitness-ab-wheel-roller-exerciser-ball-sports-fitness-ab-original-imafhhzzdv4ncg2y.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1399</del><br>Rs 284<br><mark>Flat 79% off</mark></p></div>
+            <div class="display">
+              Proactive Sports & Fitness Ab Wheel/roller Exerciser & Ball Gym & Fitness Kit
+                <ul type="circle" id="ul1">
+                    <li>Sport Type: Gym & Fitness
+   <li>Ideal For: Boys, Men, Girls, Women</li>
+   <li>Color: Multicolor</li>
+   <li>Width: 22 cm, Height: 22 cm, Depth: 5 cm</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+
+
+      <!--3 line-->
+
+
+
+    <div class="container1">
+        <div class="box1">
+            <div class="co"><img src="https://images-na.ssl-images-amazon.com/images/I/61CedfN8u%2BL._SY679_.jpg" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 3000</del><br>Rs 2000<br><mark>Flat Rs1000 off</mark></p></div>
+            <div class="display">
+                SG RSD SPARK Kashmir Willow Cricket Bat  (1.180 – 1.250 kg)
+                <ul type="circle" id="ul1">
+                    <li>Age Group 15+ Yrs
+Blade Made of Kashmir Willow
+Beginner Playing Level
+Bat Grade: Grade 4
+Sport Type: Cricket
+With Cover
+Weight Range 1.180 – 1.250 kg.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jfsknm80/racquet/m/x/8/g4-swag-wide-body-badminton-racquet-set-of-2-piece-3-piece-nylon-original-imaf46gszbhxsczj.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 895<br><mark>Flat 10% off</mark></p></div>
+            <div class="display">
+              Yonex GR 303 F Red Strung Badminton Racquet  (Pack of: 1, 95 g)
+                <ul type="circle" id="ul1">
+                    <li>Cover: Full Cover
+Strung Type:- Strung
+Grip Size: G3 - 8.89 cm
+Weight: 95 g
+Head Shape:- Isometric Shape
+Beam Width:- 203 mm</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jfmuw7k0/ball/7/j/p/420-470-22-storm-1-niviafb353-football-nivia-original-imaf42fybtxafz42.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 560</del><br>Rs 315<br><mark>Flat 43% off</mark></p></div>
+            <div class="display">
+              Nivia Storm Football - Size: 5  (Pack of 1, Yellow)
+                <ul type="circle" id="ul1">
+                    <li>Football
+Water Resistant
+Outer Material: Rubber
+Weight: 420-470 g
+Suitable for: Hard Ground without Grass, Wet & Grassy Ground, Artificail Turf</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jubjte80/dumbbell/t/u/h/k-pvc-dm-drb-10kg-combo16-10-fitmax-original-imafe9wbcmnmnw7m.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1999</del><br>Rs 788<br><mark>Flat 61% off</mark></p></div>
+            <div class="display">
+        FITMAX K-PVC-DM-DRB 10KG COMBO16 Adjustable Dumbbell  (10 kg)
+                <ul type="circle" id="ul1">
+                    <li>Weight: 10 kg</li>
+<li>Pack of: 6</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+
+
+
+
+
+
+
+      <!--4 line-->
+
+    <div class="container2">
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/800/960/jrcdsi80/watch/g/p/n/army-green-chronograph-digital-sports-watch-for-men-lokmart-original-imaf8medwzyzmpbg.jpeg?q=50" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1095</del><br>Rs 711.75<br><mark>Flat 35% off</mark></p></div>
+            <div class="display">
+            lokmart Army Green Chronograph Digital Sports Watch - For Men Digital Watch - For Men
+                <ul type="circle" id="ul1">
+                    <li>
+6 Months warranty covering manufacturing defects only.</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jt4olu80/bicycle-lock/z/9/k/anti-theft-steel-strong-bicycle-luggage-helmet-security-lock-original-imafejtywhjpakmp.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 799</del><br>Rs 179<br><mark>Flat 77% off</mark></p></div>
+            <div class="display">
+            MobFest Anti-Theft Steel Strong Bicycle/Luggage/Helmet Security Lock with Number
+                <ul type="circle" id="ul1">
+                    <li>The multipurpose Self Coiling Lock Cable with 4 Digit Combination password for keyless convenience. </li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jfsknm80/racquet/m/x/8/g4-swag-wide-body-badminton-racquet-set-of-2-piece-3-piece-nylon-original-imaf46gszbhxsczj.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 999</del><br>Rs 412<br><mark>Flat 58% off</mark></p></div>
+            <div class="display">
+              SUNLEY Swag Wide body Badminton Racquet Set Of 2 Piece, 3 Piece Nylon shuttles, 1 Piece Cover Badminton Kit
+                <ul type="circle" id="ul1">
+                    <li>Sport Type: Badminton
+Ideal For: Boys, Men, Girls, Women, Senior, Junior
+Color: Multicolor
+
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jl2m7ww0/fender/g/s/x/bicycle-atom-mudguard-with-reflective-tape-black-yellow-bmfy456-original-imaf8a9z2uf4q7ae.jpeg?q=70" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 695</del><br>Rs 590.75<br><mark>Flat 15% off</mark></p></div>
+            <div class="display">
+            Dark Horse Bicycle Atom Mudguard with Reflective Tape, Black-Yellow Clip-on Front & Rear Fender  (Yellow)
+                <ul type="circle" id="ul1">
+                    <li>Unbreakable Quality
+Easy to Install
+Universal in size
+Reflective tapes</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div><br>
+
+
+
+
+
+
+      <!--5 line-->
+
+    <div class="container2">
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jjolt3k0/ball/x/k/b/320-350-22-5-antrix-1-fb-296-football-nivia-original-imaf76byuzhnuzw5.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1095</del><br>Rs 711.75<br><mark>Flat 35% off</mark></p></div>
+            <div class="display">
+            Nivia Antrix Football - Size: 5  (Pack of 1, Multicolor)
+                <ul type="circle" id="ul1">
+                    <li>Football
+Water Resistant
+Outer Material: Rubber
+Weight: 320-350 g
+Suitable for: Hard Ground without Grass, Wet & Grassy Ground, Artificail Turf</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/j727s7k0/ball/a/2/y/600-24-pro-street-1-n-8809-basketball-nivia-original-imaexdrvztwy2z6f.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1295</del><br>Rs 1165.5<br><mark>Flat 10% off</mark></p></div>
+            <div class="display">
+              Nivia Pro Street Basketball - Size: 7  (Pack of 1, Black)
+                <ul type="circle" id="ul1">
+                    <li>Sales Package
+1 Basketball</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jkh6m4w0/ball/q/u/s/700-25-6-engraver-6-1-engrver-red-bsskbll-6-basketball-nivia-original-imaf7ssrfgyfxq3v.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 915<br><mark>Flat 8% off</mark></p></div>
+            <div class="display">
+              Nivia Engraver-7 Basketball - Size: 7  (Pack of 1, Red)
+                <ul type="circle" id="ul1">
+                    <li>Basketball
+Water Resistant
+Outer Material: Rubber
+Weight: 700 g</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/ka5oia80/toy-sport/z/f/m/bn-as01-basketball-beston-original-imafrs8thgeju32q.jpeg?q=70" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 695</del><br>Rs 590.75<br><mark>Flat 15% off</mark></p></div>
+            <div class="display">
+            Beston Finger Basketball Aim & Score Game For Kids Basketball
+                <ul type="circle" id="ul1">
+                    <li>
+2 Shooters, 10 Balls, 1 Base</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box2">
+
+
+
+
+
+
+
+
+            <!--6 line-->
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jwuzzww0/toy-sport/n/z/8/mickey-bowling-bowling-disney-original-imafhgfpkcskfmdh.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1095</del><br>Rs 711.75<br><mark>Flat 35% off</mark></p></div>
+            <div class="display">
+            Disney Mickey & Friends 6-Pin and Ball Set for Bowling
+                <ul type="circle" id="ul1">
+                    <li>
+Material: Plastic
+Age: 4+ Years</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/j8osu4w0/fitness-band/p/c/b/wrist-and-sports-band-made-with-pure-cotton-0-serveuttam-india-original-imaeymwzfnnmhyay.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 600</del><br>Rs 127<br><mark>Flat 78% off</mark></p></div>
+            <div class="display">
+              serveuttam Wrist and sports band made with pure cotton Fitness Band  (Black)
+                <ul type="circle" id="ul1">
+                    <li>Type: Fitness Band
+Color: Black
+Width: 12 inch
+Length: 15 inch</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/j51cbrk0/bottle/y/g/g/500-cyclone-shaker-shakerblack-printed-results-sm-haans-original-imaev77yqw4nsn6c.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 995</del><br>Rs 915<br><mark>Flat 8% off</mark></p></div>
+            <div class="display">
+          HAANS Cyclone Shaker 500 ml Shaker  (Pack of 1, Black, Plastic)
+                <ul type="circle" id="ul1">
+                    <li>Made of: Plastic
+Bottle Type: Shaker
+Capacity: 500 ml
+Pack of: 1</li>
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jykfxjk0/fitness-grip/w/4/f/hand-gripper-for-best-hand-exerciser-grip-adjustable-10kg-to-original-imafgs28gg4scam9.jpeg?q=70" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 900</del><br>Rs 180<br><mark>Flat 79% off</mark></p></div>
+            <div class="display">
+          Quick Shel Hand Gripper For Best Hand Exerciser Grip Adjustable 10kg to 40kg Hand Grip/Fitness Grip  (Black)
+                <ul type="circle" id="ul1">
+                    <li>Type: Hand Grip/Fitness Grip
+Exercise Type: fitness
+Color: Black
+                  </ul>
+                  <table style="border-spacing: 15;">
+                    <tr>
+                      <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                        <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+        <!--7 line-->
+      <div class="container2">
+          <div class="box2">
+              <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jit64cw0-1/sport-glove/y/g/h/left-right-free-size-palm-support-leather-647647333-70-7-gym-original-imaf5jfz4smtyv23.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1095</del><br>Rs 711.75<br><mark>Flat 35% off</mark></p></div>
+              <div class="display">
+          DreamPalace India GYM GLOVES, Gloves for gym, Leather Gym Gloves
+                  <ul type="circle" id="ul1">
+                      <li>Left & Right Gloves</li>
+      <li>For Boys, Men, Girls, Women</li>
+      <li>For Fitness</li>
+      <li>Weight: 65 g</li>
+      <li>Material: Leather</li>
+                    </ul>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+          <div class="box2">
+              <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jg406fk0/bicycle-handle-grip/6/k/6/new-pair-cycling-lock-on-anti-slip-bicycle-handlebar-handle-original-imaf4awjxdxk9m2e.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1000</del><br>Rs 200<br><mark>Flat 80% off</mark></p></div>
+              <div class="display">
+           Bicycle Handle Grip  (10 cm)
+                  <ul type="circle" id="ul1">
+                      <li>Brand
+cycle world
+Model Number
+New Pair Cycling Lock-on Anti-slip Bicycle Handlebar Handle Grips For MTB BMX
+Color
+Black</li>
+                    </ul>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+          <div class="box2">
+              <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/k226oi80/support/g/h/8/both-1pair-of-sports-pain-relief-knee-sleeve-knee-cap-knee-guard-original-imafhhbp7q9kfd7z.jpeg?q=70" alt="co" width="290" height="310"><p>MRP: <br><del>Rs 1000</del><br>Rs 200<br><mark>Flat 80% off</mark></p></div>
+              <div class="display">
+                Leosportz (1pair) of Sports Pain Relief knee sleeve knee cap knee guard Knee Support  (Green, Black)
+                  <ul type="circle" id="ul1">
+                      <li>Color: Green, Black
+Type: Knee Support
+Exercise Type: Squats, Running, Cycling, Fitness, Gym, Tennis
+Sport Type: Fitness</li>
+                    </ul>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+          <div class="box2">
+              <div class="co"><img src="https://rukminim1.flixcart.com/image/416/416/jhkvgy80/toy-sport/w/z/p/batman-large-bow-arrow-set-archery-kit-gencliq-original-imaf5jyfc7gexk6q.jpeg?q=70" alt="co" width="310" height="310"><p>MRP: <br><del>Rs 279</del><br>Rs 189<br><mark>Flat 32% off</mark></p></div>
+              <div class="display">
+              Batman Large Bow & Arrow Set Archery Kit
+                  <ul type="circle" id="ul1">
+                      <li>Material: Plastic
+Age: 3+ Years</li>
+                    </ul>
+                    <table style="border-spacing: 15;">
+                      <tr>
+                        <td><a href="M1.html"><button class="cart" type="submit">Add To Cart</button></a></td>
+                          <td><a href="M1.html"><button class="cart" type="submit">Buy Now</button></a></td>
+                      </tr>
+                    </table>
+              </div>
+          </div>
+      </div>
+
+  </ol>
+</div>
+
+
+
+  <!--8 line-->
+<br><br>
+<div class="footer">
+    <div class="f1">
+        <br><br>
+        <h2>Namashkara</h2><br>
+         For best Indian products<br>
+         and Exciting deals.
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Explore</h3>
+         <a href="mainpg1.html" id="f">Home</a>
+         <a href="login.html" id="f">Login</a>
+         <a href="aboutus.html" id="f">About Us</a>
+    </div>
+    <div class="f2">
+         <br><br>
+         <h3>Connect</h3>
+         <a href="#" id="f">Instagram</a>
+         <a href="#" id="f">Facebook</a>
+         <a href="#" id="f">Twitter</a>
+    </div>
+    <div class="f3">
+        <br><br>
+        <h3>Contact Us</h3><br>
+         9988776655,4433221100<br>
+         Email: namashkara@gmail.com
+    </div>
+</div>
+</body>
+</html>

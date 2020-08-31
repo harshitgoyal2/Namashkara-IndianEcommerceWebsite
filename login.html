@@ -1,0 +1,104 @@
+<html>
+<head><title>Login page</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+	body
+	{
+		background-color: hsl(224, 100%, 95%);
+	}
+
+	.name
+	{
+		height: 95px;
+		width: 100%;
+	}
+
+	img
+	{
+		position: absolute;
+		top:30px;
+		left:40%;
+	}
+
+	h1
+	{
+		position: absolute;
+		top:16px;
+		left:45%;
+		color: #0091B5;
+	}
+
+	.register
+	{
+		height: 320px;
+		width: 25%;
+        border: 2px solid lightgrey;
+        position: absolute;
+        left: 35%;
+        padding-left: 10px; 
+	}
+
+	input
+	{
+		height: 30px;
+		width: 350px;
+	}
+
+	input:focus 
+	{
+     border: 3px solid #006D90;
+    }
+
+    input[type=submit]
+    {
+    	height: 30px;
+		width: 350px;
+		background-color:#006d90;
+		text-align: center;
+		color: white
+    }
+
+    a:link 
+    {
+        color: red;
+    }
+
+    a:visited 
+    {
+        color: #006D90;
+    }
+
+    a:hover 
+    {
+       color: hotpink;
+    }
+
+    a:active 
+    {
+       color: blue;
+    }
+</style>
+
+<script>
+	function myfn()
+	{
+		alert("Login successfully");
+	}
+</script>
+</head>
+<body>
+	<div class="name"><img src="logo.jpeg" height="70px;" width="70px"><h1>Namashkara</h1></div>
+	<div class="register"><h2>Login</h2>
+		<label>Email or mobile phone number</label><br>
+		<input type="text" name="emailid"><br>
+		<label>Password</label><br>
+		<input type="Password" name="Password"><br><br>
+		<a href="mainpg1.html"><input type="submit" name="Login" value="LOGIN" onclick="myfn()"></a><br><br>
+		By continuing, you agree to Namashkara's Conditions<br> of Use and Privacy Notice.
+		<br>
+		
+		<h4 align="center">Create an account <a href="signup.html" style="text-decoration: none;">Sign up</a></h4>
+	</div>
+</body>
+</html>
