@@ -1,2 +1,5 @@
 # Namashkara-IndianEcommerceWebsite
-An Indian e-commerce site Aiming to connect all the Indian traders,producers and companies so that we can encourage our economy and Indian people. This will help our people to learn the Worth of India. We welcome all the sellers as well as buyers to encourage Indian products and avoid going out in this situation of pandemic.This pandemic has given us opportunity to get together for this important cause. We want to reach more and more people. So,order online and stay safe at your homes. We are here for you with lots of amazing stuff and super exciting discounts.
+Developed front-end user experience using HTML, CSS & JavaScript.
+Built responsive, accessible and dynamic web pages to enable users to easily navigate site.
+You can log in or sign up.
+Designed a user portal to check orders.
